@@ -8,7 +8,7 @@
 - Tela molde -> Footer
 - Tela home -> Perfil | Contador Moedas | Ranking | Última obra desbloqueada | (Báu do dia?) |
 - Tela QR Code
-- Tela coleçãp
+- Tela coleção
 - Perfil
 
 ### Task's da segunda linha.
