@@ -18,7 +18,7 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/userInput"
+        android:id="@+id/userInputText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="USUÁRIO"
@@ -27,28 +27,35 @@
         app:layout_constraintHorizontal_bias="0.235"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.050000012" />
+        app:layout_constraintVertical_bias="0.036" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/inputPassword"
         android:layout_width="241dp"
         android:layout_height="48dp"
         android:ems="10"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="83dp"
-        tools:layout_editor_absoluteY="328dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputName"
+        app:layout_constraintVertical_bias="0.115" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="-14dp"
-        tools:layout_editor_absoluteY="315dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.241">
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText"
+        android:id="@+id/inputName"
         android:layout_width="246dp"
         android:layout_height="38dp"
         android:hint="hint"
@@ -57,10 +64,10 @@
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.07999998" />
+        app:layout_constraintVertical_bias="0.089" />
 
     <TextView
-        android:id="@+id/senhaInput"
+        android:id="@+id/senhaInputText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SENHA"
