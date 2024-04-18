@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Seção do perfil -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Foto do perfil -->
+        <ImageView
+            android:id="@+id/prefil_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/perfil_img" />
+
+        <!-- Nome do usuário -->
+        <TextView
+            android:id="@+id/nome_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome do Usuário"
+            android:textSize="24sp"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Seção de imagens favoritas -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Obras Favoritas"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="8dp" />
+
+    <!-- RecyclerView para exibir imagens favoritas -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/obras_favoritas_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Seção personalizada -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Figurinhas Desbloqueadas"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="8dp" />
+
+    <!-- ListView ou RecyclerView para exibir itens personalizados -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/figurinhas_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Báus Abertos"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="8dp" />
+
+    <!-- ListView ou RecyclerView para exibir itens personalizados -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bau_aberto_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
