@@ -1,6 +1,8 @@
 # Principal Arquivo README
 
 ## Requisitos
+### **Funcionais**
+### **Não Funcionais**
 
 ## Regras de produção
 - Sempre criar pastas com a inicial maiúscula.
