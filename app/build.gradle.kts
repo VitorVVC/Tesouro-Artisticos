@@ -28,16 +28,9 @@ android {
     }
 
     buildFeatures {
-<<<<<<< HEAD
         viewBinding = true;
     }
 
-=======
-
-        viewBinding = true
-
-    }
->>>>>>> 978ad7b484612c6db4e65bc9cf4a1cefa43c3144
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
