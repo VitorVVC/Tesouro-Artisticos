@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Tesouros Artísticos</string>
+<<<<<<< HEAD
     <string name="usuario">USUARIO</string>
+=======
+>>>>>>> 978ad7b484612c6db4e65bc9cf4a1cefa43c3144
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
