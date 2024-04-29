@@ -16,12 +16,14 @@
             android:id="@+id/btnCriarQuiz"
             android:layout_width="250dp"
             android:layout_height="85dp"
+            android:layout_marginTop="24dp"
             android:backgroundTint="#D9D9D9"
             android:text="CRIAR QUIZ"
             android:textColor="#000000"
             android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/perguntaQuiz"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -68,7 +70,7 @@
         <Button
             android:id="@+id/btnRespostaTres"
             android:layout_width="230dp"
-            android:layout_height="45dp"
+            android:layout_height="50dp"
             android:backgroundTint="#2B2929"
             android:text="Button"
             app:layout_constraintBottom_toBottomOf="parent"
