@@ -2,6 +2,7 @@ package com.example.tesourosartsticos
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.TextUtils
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -12,6 +13,7 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 
 
 class MainActivity : AppCompatActivity() {
@@ -59,10 +61,21 @@ class MainActivity : AppCompatActivity() {
             val nome = nomeLogin.text.toString()
             val senha = senhaLogin.text.toString()
 
+            if (TextUtils.isEmpty(nome)) {
+                Toast.makeText(this, "Entre com o nome", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            if (TextUtils.isEmpty(senha)) {
+                Toast.makeText(this, "Entre com a senha", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+
             Firebase.firestore.collection("Logins").document(nome).get()
                 .addOnSuccessListener { documentSnapshot ->
                     if (documentSnapshot.exists()) {
-                        val senhaCorreta = documentSnapshot.getString("senhaTesouro")
+                        val senhaCorreta = documentSnapshot.getString("senha")
 
                         if (senha == senhaCorreta) {
                             // Senha correta, redirecionar para a Home
@@ -76,21 +89,22 @@ class MainActivity : AppCompatActivity() {
                         }
                     } else {
                         // Documento não encontrado para o nome de usuário fornecido
-                        errorTextView.apply {
-                            text = "Usuário não encontrado. Por favor, verifique suas credenciais."
-                            visibility = View.VISIBLE
-                        }
+                        Toast.makeText(
+                            this,
+                            "Usuário não encontrado. Por favor, verifique suas credenciais.",
+                            Toast.LENGTH_SHORT
+                        ).show()
                     }
                 }.addOnFailureListener { exception ->
-                // Ocorreu algum erro ao buscar o documento
-                Log.e("MainActivity", "Erro ao fazer login: $exception")
-                // Mostrar mensagem de erro genérica
-                errorTextView.apply {
-                    text =
-                        "Erro ao fazer login. Por favor, tente novamente mais tarde." // BUG FIX: Ao tentar logar, está caindo aqui
-                    visibility = View.VISIBLE
+                    // Ocorreu algum erro ao buscar o documento
+                    Log.e("MainActivity", "Erro ao fazer login: $exception")
+                    // Mostrar mensagem de erro genérica
+                    Toast.makeText(
+                        this,
+                        "Erro ao fazer login. Por favor, tente novamente mais tarde",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
-            }
         }
     }
 
