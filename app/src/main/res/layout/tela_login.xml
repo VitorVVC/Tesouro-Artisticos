@@ -22,7 +22,7 @@
     <EditText
         android:id="@+id/senhaInput"
         android:layout_width="246dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -47,7 +47,7 @@
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/inputName"
         android:layout_width="246dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.515"
@@ -91,5 +91,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logoLogin"
         app:layout_constraintVertical_bias="0.224" />
+
+    <TextView
+        android:id="@+id/errorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/loginButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/senhaInput" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
