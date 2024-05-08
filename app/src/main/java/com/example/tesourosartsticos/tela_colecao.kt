@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.TextView
+import androidx.navigation.Navigation
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -34,7 +37,14 @@ class tela_colecao : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tela_colecao, container, false)
+        val view = inflater.inflate(R.layout.fragment_tela_colecao, container, false)
+
+        val btnMod = view.findViewById<TextView>(R.id.textView11)
+        btnMod.setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.navigateToModificarCarta)
+        }
+
+        return view
     }
 
     companion object {

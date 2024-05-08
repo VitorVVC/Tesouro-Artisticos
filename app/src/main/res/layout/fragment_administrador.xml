@@ -12,6 +12,19 @@
         android:background="#6D6969">
 
         <Button
+            android:id="@+id/btnVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="513dp"
+            android:text="Voltar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.835" />
+
+        <Button
             android:id="@+id/btnAdicionarFigurinha"
             android:layout_width="270dp"
             android:layout_height="75dp"

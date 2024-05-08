@@ -5,6 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageButton
+import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -34,7 +38,19 @@ class Home : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        val view = inflater.inflate(R.layout.fragment_home, container, false)
+
+        val btnRaking = view.findViewById<Button>(R.id.btn_ranking)
+        btnRaking.setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.navigateToRanking)
+        }
+
+        val btnPerfil = view.findViewById<ImageButton>(R.id.imageButton)
+        btnPerfil.setOnClickListener{
+            Navigation.findNavController(view).navigate(R.id.navigateToPerfil)
+        }
+
+        return view
     }
 
     companion object {
