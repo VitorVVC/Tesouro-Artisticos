@@ -1,5 +1,6 @@
 package com.example.tesourosartsticos
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
@@ -10,6 +11,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.navigation.Navigation
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.findNavController
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.example.tesourosartsticos.databinding.ActivityMainBinding
@@ -45,6 +49,8 @@ class tela_login : Fragment() {
         // Capturando botão
         btnLogar = view.findViewById(R.id.loginButton)
 
+
+
         btnLogar.setOnClickListener {
             val nome = nomeLogin.text.toString()
             val senha = senhaLogin.text.toString()
@@ -56,18 +62,24 @@ class tela_login : Fragment() {
 
             Firebase.firestore.collection("Logins").document("A4DHpnfLZ9PIZzM7zuqB").get()
                 .addOnSuccessListener { documentSnapshot ->
-                    // Restante do código omitido por brevidade
+                    val loginCorreto = documentSnapshot.getString("nome")
+                    val senhaCorreta = documentSnapshot.getString("senha")
+
+                    if (nome == loginCorreto && senha == senhaCorreta) {
+                        Toast.makeText(requireContext(), "Login bem-sucedido", Toast.LENGTH_SHORT).show()
+                        // Aqui você pode navegar para a próxima tela ou executar outras ações
+                        Navigation.findNavController(view).navigate(R.id.sucessoLogin)
+
+                    } else {
+                        Toast.makeText(requireContext(), "Nome de usuário ou senha incorretos", Toast.LENGTH_SHORT).show()
+                    }
+                }
+                .addOnFailureListener { e ->
+                    Toast.makeText(requireContext(), "Erro ao realizar login. Tente novamente mais tarde.", Toast.LENGTH_SHORT).show()
                 }
         }
 
         return view
-    }
-
-    // Método para substituir o fragmento atual pelo fornecido como parâmetro
-    private fun replaceFragment(fragment: Fragment) {
-        parentFragmentManager.beginTransaction()
-            .replace(R.id.frame_layout, fragment)
-            .commit()
     }
 
 }
