@@ -26,21 +26,7 @@ class quiz : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_quiz, container, false)
-
-
-        val perguntaQuiz = view.findViewById<EditText>(R.id.perguntaQuiz);
-
-        val opCorreta = view.findViewById<EditText>(R.id.opCorreta);
-        val opErradaUm = view.findViewById<EditText>(R.id.opErradaUm);
-        val opErradaDois = view.findViewById<EditText>(R.id.opErradaDois);
-        val opErradaTres = view.findViewById<EditText>(R.id.opErradaTres);
-
-
-
-
-
-        return view;
+        return inflater.inflate(R.layout.fragment_quiz, container, false)
     }
 
     companion object {

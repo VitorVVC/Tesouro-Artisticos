@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
 import androidx.navigation.Navigation
 
 // TODO: Rename parameter arguments, choose names that match
@@ -42,7 +43,12 @@ class adicionar_figurinha : Fragment() {
         btnVoltar.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.backToAdm)
         }
+        val perguntaQuiz = view.findViewById<EditText>(R.id.perguntaQuiz);
 
+        val opCorreta = view.findViewById<EditText>(R.id.opCorreta);
+        val opErradaUm = view.findViewById<EditText>(R.id.opErradaUm);
+        val opErradaDois = view.findViewById<EditText>(R.id.opErradaDois);
+        val opErradaTres = view.findViewById<EditText>(R.id.opErradaTres);
         return view
     }
 
