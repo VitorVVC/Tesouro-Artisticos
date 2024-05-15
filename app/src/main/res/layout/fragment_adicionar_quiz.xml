@@ -4,119 +4,125 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-tools:context=".adicionar_figurinha">
+tools:context=".adicionar_quiz">
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#6D6969"
-    android:textAlignment="center">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6D6969"
+        android:textAlignment="center">
 
-    <Button
-        android:id="@+id/btnVoltar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="513dp"
-        android:text="Voltar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.835" />
+        <Button
+            android:id="@+id/btnVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="513dp"
+            android:text="Voltar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.835" />
 
-    <Button
-        android:id="@+id/btnQuizHeader"
-        android:layout_width="214dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="596dp"
-        android:backgroundTint="#D9D9D9"
-        android:clickable="false"
-        android:text="CRIAR QUIZ"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/btnCriar"
+            android:layout_width="214dp"
+            android:layout_height="52dp"
+            android:backgroundTint="#D9D9D9"
+            android:clickable="false"
+            android:text="CRIAR QUIZ"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.522"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.861" />
 
-    <TextView
-        android:id="@+id/perguntaQuiz"
-        android:layout_width="250dp"
-        android:layout_height="180dp"
-        android:background="#D9D9D9"
-        android:gravity="center"
-        android:text="INSERIR TEXTO"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.096" />
+        <EditText
+            android:id="@+id/perguntaQuiz"
+            android:layout_width="250dp"
+            android:layout_height="180dp"
+            android:background="#D9D9D9"
+            android:gravity="center"
+            android:text="INSERIR TEXTO"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.096" />
 
-    <TextView
-        android:id="@+id/opErradaTres"
-        android:layout_width="224dp"
-        android:layout_height="40dp"
-        android:background="#d9d9d9"
-        android:gravity="center"
-        android:text="Opção Errada TRES"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.707" />
-
-    <TextView
-        android:id="@+id/opCorreta"
-        android:layout_width="224dp"
-        android:layout_height="40dp"
-        android:background="#8B87FF7E"
-        android:gravity="center"
-        android:text="Opção Correta"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.406" />
-
-    <TextView
-        android:id="@+id/opErradaUm"
-        android:layout_width="224dp"
-        android:layout_height="40dp"
-        android:background="#d9d9d9"
-        android:gravity="center"
-        android:text="Opção Errada UM"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
-
-    <TextView
-        android:id="@+id/opErradaDois"
-        android:layout_width="224dp"
-        android:layout_height="40dp"
-        android:background="#d9d9d9"
-        android:gravity="center"
-        android:text="Opção Errada DOIS"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.599" />
+        <EditText
+            android:id="@+id/opCorreta"
+            android:layout_width="224dp"
+            android:layout_height="50dp"
+            android:background="#8B87FF7E"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="Opção Correta"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.376" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/opErradaUm"
+            android:layout_width="224dp"
+            android:layout_height="50dp"
+            android:background="#d9d9d9"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="Opção Errada UM"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.499" />
+
+        <EditText
+            android:id="@+id/opErradaDois"
+            android:layout_width="224dp"
+            android:layout_height="50dp"
+            android:background="#d9d9d9"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="Opção Errada DOIS"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.612" />
+
+        <EditText
+            android:id="@+id/opErradaTres"
+            android:layout_width="224dp"
+            android:layout_height="50dp"
+            android:background="#d9d9d9"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="Opção Errada TRES"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.72" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

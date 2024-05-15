@@ -79,7 +79,7 @@
     </fragment>
     <fragment
         android:id="@+id/adicionar_figurinha"
-        android:name="com.example.tesourosartsticos.adicionar_figurinha"
+        android:name="com.example.tesourosartsticos.adicionar_quiz"
         android:label="fragment_adicionar_quiz"
         tools:layout="@layout/fragment_adicionar_quiz" >
         <action
