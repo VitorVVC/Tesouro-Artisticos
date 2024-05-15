@@ -13,21 +13,34 @@
         android:textAlignment="center">
 
         <Button
-            android:id="@+id/btnQuizHeader"
+            android:id="@+id/btnVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="513dp"
+            android:text="Voltar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.835" />
+
+        <Button
+            android:id="@+id/btnCriarQuiz"
             android:layout_width="250dp"
             android:layout_height="85dp"
+            android:layout_marginTop="24dp"
             android:backgroundTint="#D9D9D9"
-            android:clickable="false"
             android:text="CRIAR QUIZ"
             android:textColor="#000000"
             android:textSize="24sp"
-            app:layout_constraintBottom_toTopOf="@+id/perguntaQuiz"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/perguntaQuiz"
+            android:id="@+id/criarPerguntaQuiz"
             android:layout_width="250dp"
             android:layout_height="180dp"
             android:background="#D9D9D9"
@@ -92,5 +105,4 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.793" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </FrameLayout>
