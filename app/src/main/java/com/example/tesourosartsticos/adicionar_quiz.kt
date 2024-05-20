@@ -15,10 +15,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [adicionar_figurinha.newInstance] factory method to
+ * Use the [adicionar_quiz.newInstance] factory method to
  * create an instance of this fragment.
  */
-class adicionar_figurinha : Fragment() {
+class adicionar_quiz : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -36,12 +36,11 @@ class adicionar_figurinha : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-       val view = inflater.inflate(R.layout.fragment_adicionar_figurinha, container, false)
+        val view = inflater.inflate(R.layout.fragment_adicionar_quiz, container, false)
 
-        val btnProximo = view.findViewById<Button>(R.id.button6)
-
-        btnProximo.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.navToAddQuiz)
+        val btnVoltar = view.findViewById<Button>(R.id.btnVoltar)
+        btnVoltar.setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.backToAdm)
         }
 
         return view
@@ -59,7 +58,7 @@ class adicionar_figurinha : Fragment() {
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            adicionar_figurinha().apply {
+            adicionar_quiz().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
