@@ -64,6 +64,9 @@ class adicionar_quiz : Fragment() {
             val opErradaDoisText = opErradaDois.text.toString();
             val opErradaTresText = opErradaTres.text.toString();
 
+            // TODO ->
+            val idObra = "";
+
             if (TextUtils.isEmpty(perguntaQuizText) || TextUtils.isEmpty(opCorretaText) || TextUtils.isEmpty(
                     opErradaUmText
                 ) || TextUtils.isEmpty(opErradaDoisText) || TextUtils.isEmpty(opErradaTresText)
