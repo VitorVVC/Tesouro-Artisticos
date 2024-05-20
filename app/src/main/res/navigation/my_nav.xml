@@ -59,13 +59,12 @@
         android:label="fragment_administrador"
         tools:layout="@layout/fragment_administrador" >
         <action
-            android:id="@+id/navigateToAddFigurinha"
-            app:destination="@id/adicionar_figurinha"
-            app:enterAnim="@anim/nav_default_enter_anim" />
-        <action
             android:id="@+id/backToSettings"
             app:destination="@id/settings"
             app:enterAnim="@anim/nav_default_enter_anim" />
+        <action
+            android:id="@+id/navToAddFigurinha"
+            app:destination="@id/adicionar_figurinha2" />
     </fragment>
     <fragment
         android:id="@+id/perfil"
@@ -79,7 +78,7 @@
     </fragment>
     <fragment
         android:id="@+id/adicionar_figurinha"
-        android:name="com.example.tesourosartsticos.adicionar_figurinha"
+        android:name="com.example.tesourosartsticos.adicionar_quiz"
         android:label="fragment_adicionar_quiz"
         tools:layout="@layout/fragment_adicionar_quiz" >
         <action
@@ -104,5 +103,14 @@
         <action
             android:id="@+id/action_modificar_carta_to_quiz"
             app:destination="@id/quiz" />
+    </fragment>
+    <fragment
+        android:id="@+id/adicionar_figurinha2"
+        android:name="com.example.tesourosartsticos.adicionar_figurinha"
+        android:label="fragment_adicionar_figurinha"
+        tools:layout="@layout/fragment_adicionar_figurinha" >
+        <action
+            android:id="@+id/navToAddQuiz"
+            app:destination="@id/adicionar_figurinha" />
     </fragment>
 </navigation>
