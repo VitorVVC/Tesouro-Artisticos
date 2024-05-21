@@ -10,6 +10,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.navigation.Navigation
+import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import java.util.UUID
@@ -62,7 +63,8 @@ class adicionar_figurinha : Fragment() {
                 "obraId" to myUuidAsString,
                 "titulo" to tituloTxT,
                 "autor" to autorTxT,
-                "descricao" to descTxT
+                "descricao" to descTxT,
+                "dataCriacao" to FieldValue.serverTimestamp()  // Adiciona a data de criação
             )
 
             // Adicionar obra ao Firestore

@@ -74,6 +74,7 @@ class adicionar_quiz : Fragment() {
                 Firebase.firestore.collection("Obras").document(path).get()
                     .addOnSuccessListener { documentSnapshot ->
                         val docId = documentSnapshot.getString("obraId")
+                        val dataCriacao = documentSnapshot.getTimestamp("dataCriacao")
 
                         if (docId != null) {
                             Firebase.firestore.collection("Quiz").add(
@@ -84,7 +85,7 @@ class adicionar_quiz : Fragment() {
                                     "opErradaDois" to opErradaDoisText,
                                     "opErradaTres" to opErradaTresText,
                                     "idObraOriginal" to docId,
-                                    "pathObra" to path
+                                    "dataCriacao" to dataCriacao  // Adiciona a data de criação do quiz
                                 )
                             ).addOnSuccessListener {
                                 Toast.makeText(
