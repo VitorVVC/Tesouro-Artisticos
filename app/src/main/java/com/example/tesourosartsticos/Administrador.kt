@@ -33,7 +33,7 @@ class Administrador : Fragment() {
         val btnAdicionarFigurinha = view.findViewById<Button>(R.id.btnAdicionarFigurinha)
 
         btnAdicionarFigurinha.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.navigateToAddFigurinha)
+            Navigation.findNavController(view).navigate(R.id.navToAddFigurinha)
         }
 
         val btnVoltar = view.findViewById<Button>(R.id.btnVoltar)
