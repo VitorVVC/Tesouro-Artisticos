@@ -11,30 +11,14 @@
         android:layout_height="match_parent"
         android:background="#6D6969">
 
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Obra 1"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.124"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.334" />
-
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView2"
-            android:layout_width="320dp"
-            android:layout_height="395dp"
+            android:id="@+id/recycleItems"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.505"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/headerColecao"
-            app:layout_constraintVertical_bias="0.637">
-
-        </androidx.recyclerview.widget.RecyclerView>
+            app:layout_constraintTop_toBottomOf="@+id/headerColecao" />
 
         <TextView
             android:id="@+id/headerColecao"
@@ -65,6 +49,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/headerColecao"
             app:layout_constraintVertical_bias="0.053" />
+
+        <!-- Layout do item da RecyclerView -->
+        <include layout="@layout/item_obra" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
