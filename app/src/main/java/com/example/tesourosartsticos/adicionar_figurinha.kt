@@ -76,7 +76,7 @@ class adicionar_figurinha : Fragment() {
                 "titulo" to tituloTxT,
                 "autor" to autorTxT,
                 "descricao" to descTxT,
-                "dataCriacao" to FieldValue.serverTimestamp()  // Adiciona a data de criação
+                "dataCriacao" to FieldValue.serverTimestamp()
             )
 
             // Adicionar obra ao Firestore
