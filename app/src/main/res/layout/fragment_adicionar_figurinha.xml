@@ -40,7 +40,7 @@
             tools:src="@tools:sample/avatars" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/inputImage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
