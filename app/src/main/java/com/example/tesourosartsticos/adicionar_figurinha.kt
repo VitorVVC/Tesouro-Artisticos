@@ -1,25 +1,24 @@
 package com.example.tesourosartsticos
 
 import android.os.Bundle
+import android.text.TextUtils
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
 import androidx.navigation.Navigation
+import com.google.firebase.firestore.FieldValue
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
+import java.util.UUID
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [adicionar_figurinha.newInstance] factory method to
- * create an instance of this fragment.
- */
 class adicionar_figurinha : Fragment() {
-    // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
 
@@ -35,28 +34,61 @@ class adicionar_figurinha : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-       val view = inflater.inflate(R.layout.fragment_adicionar_figurinha, container, false)
+        val view = inflater.inflate(R.layout.fragment_adicionar_figurinha, container, false)
 
         val btnProximo = view.findViewById<Button>(R.id.button6)
 
         btnProximo.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.navToAddQuiz)
+            val titulo = view.findViewById<EditText>(R.id.editTitle)
+            val autor = view.findViewById<EditText>(R.id.editAuthor)
+            val desc = view.findViewById<EditText>(R.id.editDescription)
+
+            val tituloTxT = titulo.text.toString()
+            val autorTxT = autor.text.toString()
+            val descTxT = desc.text.toString()
+
+            val myUuid = UUID.randomUUID()
+            val myUuidAsString = myUuid.toString()
+
+            if (TextUtils.isEmpty(tituloTxT) || TextUtils.isEmpty(autorTxT) || TextUtils.isEmpty(descTxT)) {
+                Toast.makeText(
+                    requireContext(),
+                    "Preencha todos os campos corretamente",
+                    Toast.LENGTH_SHORT
+                ).show()
+                return@setOnClickListener
+            }
+
+            val obra = mapOf(
+                "obraId" to myUuidAsString,
+                "titulo" to tituloTxT,
+                "autor" to autorTxT,
+                "descricao" to descTxT,
+                "dataCriacao" to FieldValue.serverTimestamp()  // Adiciona a data de criação
+            )
+
+            // Adicionar obra ao Firestore
+            val db = Firebase.firestore
+            db.collection("Obras").add(obra)
+                .addOnSuccessListener { documentReference ->
+                    val pathGerado = documentReference.id // Captura o path gerado
+
+                    Toast.makeText(requireContext(), "Figurinha criada com sucesso", Toast.LENGTH_SHORT).show()
+
+                    // Passar o path para o fragmento adicionar_quiz
+                    val bundle = Bundle()
+                    bundle.putString("pathObra", pathGerado)
+                    Navigation.findNavController(view).navigate(R.id.navToAddQuiz, bundle)
+                }
+                .addOnFailureListener { e ->
+                    Toast.makeText(requireContext(), "Erro ao criar figurinha: ${e.message}", Toast.LENGTH_SHORT).show()
+                }
         }
 
         return view
     }
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment adicionar_figurinha.
-         */
-        // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
             adicionar_figurinha().apply {
