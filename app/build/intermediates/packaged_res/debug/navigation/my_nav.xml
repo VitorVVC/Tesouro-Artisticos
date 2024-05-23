@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.tesourosartsticos.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/navigateToRanking"
+            app:destination="@id/ranking"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+        <action
+            android:id="@+id/navigateToPerfil"
+            app:destination="@id/perfil"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/colecao"
+        android:name="com.example.tesourosartsticos.tela_colecao"
+        android:label="fragment_tela_colecao"
+        tools:layout="@layout/fragment_tela_colecao" >
+        <action
+            android:id="@+id/navigateToModificarCarta"
+            app:destination="@id/modificar_carta" />
+        <action
+            android:id="@+id/navigateToFigurinhaObra"
+            app:destination="@id/fragment_figurinha_obra" />
+    </fragment>
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.tesourosartsticos.Settings"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/navigateToAdmin"
+            app:destination="@id/administrador"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/camera"
+        android:name="com.example.tesourosartsticos.Camera"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" />
+    <fragment
+        android:id="@+id/ranking"
+        android:name="com.example.tesourosartsticos.Ranking"
+        android:label="fragment_ranking"
+        tools:layout="@layout/fragment_ranking" >
+        <action
+            android:id="@+id/backToHome"
+            app:destination="@id/home"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/administrador"
+        android:name="com.example.tesourosartsticos.Administrador"
+        android:label="fragment_administrador"
+        tools:layout="@layout/fragment_administrador" >
+        <action
+            android:id="@+id/backToSettings"
+            app:destination="@id/settings"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+        <action
+            android:id="@+id/navToAddFigurinha"
+            app:destination="@id/adicionar_figurinha2" />
+    </fragment>
+    <fragment
+        android:id="@+id/perfil"
+        android:name="com.example.tesourosartsticos.perfil"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" >
+        <action
+            android:id="@+id/backToHome"
+            app:destination="@id/home"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/adicionar_figurinha"
+        android:name="com.example.tesourosartsticos.adicionar_quiz"
+        android:label="fragment_adicionar_quiz"
+        tools:layout="@layout/fragment_adicionar_quiz" >
+        <action
+            android:id="@+id/backToAdm"
+            app:destination="@id/administrador"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/quiz"
+        android:name="com.example.tesourosartsticos.quiz"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" />
+    <fragment
+        android:id="@+id/modificar_carta"
+        android:name="com.example.tesourosartsticos.modificar_carta"
+        android:label="fragment_modificar_carta"
+        tools:layout="@layout/fragment_modificar_carta" >
+        <action
+            android:id="@+id/backToColecao"
+            app:destination="@id/colecao"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+        <action
+            android:id="@+id/action_modificar_carta_to_quiz"
+            app:destination="@id/quiz" />
+    </fragment>
+    <fragment
+        android:id="@+id/adicionar_figurinha2"
+        android:name="com.example.tesourosartsticos.adicionar_figurinha"
+        android:label="fragment_adicionar_figurinha"
+        tools:layout="@layout/fragment_adicionar_figurinha" >
+        <action
+            android:id="@+id/navToAddQuiz"
+            app:destination="@id/adicionar_figurinha" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_figurinha_obra"
+        android:name="com.example.tesourosartsticos.FigurinhaObra"
+        android:label="fragment_figurinha_obra"
+        tools:layout="@layout/fragment_figurinha_obra" />
+</navigation>

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "my_nav",
+    "navigationXmlIds": [],
+    "deepLinks": []
+  },
+  {
+    "name": "nav_login",
+    "navigationXmlIds": [
+      "my_nav"
+    ],
+    "deepLinks": []
+  }
+]

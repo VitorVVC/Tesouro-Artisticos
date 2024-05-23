@@ -1,5 +1,3 @@
-package com.example.tesourosartsticos
-
 import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
@@ -7,8 +5,11 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.tesourosartsticos.MainActivity
+import com.example.tesourosartsticos.R
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import io.github.cdimascio.dotenv.Dotenv
 
 class Inicio : AppCompatActivity() {
 
@@ -16,12 +17,22 @@ class Inicio : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio)
 
+        val dotenv = Dotenv.configure()
+            .directory(".") // diretório atual
+            .ignoreIfMalformed()
+            .ignoreIfMissing()
+            .load()
+
+        val firebasePathAdm = "A4DHpnfLZ9PIZzM7zuqB"
+
         // Capturando inputs
         val senhaLogin = findViewById<EditText>(R.id.senhaInput)
         val nomeLogin = findViewById<EditText>(R.id.inputName)
 
         // Capturando botão
         val btnLogar = findViewById<Button>(R.id.loginButton)
+
+
 
         btnLogar.setOnClickListener {
             val nome = nomeLogin.text.toString()
@@ -32,17 +43,33 @@ class Inicio : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            Firebase.firestore.collection("Logins").document("A4DHpnfLZ9PIZzM7zuqB").get()
-                .addOnSuccessListener { documentSnapshot ->
-                    val loginCorreto = documentSnapshot.getString("nome")
-                    val senhaCorreta = documentSnapshot.getString("senha")
+            Firebase.firestore.collection("Logins")
+                .get()
+                .addOnSuccessListener { querySnapshot ->
+                    var isAdmin = false
+                    var loginEncontrado = false
+                    for (document in querySnapshot.documents) {
+                        val loginCorreto = document.getString("nome")
+                        val senhaCorreta = document.getString("senha")
 
-                    if (nome == loginCorreto && senha == senhaCorreta) {
-                        Toast.makeText(this, "Login bem-sucedido", Toast.LENGTH_SHORT).show()
-                        // Aqui você pode navegar para a próxima tela ou executar outras ações
-                        val intent = Intent(this, MainActivity::class.java)
-                        startActivity(intent)
-                        finish() // Se desejar fechar a atividade de login após o sucesso
+                        if (nome == loginCorreto && senha == senhaCorreta) {
+                            loginEncontrado = true
+                            if (document.id == firebasePathAdm) {
+                                isAdmin = true
+                            }
+                            break
+                        }
+                    }
+                    if (loginEncontrado) {
+                        if (isAdmin) {
+                            Toast.makeText(this, "Login como administrador bem-sucedido", Toast.LENGTH_SHORT).show()
+                            val intent = Intent(this, MainActivity::class.java)
+                            startActivity(intent)
+                            finish()
+                        } else {
+                            Toast.makeText(this, "Login como usuário bem-sucedido", Toast.LENGTH_SHORT).show()
+                            // Criar fluxo para USER
+                        }
                     } else {
                         Toast.makeText(this, "Nome de usuário ou senha incorretos", Toast.LENGTH_SHORT).show()
                     }
@@ -51,5 +78,6 @@ class Inicio : AppCompatActivity() {
                     Toast.makeText(this, "Erro ao realizar login. Tente novamente mais tarde.", Toast.LENGTH_SHORT).show()
                 }
         }
+
     }
 }
