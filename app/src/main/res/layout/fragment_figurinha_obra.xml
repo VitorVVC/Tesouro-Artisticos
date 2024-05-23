@@ -14,6 +14,7 @@
             android:id="@+id/headerObra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:clickable="false"
             android:text="OBRA"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -61,15 +62,15 @@
 
         <TextView
             android:id="@+id/descricao"
-            android:layout_width="268dp"
-            android:layout_height="154dp"
+            android:layout_width="266dp"
+            android:layout_height="87dp"
             android:text="Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição "
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.712" />
+            app:layout_constraintVertical_bias="0.664" />
 
         <TextView
             android:id="@+id/autor"
@@ -78,10 +79,10 @@
             android:text="Autor"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.188"
+            app:layout_constraintHorizontal_bias="0.193"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.793" />
+            app:layout_constraintVertical_bias="0.723" />
 
         <Button
             android:id="@+id/btnVoltar"
