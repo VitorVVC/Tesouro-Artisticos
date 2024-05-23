@@ -50,8 +50,10 @@ class tela_colecao : Fragment() {
                 for (document in result) {
                     val nome = document.getString("titulo")
                     val imageUrl = document.getString("imageUrl")
+                    val autor = document.getString("autor")
+                    val detalhes = document.getString("detalhes")
                     if (nome != null && imageUrl != null) {
-                        val obra = Obra(nome, imageUrl)
+                        val obra = Obra(nome, imageUrl, autor, detalhes)
                         obrasList.add(obra)
                     }
                 }

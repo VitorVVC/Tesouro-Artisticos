@@ -41,6 +41,7 @@ class adicionar_figurinha : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         val view = inflater.inflate(R.layout.fragment_adicionar_figurinha, container, false)
 
         val btnProximo = view.findViewById<Button>(R.id.button6)
@@ -76,6 +77,7 @@ class adicionar_figurinha : Fragment() {
                 "titulo" to tituloTxT,
                 "autor" to autorTxT,
                 "descricao" to descTxT,
+                "idObra" to myUuidAsString,
                 "dataCriacao" to FieldValue.serverTimestamp()
             )
 

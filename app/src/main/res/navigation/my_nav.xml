@@ -27,6 +27,9 @@
         <action
             android:id="@+id/navigateToModificarCarta"
             app:destination="@id/modificar_carta" />
+        <action
+            android:id="@+id/navigateToFigurinhaObra"
+            app:destination="@id/fragment_figurinha_obra" />
     </fragment>
     <fragment
         android:id="@+id/settings"
@@ -113,4 +116,9 @@
             android:id="@+id/navToAddQuiz"
             app:destination="@id/adicionar_figurinha" />
     </fragment>
+    <fragment
+        android:id="@+id/fragment_figurinha_obra"
+        android:name="com.example.tesourosartsticos.FigurinhaObra"
+        android:label="fragment_figurinha_obra"
+        tools:layout="@layout/fragment_figurinha_obra" />
 </navigation>
