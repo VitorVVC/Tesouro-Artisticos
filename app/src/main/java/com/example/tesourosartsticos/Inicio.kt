@@ -70,7 +70,7 @@ class Inicio : AppCompatActivity() {
                             Toast.makeText(this, "Login como usuário bem-sucedido", Toast.LENGTH_SHORT).show()
                             // Criar fluxo para USER
                         }
-                    } else {
+                    }    else {
                         Toast.makeText(this, "Nome de usuário ou senha incorretos", Toast.LENGTH_SHORT).show()
                     }
                 }
