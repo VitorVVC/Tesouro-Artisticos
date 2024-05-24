@@ -674,6 +674,7 @@ attr imagePanX
 attr imagePanY
 attr imageRotate
 attr imageZoom
+attr implementationMode
 attr indeterminateAnimationType
 attr indeterminateProgressStyle
 attr indicatorColor
@@ -1053,6 +1054,7 @@ attr roundPercent
 attr route
 attr saturation
 attr scaleFromTextSize
+attr scaleType
 attr scopeUris
 attr scrimAnimationDuration
 attr scrimBackground
@@ -3324,10 +3326,12 @@ id button2
 id button3
 id button5
 id button6
+id buttonContact
 id buttonPanel
 id cache_measures
 id callMeasure
 id camera
+id cameraPreview
 id cancel_button
 id carryVelocity
 id center
@@ -3349,6 +3353,7 @@ id clockwise
 id closest
 id colecao
 id collapseActionView
+id compatible
 id compress
 id confirm_button
 id constraint
@@ -3403,6 +3408,7 @@ id easeOut
 id east
 id edge
 id editAuthor
+id editBtn
 id editDescription
 id editTitle
 id edit_query
@@ -3418,6 +3424,9 @@ id expand_activities_button
 id expanded_menu
 id fade
 id fill
+id fillCenter
+id fillEnd
+id fillStart
 id fill_horizontal
 id fill_vertical
 id filled
@@ -3433,6 +3442,7 @@ id forever
 id fragmentContainerView5
 id fragment_container_view_tag
 id fragment_figurinha_obra
+id frameObra
 id frost
 id fullscreen_header
 id ghost_view
@@ -3624,6 +3634,7 @@ id pathRelative
 id peekHeight
 id percent
 id perfil
+id performance
 id perguntaQuiz
 id pin
 id position
@@ -3632,6 +3643,7 @@ id pressed
 id progressBar
 id progress_circular
 id progress_horizontal
+id qrCodeTxt
 id quiz
 id radio
 id ranking
@@ -3733,11 +3745,19 @@ id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
 id text
 id text2
+id textDesc
+id textDescTit
 id textEnd
+id textFAQ1
+id textHelpSubTitle
+id textHelpTitle
 id textInputLayout
+id textPorcent
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textStatus
+id textTitulo
 id textTop
 id textView
 id textView10
@@ -3941,8 +3961,10 @@ layout design_text_input_start_icon
 layout fragment_adicionar_figurinha
 layout fragment_adicionar_quiz
 layout fragment_administrador
+layout fragment_ajuda
 layout fragment_album
 layout fragment_camera
+layout fragment_figurinha_lock
 layout fragment_figurinha_obra
 layout fragment_home
 layout fragment_modificar_carta
@@ -5483,6 +5505,7 @@ styleable OnClick clickAction targetId
 styleable OnSwipe autoCompleteMode dragDirection dragScale dragThreshold limitBoundsTo maxAcceleration maxVelocity moveWhenScrollAtTop nestedScrollFlags onTouchUp rotationCenterId springBoundary springDamping springMass springStiffness springStopThreshold touchAnchorId touchAnchorSide touchRegionId
 styleable PopupWindow android_popupBackground android_popupAnimationStyle overlapAnchor
 styleable PopupWindowBackgroundState state_above_anchor
+styleable PreviewView implementationMode scaleType
 styleable PropertySet android_visibility android_alpha layout_constraintTag motionProgress visibilityMode
 styleable RadialViewGroup materialCircleRadius
 styleable RangeSlider minSeparation values

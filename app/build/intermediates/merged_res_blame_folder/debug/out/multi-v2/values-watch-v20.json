@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.tesourosartsticos.app-mergeDebugResources-55:/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "com.example.tesourosartsticos.app-mergeDebugResources-61:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
                     "source": "C:\\Users\\RICARDO\\.gradle\\caches\\transforms-3\\c06c3f856290faabc2e7a7d7def0d0ae\\transformed\\play-services-auth-20.7.0\\res\\values-watch-v20\\values.xml",

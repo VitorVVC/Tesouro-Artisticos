@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.tesourosartsticos.app-mergeDebugResources-55:/values-ar/values-ar.xml",
+            "outputFile": "com.example.tesourosartsticos.app-mergeDebugResources-61:/values-ar/values-ar.xml",
             "map": [
                 {
                     "source": "C:\\Users\\RICARDO\\.gradle\\caches\\transforms-3\\8d1f62a3a82d342cd09c12a6dfa2ca28\\transformed\\navigation-ui-2.7.7\\res\\values-ar\\values-ar.xml",

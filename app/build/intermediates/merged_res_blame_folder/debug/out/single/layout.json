@@ -1,82 +1,90 @@
 [
     {
-        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-56:/layout/activity_inicio.xml",
-        "source": "com.example.tesourosartsticos.app-main-59:/layout/activity_inicio.xml"
+        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-62:/layout/fragment_adicionar_quiz.xml",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_adicionar_quiz.xml"
     },
     {
-        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-56:/layout/fragment_tela_colecao.xml",
-        "source": "com.example.tesourosartsticos.app-main-59:/layout/fragment_tela_colecao.xml"
+        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-62:/layout/fragment_figurinha_lock.xml",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_figurinha_lock.xml"
     },
     {
-        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-56:/layout/fragment_sobre.xml",
-        "source": "com.example.tesourosartsticos.app-main-59:/layout/fragment_sobre.xml"
+        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-62:/layout/fragment_perfil.xml",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_perfil.xml"
     },
     {
-        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-56:/layout/fragment_adicionar_figurinha.xml",
-        "source": "com.example.tesourosartsticos.app-main-59:/layout/fragment_adicionar_figurinha.xml"
+        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-62:/layout/fragment_figurinha_obra.xml",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_figurinha_obra.xml"
     },
     {
-        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-56:/layout/item_obra.xml",
-        "source": "com.example.tesourosartsticos.app-main-59:/layout/item_obra.xml"
+        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-62:/layout/fragment_ranking.xml",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_ranking.xml"
     },
     {
-        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-56:/layout/fragment_modificar_carta.xml",
-        "source": "com.example.tesourosartsticos.app-main-59:/layout/fragment_modificar_carta.xml"
+        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-62:/layout/fragment_tela_colecao.xml",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_tela_colecao.xml"
     },
     {
-        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-56:/layout/fragment_user_settings.xml",
-        "source": "com.example.tesourosartsticos.app-main-59:/layout/fragment_user_settings.xml"
+        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-62:/layout/item_obra.xml",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/item_obra.xml"
     },
     {
-        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-56:/layout/activity_user.xml",
-        "source": "com.example.tesourosartsticos.app-main-59:/layout/activity_user.xml"
+        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-62:/layout/fragment_administrador.xml",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_administrador.xml"
     },
     {
-        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-56:/layout/activity_main.xml",
-        "source": "com.example.tesourosartsticos.app-main-59:/layout/activity_main.xml"
+        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-62:/layout/fragment_adicionar_figurinha.xml",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_adicionar_figurinha.xml"
     },
     {
-        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-56:/layout/fragment_perfil.xml",
-        "source": "com.example.tesourosartsticos.app-main-59:/layout/fragment_perfil.xml"
+        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-62:/layout/fragment_modificar_carta.xml",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_modificar_carta.xml"
     },
     {
-        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-56:/layout/fragment_camera.xml",
-        "source": "com.example.tesourosartsticos.app-main-59:/layout/fragment_camera.xml"
+        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-62:/layout/fragment_quiz.xml",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_quiz.xml"
     },
     {
-        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-56:/layout/fragment_quiz.xml",
-        "source": "com.example.tesourosartsticos.app-main-59:/layout/fragment_quiz.xml"
+        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-62:/layout/fragment_ajuda.xml",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_ajuda.xml"
     },
     {
-        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-56:/layout/tela_login.xml",
-        "source": "com.example.tesourosartsticos.app-main-59:/layout/tela_login.xml"
+        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-62:/layout/fragment_user_settings.xml",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_user_settings.xml"
     },
     {
-        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-56:/layout/fragment_administrador.xml",
-        "source": "com.example.tesourosartsticos.app-main-59:/layout/fragment_administrador.xml"
+        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-62:/layout/fragment_camera.xml",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_camera.xml"
     },
     {
-        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-56:/layout/fragment_adicionar_quiz.xml",
-        "source": "com.example.tesourosartsticos.app-main-59:/layout/fragment_adicionar_quiz.xml"
+        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-62:/layout/activity_inicio.xml",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/activity_inicio.xml"
     },
     {
-        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-56:/layout/fragment_home.xml",
-        "source": "com.example.tesourosartsticos.app-main-59:/layout/fragment_home.xml"
+        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-62:/layout/tela_login.xml",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/tela_login.xml"
     },
     {
-        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-56:/layout/fragment_figurinha_obra.xml",
-        "source": "com.example.tesourosartsticos.app-main-59:/layout/fragment_figurinha_obra.xml"
+        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-62:/layout/fragment_album.xml",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_album.xml"
     },
     {
-        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-56:/layout/fragment_ranking.xml",
-        "source": "com.example.tesourosartsticos.app-main-59:/layout/fragment_ranking.xml"
+        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-62:/layout/fragment_sobre.xml",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_sobre.xml"
     },
     {
-        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-56:/layout/fragment_settings.xml",
-        "source": "com.example.tesourosartsticos.app-main-59:/layout/fragment_settings.xml"
+        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-62:/layout/fragment_home.xml",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_home.xml"
     },
     {
-        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-56:/layout/fragment_album.xml",
-        "source": "com.example.tesourosartsticos.app-main-59:/layout/fragment_album.xml"
+        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-62:/layout/fragment_settings.xml",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-62:/layout/activity_user.xml",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/activity_user.xml"
+    },
+    {
+        "merged": "com.example.tesourosartsticos.app-mergeDebugResources-62:/layout/activity_main.xml",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/activity_main.xml"
     }
 ]
