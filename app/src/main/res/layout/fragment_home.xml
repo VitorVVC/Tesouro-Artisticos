@@ -10,23 +10,41 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="538dp"
+                android:layout_height="300dp"
+                android:src="@drawable/triangulo_background_2"
+                tools:layout_editor_absoluteX="-55dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
         <ImageButton
             android:id="@+id/imageButton"
-            android:layout_width="88dp"
-            android:layout_height="91dp"
+            android:layout_width="108dp"
+            android:layout_height="111dp"
+            android:adjustViewBounds="false"
+            android:backgroundTint="#01B38B"
+            android:contentDescription="@string/profilepic"
+            android:cropToPadding="false"
+            android:padding="10dp"
+            android:scaleType="centerInside"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.154"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.045"
-            tools:src="@tools:sample/avatars"
-            android:contentDescription="@string/profilepic" />
+            tools:src="@drawable/account_circle" />
         <TextView
             android:id="@+id/nome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Admin"
+            android:textSize="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.085"
@@ -39,14 +57,14 @@
             android:id="@+id/moeda"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Moedas"
+            android:text="Moedas :"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.669"
             app:layout_constraintStart_toEndOf="@+id/imageButton"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.092"
-            tools:ignore="HardcodedText"/>
+            tools:ignore="HardcodedText" />
 
         <TextView
             android:id="@+id/qntMoedas"
