@@ -3523,7 +3523,6 @@ int id message 0x7f0a0143
 int id middle 0x7f0a0144
 int id mini 0x7f0a0145
 int id modificar_carta 0x7f0a0146
-int id moeda 0x7f0a0147
 int id month_grid 0x7f0a0148
 int id month_navigation_bar 0x7f0a0149
 int id month_navigation_fragment_toggle 0x7f0a014a
@@ -3631,7 +3630,6 @@ int id pressed 0x7f0a01ac
 int id progressBar 0x7f0a0267
 int id progress_circular 0x7f0a01ad
 int id progress_horizontal 0x7f0a01ae
-int id qntMoedas 0x7f0a01af
 int id quiz 0x7f0a01b0
 int id radio 0x7f0a01b1
 int id ranking 0x7f0a01b2

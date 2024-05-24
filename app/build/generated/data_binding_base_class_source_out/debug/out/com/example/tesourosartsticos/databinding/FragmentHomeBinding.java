@@ -34,25 +34,17 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final Button lastObra;
 
   @NonNull
-  public final TextView moeda;
-
-  @NonNull
   public final TextView nome;
-
-  @NonNull
-  public final TextView qntMoedas;
 
   private FragmentHomeBinding(@NonNull FrameLayout rootView, @NonNull Button btnRanking,
       @NonNull Button button3, @NonNull ImageButton imageButton, @NonNull Button lastObra,
-      @NonNull TextView moeda, @NonNull TextView nome, @NonNull TextView qntMoedas) {
+      @NonNull TextView nome) {
     this.rootView = rootView;
     this.btnRanking = btnRanking;
     this.button3 = button3;
     this.imageButton = imageButton;
     this.lastObra = lastObra;
-    this.moeda = moeda;
     this.nome = nome;
-    this.qntMoedas = qntMoedas;
   }
 
   @Override
@@ -106,26 +98,14 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.moeda;
-      TextView moeda = ViewBindings.findChildViewById(rootView, id);
-      if (moeda == null) {
-        break missingId;
-      }
-
       id = R.id.nome;
       TextView nome = ViewBindings.findChildViewById(rootView, id);
       if (nome == null) {
         break missingId;
       }
 
-      id = R.id.qntMoedas;
-      TextView qntMoedas = ViewBindings.findChildViewById(rootView, id);
-      if (qntMoedas == null) {
-        break missingId;
-      }
-
       return new FragmentHomeBinding((FrameLayout) rootView, btnRanking, button3, imageButton,
-          lastObra, moeda, nome, qntMoedas);
+          lastObra, nome);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

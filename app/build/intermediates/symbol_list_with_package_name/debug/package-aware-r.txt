@@ -3524,7 +3524,6 @@ id message
 id middle
 id mini
 id modificar_carta
-id moeda
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -3632,7 +3631,6 @@ id pressed
 id progressBar
 id progress_circular
 id progress_horizontal
-id qntMoedas
 id quiz
 id radio
 id ranking

@@ -75,7 +75,6 @@ id lastObra
 id loginButton
 id logoLogin
 id modificar_carta
-id moeda
 id my_nav
 id navToAddFigurinha
 id navToAddQuiz
@@ -95,7 +94,6 @@ id opErradaUm
 id perfil
 id perguntaQuiz
 id progressBar
-id qntMoedas
 id quiz
 id ranking
 id recycleItems

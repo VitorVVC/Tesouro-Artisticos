@@ -1,4 +1,4 @@
-#Thu May 23 18:17:40 BRT 2024
+#Fri May 24 11:19:43 BRT 2024
 base.0=/Users/vitorvargas/Desktop/Projeto Tesouros Artísticos/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/Users/vitorvargas/Desktop/Projeto Tesouros Artísticos/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 base.2=/Users/vitorvargas/Desktop/Projeto Tesouros Artísticos/app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex

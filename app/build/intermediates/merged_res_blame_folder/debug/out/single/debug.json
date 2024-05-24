@@ -104,6 +104,10 @@
         "source": "/Users/vitorvargas/.gradle/daemon/8.2/com.example.tesourosartsticos.app-main-59:/drawable/ic_launcher_background.xml"
     },
     {
+        "merged": "com.example.tesourosartsticos.app-merged_res-57:/layout_fragment_home.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-59:/layout/fragment_home.xml"
+    },
+    {
         "merged": "/Users/vitorvargas/.gradle/daemon/8.2/com.example.tesourosartsticos.app-merged_res-57:/drawable_baseline_settings_24.xml.flat",
         "source": "/Users/vitorvargas/.gradle/daemon/8.2/com.example.tesourosartsticos.app-main-59:/drawable/baseline_settings_24.xml"
     },
@@ -186,10 +190,6 @@
     {
         "merged": "/Users/vitorvargas/.gradle/daemon/8.2/com.example.tesourosartsticos.app-merged_res-57:/layout_tela_login.xml.flat",
         "source": "/Users/vitorvargas/.gradle/daemon/8.2/com.example.tesourosartsticos.app-main-59:/layout/tela_login.xml"
-    },
-    {
-        "merged": "com.example.tesourosartsticos.app-merged_res-57:/layout_fragment_figurinha_obra.xml.flat",
-        "source": "com.example.tesourosartsticos.app-main-59:/layout/fragment_figurinha_obra.xml"
     },
     {
         "merged": "/Users/vitorvargas/.gradle/daemon/8.2/com.example.tesourosartsticos.app-merged_res-57:/drawable_baseline_photo_album_24.xml.flat",
