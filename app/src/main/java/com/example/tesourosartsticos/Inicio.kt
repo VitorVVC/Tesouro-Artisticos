@@ -1,3 +1,4 @@
+// Início da tela de login (Inicio)
 package com.example.tesourosartsticos
 
 import android.content.Intent
@@ -24,8 +25,6 @@ class Inicio : AppCompatActivity() {
 
         // Capturando botão
         val btnLogar = findViewById<Button>(R.id.loginButton)
-
-
 
         btnLogar.setOnClickListener {
             val nome = nomeLogin.text.toString()
@@ -54,17 +53,18 @@ class Inicio : AppCompatActivity() {
                         }
                     }
                     if (loginEncontrado) {
-                        if (isAdmin) {
-                            Toast.makeText(this, "Login como administrador bem-sucedido", Toast.LENGTH_SHORT).show()
-                            val intent = Intent(this, MainActivity::class.java)
-                            startActivity(intent)
-                            finish()
+                        val intent = if (isAdmin) {
+                            Intent(this, MainActivity::class.java)
                         } else {
-                            Toast.makeText(this, "Login como usuário bem-sucedido", Toast.LENGTH_SHORT).show()
-                            val intent = Intent(this, UserActivity::class.java)
-                            startActivity(intent)
-                            finish()
+                            Intent(this, UserActivity::class.java)
                         }
+
+                        // Passar informações do usuário
+                        intent.putExtra("USER_NAME", nome)
+                        intent.putExtra("USER_TYPE", if (isAdmin) "Admin" else "User")
+
+                        startActivity(intent)
+                        finish()
                     } else {
                         Toast.makeText(this, "Nome de usuário ou senha incorretos", Toast.LENGTH_SHORT).show()
                     }
@@ -73,6 +73,5 @@ class Inicio : AppCompatActivity() {
                     Toast.makeText(this, "Erro ao realizar login. Tente novamente mais tarde.", Toast.LENGTH_SHORT).show()
                 }
         }
-
     }
 }
