@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:2:1-38:12
+ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:2:1-36:12
 MERGED from [androidx.databinding:viewbinding:8.2.2] C:\Users\RICARDO\.gradle\caches\transforms-3\7d9a5c5d5f7b87d82578e4f9bd567898\transformed\viewbinding-8.2.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.7.7] C:\Users\RICARDO\.gradle\caches\transforms-3\094c63a6af0fab57f2ddbdd9304ab4c6\transformed\navigation-common-2.7.7\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] C:\Users\RICARDO\.gradle\caches\transforms-3\f6d6c56d447dfd7fd977b3589c786f9f\transformed\navigation-common-ktx-2.7.7\AndroidManifest.xml:2:1-7:12
@@ -15,48 +15,37 @@ MERGED from [androidx.navigation:navigation-ui-ktx:2.7.7] C:\Users\RICARDO\.grad
 MERGED from [androidx.navigation:navigation-ui:2.7.7] C:\Users\RICARDO\.gradle\caches\transforms-3\8d1f62a3a82d342cd09c12a6dfa2ca28\transformed\navigation-ui-2.7.7\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\RICARDO\.gradle\caches\transforms-3\108868f104a89f7f89994bd5541b1cef\transformed\material-1.11.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\RICARDO\.gradle\caches\transforms-3\e8619fba180b562b20c682cfcf7b32eb\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.camera:camera-extensions:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\c2e0ae33fb81477c1600cfa52b932670\transformed\camera-extensions-1.3.3\AndroidManifest.xml:17:1-34:12
-MERGED from [androidx.camera:camera-video:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\9f7b0b63e323782f2aaaa912064faad7\transformed\camera-video-1.3.3\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.camera:camera-lifecycle:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\549d3a5a3f6ff92ef098504bdb8cdcfd\transformed\camera-lifecycle-1.3.3\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.camera:camera-camera2:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\7ede877212df7284dc75b5e2bb4600fd\transformed\camera-camera2-1.3.3\AndroidManifest.xml:17:1-36:12
-MERGED from [androidx.camera:camera-core:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\668c099151ca7bced1a0a314dcea4fcb\transformed\camera-core-1.3.3\AndroidManifest.xml:17:1-36:12
-MERGED from [androidx.camera:camera-view:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\19a84434c727ab28148d0f6ae786e6ce\transformed\camera-view-1.3.3\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\RICARDO\.gradle\caches\transforms-3\8c014c8b4aebe50febbd1f94efe12ee9\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\RICARDO\.gradle\caches\transforms-3\56956d5365b597db3057af862f894709\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\RICARDO\.gradle\caches\transforms-3\bd2b163dca88865b1b7da4c3460a2454\transformed\glide-4.12.0\AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\9bf5ead2b7d9ce0a4923e9a0d5ecff3f\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\RICARDO\.gradle\caches\transforms-3\176fd331039f4e3a596e156f71c7c58c\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:2:1-18:12
-MERGED from [com.google.mlkit:barcode-scanning-common:17.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\956fabc1df30c43e1aa6fd8637768459\transformed\barcode-scanning-common-17.0.0\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.mlkit:vision-common:17.3.0] C:\Users\RICARDO\.gradle\caches\transforms-3\bac64de2d76f6f731784a06aaca301be\transformed\vision-common-17.3.0\AndroidManifest.xml:2:1-18:12
-MERGED from [com.google.mlkit:common:18.9.0] C:\Users\RICARDO\.gradle\caches\transforms-3\5011b724fc7a5965f1da71c3a78a58d0\transformed\common-18.9.0\AndroidManifest.xml:2:1-26:12
-MERGED from [com.google.firebase:firebase-storage-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\7f944b163150dd58042433d3458ea8c2\transformed\firebase-storage-ktx-21.0.0\AndroidManifest.xml:2:1-18:12
-MERGED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:15:1-39:12
-MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\106607f01544830e2098d371f4b79c3b\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:2:1-18:12
-MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:2:1-26:12
 MERGED from [com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\44e6841ce473df2dd5f996272f905772\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:2:1-17:12
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\05716b40eed296989b1b2a80f1c5e8ff\transformed\firebase-auth-23.0.0\AndroidManifest.xml:17:1-75:12
+MERGED from [androidx.fragment:fragment-ktx:1.6.2] C:\Users\RICARDO\.gradle\caches\transforms-3\c3047e337af66f2a708a0e1db29788a0\transformed\fragment-ktx-1.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-storage-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\7f944b163150dd58042433d3458ea8c2\transformed\firebase-storage-ktx-21.0.0\AndroidManifest.xml:2:1-18:12
+MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\106607f01544830e2098d371f4b79c3b\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:2:1-18:12
+MERGED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:15:1-39:12
+MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:2:1-26:12
 MERGED from [com.google.firebase:firebase-appcheck:18.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\ae0f28cf2371aff1e54832e85b90e2b7\transformed\firebase-appcheck-18.0.0\AndroidManifest.xml:15:1-34:12
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\2e23c4afaac70a508024f05ddd4813d8\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:2:1-18:12
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\a0642925ec5852411c54ae06e9b2dccb\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:15:1-41:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] C:\Users\RICARDO\.gradle\caches\transforms-3\64b7bcf246538ec1a89e4312a9103a3b\transformed\firebase-appcheck-interop-17.1.0\AndroidManifest.xml:15:1-23:12
-MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\RICARDO\.gradle\caches\transforms-3\17ee8b5a354d3a065f8eeb59a9a4bc8b\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.credentials:credentials:1.2.0-rc01] C:\Users\RICARDO\.gradle\caches\transforms-3\1a4877d7e8d3d287aded896a6cf6af4b\transformed\credentials-1.2.0-rc01\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\RICARDO\.gradle\caches\transforms-3\02810eb08372403380c8b30a5483049f\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:17:1-44:12
 MERGED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\RICARDO\.gradle\caches\transforms-3\c06c3f856290faabc2e7a7d7def0d0ae\transformed\play-services-auth-20.7.0\AndroidManifest.xml:17:1-40:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] C:\Users\RICARDO\.gradle\caches\transforms-3\b0c3671b93bccf0d1d06a1535b98d799\transformed\play-services-auth-api-phone-18.0.2\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\RICARDO\.gradle\caches\transforms-3\8d76f9e8bd42687475a1fa4f3d4ee409\transformed\recaptcha-18.4.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.play:integrity:1.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\d9ffe17bbfdb58a705736528801cf57b\transformed\integrity-1.2.0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\RICARDO\.gradle\caches\transforms-3\17ee8b5a354d3a065f8eeb59a9a4bc8b\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-fido:20.1.0] C:\Users\RICARDO\.gradle\caches\transforms-3\84e2aa121c20a6f9451d2797bc949e99\transformed\play-services-fido-20.1.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\RICARDO\.gradle\caches\transforms-3\c1ee4393f0dbaf978aa0c399342208a5\transformed\play-services-auth-base-18.0.4\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\RICARDO\.gradle\caches\transforms-3\65bc641168e3472577b4e6d186eb6f44\transformed\play-services-base-18.1.0\AndroidManifest.xml:16:1-24:12
-MERGED from [androidx.fragment:fragment-ktx:1.6.2] C:\Users\RICARDO\.gradle\caches\transforms-3\c3047e337af66f2a708a0e1db29788a0\transformed\fragment-ktx-1.6.2\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.mlkit:vision-interfaces:16.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\c579f073886bff44e7e60d5f90009dc3\transformed\vision-interfaces-16.2.0\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\2e23c4afaac70a508024f05ddd4813d8\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:2:1-18:12
-MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\a0642925ec5852411c54ae06e9b2dccb\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
-MERGED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:15:1-41:12
-MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\RICARDO\.gradle\caches\transforms-3\8d76f9e8bd42687475a1fa4f3d4ee409\transformed\recaptcha-18.4.0\AndroidManifest.xml:2:1-11:12
-MERGED from [com.google.android.play:integrity:1.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\d9ffe17bbfdb58a705736528801cf57b\transformed\integrity-1.2.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\f3181c4aabfa7edc49b74a88ecd0356f\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\2903b5c9feeda4495d036174d9842319\transformed\emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.activity:activity-ktx:1.8.0] C:\Users\RICARDO\.gradle\caches\transforms-3\c364f2fbbf432b5b012934e570b05922\transformed\activity-ktx-1.8.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\RICARDO\.gradle\caches\transforms-3\2156f96d39dcf8791e9fd2a333bc5aa2\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\RICARDO\.gradle\caches\transforms-3\fbb1631e3e0011abcfee7e2665fe7244\transformed\savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\f3181c4aabfa7edc49b74a88ecd0356f\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\2903b5c9feeda4495d036174d9842319\transformed\emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] C:\Users\RICARDO\.gradle\caches\transforms-3\6420eb8081b6c704a72c7167bd8088ba\transformed\lifecycle-runtime-ktx-2.7.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\RICARDO\.gradle\caches\transforms-3\0fef53bcdcfb9c93dff1db1e774f9243\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] C:\Users\RICARDO\.gradle\caches\transforms-3\d5186e169c23a0a5afa764079f60dc4d\transformed\lifecycle-livedata-core-2.7.0\AndroidManifest.xml:17:1-22:12
@@ -88,16 +77,12 @@ MERGED from [androidx.transition:transition:1.4.1] C:\Users\RICARDO\.gradle\cach
 MERGED from [androidx.core:core:1.13.0] C:\Users\RICARDO\.gradle\caches\transforms-3\3fb07d1bc1744e16e12063eaaa3861cb\transformed\core-1.13.0\AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.core:core-ktx:1.13.0] C:\Users\RICARDO\.gradle\caches\transforms-3\1d3148de80d12acc56cf28b46aa73680\transformed\core-ktx-1.13.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\RICARDO\.gradle\caches\transforms-3\bbf14b05b035ee1f95e66bb3c255479d\transformed\gifdecoder-4.12.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\1ae2ba63c9aba0f1d0c4f92b77e321a4\transformed\exifinterface-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\88ce8132119e0e723f6a92aa033083a2\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\b72b8b57566e4c66b4e6687aef3d391c\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\RICARDO\.gradle\caches\transforms-3\049b32537d18db14e9710410c893ce61\transformed\profileinstaller-1.3.0\AndroidManifest.xml:17:1-55:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\RICARDO\.gradle\caches\transforms-3\8ea6126d004aa2f5d5bf60ff9f6fbe80\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\e078c772bd92721ef56ff14c4fde9107\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.exifinterface:exifinterface:1.3.2] C:\Users\RICARDO\.gradle\caches\transforms-3\a33e0b4ff9f6cf871ae2f67eca845b78\transformed\exifinterface-1.3.2\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\eb75feaf8a13f0e78c224f5eb9c3b0f7\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:15:1-38:12
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\RICARDO\.gradle\caches\transforms-3\909b02fcf478f42e0e905709b8502470\transformed\transport-runtime-2.2.6\AndroidManifest.xml:15:1-41:12
-MERGED from [com.google.android.datatransport:transport-api:2.2.1] C:\Users\RICARDO\.gradle\caches\transforms-3\01521883762a354eb426cfaf60fbb43b\transformed\transport-api-2.2.1\AndroidManifest.xml:15:1-22:12
-MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] C:\Users\RICARDO\.gradle\caches\transforms-3\9575be1ab7571b5abbdc59531b037b68\transformed\firebase-encoders-json-17.1.0\AndroidManifest.xml:15:1-23:12
 MERGED from [com.google.firebase:firebase-components:18.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\59e91215a67c2311c4bb53581613b269\transformed\firebase-components-18.0.0\AndroidManifest.xml:15:1-20:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\f0865f3384a9537f9de6753a58f72fa8\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\RICARDO\.gradle\caches\transforms-3\26cd1c8888df0cfd4cc468d6fec6d2b4\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
@@ -108,79 +93,58 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\RICARDO\.gradle\caches\transfo
 MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] C:\Users\RICARDO\.gradle\caches\transforms-3\08627a1564b91307c8c734554fdf1c5d\transformed\googleid-1.1.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\RICARDO\.gradle\caches\transforms-3\012c776a7aae6a370a87774dddd9a067\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:2:1-7:12
 MERGED from [io.grpc:grpc-android:1.57.2] C:\Users\RICARDO\.gradle\caches\transforms-3\052591edbb70ec85edd584e4841cc8d9\transformed\grpc-android-1.57.2\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\RICARDO\.gradle\caches\transforms-3\f8942688e55a04bceaaef33db4a0c0c7\transformed\image-1.0.0-beta1\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\57d97585ddd0a4c2d9ec87e56331b3af\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 	package
-		INJECTED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml
+		INJECTED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml
+		INJECTED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml
+		INJECTED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:2:11-69
-uses-permission#android.permission.CAMERA
-ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:4:5-64
-	android:name
-		ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:4:22-62
-uses-feature#android.hardware.camera.any
-ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:5:5-63
-	android:name
-		ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:5:19-61
+		ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:7:5-36:19
-INJECTED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:7:5-36:19
+ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:5:5-34:19
+INJECTED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:5:5-34:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\RICARDO\.gradle\caches\transforms-3\108868f104a89f7f89994bd5541b1cef\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\RICARDO\.gradle\caches\transforms-3\108868f104a89f7f89994bd5541b1cef\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\RICARDO\.gradle\caches\transforms-3\e8619fba180b562b20c682cfcf7b32eb\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\RICARDO\.gradle\caches\transforms-3\e8619fba180b562b20c682cfcf7b32eb\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
-MERGED from [androidx.camera:camera-extensions:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\c2e0ae33fb81477c1600cfa52b932670\transformed\camera-extensions-1.3.3\AndroidManifest.xml:28:5-32:19
-MERGED from [androidx.camera:camera-extensions:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\c2e0ae33fb81477c1600cfa52b932670\transformed\camera-extensions-1.3.3\AndroidManifest.xml:28:5-32:19
-MERGED from [androidx.camera:camera-camera2:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\7ede877212df7284dc75b5e2bb4600fd\transformed\camera-camera2-1.3.3\AndroidManifest.xml:23:5-34:19
-MERGED from [androidx.camera:camera-camera2:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\7ede877212df7284dc75b5e2bb4600fd\transformed\camera-camera2-1.3.3\AndroidManifest.xml:23:5-34:19
-MERGED from [androidx.camera:camera-core:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\668c099151ca7bced1a0a314dcea4fcb\transformed\camera-core-1.3.3\AndroidManifest.xml:23:5-34:19
-MERGED from [androidx.camera:camera-core:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\668c099151ca7bced1a0a314dcea4fcb\transformed\camera-core-1.3.3\AndroidManifest.xml:23:5-34:19
 MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\RICARDO\.gradle\caches\transforms-3\bd2b163dca88865b1b7da4c3460a2454\transformed\glide-4.12.0\AndroidManifest.xml:10:5-20
 MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\RICARDO\.gradle\caches\transforms-3\bd2b163dca88865b1b7da4c3460a2454\transformed\glide-4.12.0\AndroidManifest.xml:10:5-20
-MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\RICARDO\.gradle\caches\transforms-3\176fd331039f4e3a596e156f71c7c58c\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:8:5-16:19
-MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\RICARDO\.gradle\caches\transforms-3\176fd331039f4e3a596e156f71c7c58c\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:8:5-16:19
-MERGED from [com.google.mlkit:vision-common:17.3.0] C:\Users\RICARDO\.gradle\caches\transforms-3\bac64de2d76f6f731784a06aaca301be\transformed\vision-common-17.3.0\AndroidManifest.xml:8:5-16:19
-MERGED from [com.google.mlkit:vision-common:17.3.0] C:\Users\RICARDO\.gradle\caches\transforms-3\bac64de2d76f6f731784a06aaca301be\transformed\vision-common-17.3.0\AndroidManifest.xml:8:5-16:19
-MERGED from [com.google.mlkit:common:18.9.0] C:\Users\RICARDO\.gradle\caches\transforms-3\5011b724fc7a5965f1da71c3a78a58d0\transformed\common-18.9.0\AndroidManifest.xml:8:5-24:19
-MERGED from [com.google.mlkit:common:18.9.0] C:\Users\RICARDO\.gradle\caches\transforms-3\5011b724fc7a5965f1da71c3a78a58d0\transformed\common-18.9.0\AndroidManifest.xml:8:5-24:19
-MERGED from [com.google.firebase:firebase-storage-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\7f944b163150dd58042433d3458ea8c2\transformed\firebase-storage-ktx-21.0.0\AndroidManifest.xml:8:5-16:19
-MERGED from [com.google.firebase:firebase-storage-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\7f944b163150dd58042433d3458ea8c2\transformed\firebase-storage-ktx-21.0.0\AndroidManifest.xml:8:5-16:19
-MERGED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:26:5-37:19
-MERGED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:26:5-37:19
-MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\106607f01544830e2098d371f4b79c3b\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:8:5-16:19
-MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\106607f01544830e2098d371f4b79c3b\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:8:5-16:19
-MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:13:5-24:19
-MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:13:5-24:19
 MERGED from [com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\44e6841ce473df2dd5f996272f905772\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\44e6841ce473df2dd5f996272f905772\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\05716b40eed296989b1b2a80f1c5e8ff\transformed\firebase-auth-23.0.0\AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\05716b40eed296989b1b2a80f1c5e8ff\transformed\firebase-auth-23.0.0\AndroidManifest.xml:28:5-73:19
+MERGED from [com.google.firebase:firebase-storage-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\7f944b163150dd58042433d3458ea8c2\transformed\firebase-storage-ktx-21.0.0\AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.firebase:firebase-storage-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\7f944b163150dd58042433d3458ea8c2\transformed\firebase-storage-ktx-21.0.0\AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\106607f01544830e2098d371f4b79c3b\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\106607f01544830e2098d371f4b79c3b\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:26:5-37:19
+MERGED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:26:5-37:19
+MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:13:5-24:19
+MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:13:5-24:19
 MERGED from [com.google.firebase:firebase-appcheck:18.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\ae0f28cf2371aff1e54832e85b90e2b7\transformed\firebase-appcheck-18.0.0\AndroidManifest.xml:21:5-32:19
 MERGED from [com.google.firebase:firebase-appcheck:18.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\ae0f28cf2371aff1e54832e85b90e2b7\transformed\firebase-appcheck-18.0.0\AndroidManifest.xml:21:5-32:19
-MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] C:\Users\RICARDO\.gradle\caches\transforms-3\64b7bcf246538ec1a89e4312a9103a3b\transformed\firebase-appcheck-interop-17.1.0\AndroidManifest.xml:21:5-20
-MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] C:\Users\RICARDO\.gradle\caches\transforms-3\64b7bcf246538ec1a89e4312a9103a3b\transformed\firebase-appcheck-interop-17.1.0\AndroidManifest.xml:21:5-20
-MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\RICARDO\.gradle\caches\transforms-3\02810eb08372403380c8b30a5483049f\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:23:5-42:19
-MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\RICARDO\.gradle\caches\transforms-3\02810eb08372403380c8b30a5483049f\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:23:5-42:19
-MERGED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\RICARDO\.gradle\caches\transforms-3\c06c3f856290faabc2e7a7d7def0d0ae\transformed\play-services-auth-20.7.0\AndroidManifest.xml:22:5-38:19
-MERGED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\RICARDO\.gradle\caches\transforms-3\c06c3f856290faabc2e7a7d7def0d0ae\transformed\play-services-auth-20.7.0\AndroidManifest.xml:22:5-38:19
-MERGED from [com.google.android.gms:play-services-fido:20.1.0] C:\Users\RICARDO\.gradle\caches\transforms-3\84e2aa121c20a6f9451d2797bc949e99\transformed\play-services-fido-20.1.0\AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.android.gms:play-services-fido:20.1.0] C:\Users\RICARDO\.gradle\caches\transforms-3\84e2aa121c20a6f9451d2797bc949e99\transformed\play-services-fido-20.1.0\AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\RICARDO\.gradle\caches\transforms-3\65bc641168e3472577b4e6d186eb6f44\transformed\play-services-base-18.1.0\AndroidManifest.xml:19:5-23:19
-MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\RICARDO\.gradle\caches\transforms-3\65bc641168e3472577b4e6d186eb6f44\transformed\play-services-base-18.1.0\AndroidManifest.xml:19:5-23:19
 MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\2e23c4afaac70a508024f05ddd4813d8\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\2e23c4afaac70a508024f05ddd4813d8\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\a0642925ec5852411c54ae06e9b2dccb\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\a0642925ec5852411c54ae06e9b2dccb\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:22:5-39:19
 MERGED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:22:5-39:19
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] C:\Users\RICARDO\.gradle\caches\transforms-3\64b7bcf246538ec1a89e4312a9103a3b\transformed\firebase-appcheck-interop-17.1.0\AndroidManifest.xml:21:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] C:\Users\RICARDO\.gradle\caches\transforms-3\64b7bcf246538ec1a89e4312a9103a3b\transformed\firebase-appcheck-interop-17.1.0\AndroidManifest.xml:21:5-20
+MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\RICARDO\.gradle\caches\transforms-3\02810eb08372403380c8b30a5483049f\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:23:5-42:19
+MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\RICARDO\.gradle\caches\transforms-3\02810eb08372403380c8b30a5483049f\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:23:5-42:19
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\RICARDO\.gradle\caches\transforms-3\c06c3f856290faabc2e7a7d7def0d0ae\transformed\play-services-auth-20.7.0\AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\RICARDO\.gradle\caches\transforms-3\c06c3f856290faabc2e7a7d7def0d0ae\transformed\play-services-auth-20.7.0\AndroidManifest.xml:22:5-38:19
 MERGED from [com.google.android.play:integrity:1.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\d9ffe17bbfdb58a705736528801cf57b\transformed\integrity-1.2.0\AndroidManifest.xml:5:5-6:19
 MERGED from [com.google.android.play:integrity:1.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\d9ffe17bbfdb58a705736528801cf57b\transformed\integrity-1.2.0\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-fido:20.1.0] C:\Users\RICARDO\.gradle\caches\transforms-3\84e2aa121c20a6f9451d2797bc949e99\transformed\play-services-fido-20.1.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-fido:20.1.0] C:\Users\RICARDO\.gradle\caches\transforms-3\84e2aa121c20a6f9451d2797bc949e99\transformed\play-services-fido-20.1.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\RICARDO\.gradle\caches\transforms-3\65bc641168e3472577b4e6d186eb6f44\transformed\play-services-base-18.1.0\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\RICARDO\.gradle\caches\transforms-3\65bc641168e3472577b4e6d186eb6f44\transformed\play-services-base-18.1.0\AndroidManifest.xml:19:5-23:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\2903b5c9feeda4495d036174d9842319\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\2903b5c9feeda4495d036174d9842319\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\RICARDO\.gradle\caches\transforms-3\0fef53bcdcfb9c93dff1db1e774f9243\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:23:5-33:19
@@ -199,74 +163,68 @@ MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\RICARDO\
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\RICARDO\.gradle\caches\transforms-3\049b32537d18db14e9710410c893ce61\transformed\profileinstaller-1.3.0\AndroidManifest.xml:23:5-53:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\RICARDO\.gradle\caches\transforms-3\8ea6126d004aa2f5d5bf60ff9f6fbe80\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\RICARDO\.gradle\caches\transforms-3\8ea6126d004aa2f5d5bf60ff9f6fbe80\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\eb75feaf8a13f0e78c224f5eb9c3b0f7\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:28:5-36:19
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\eb75feaf8a13f0e78c224f5eb9c3b0f7\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:28:5-36:19
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\RICARDO\.gradle\caches\transforms-3\909b02fcf478f42e0e905709b8502470\transformed\transport-runtime-2.2.6\AndroidManifest.xml:25:5-39:19
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\RICARDO\.gradle\caches\transforms-3\909b02fcf478f42e0e905709b8502470\transformed\transport-runtime-2.2.6\AndroidManifest.xml:25:5-39:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\RICARDO\.gradle\caches\transforms-3\26cd1c8888df0cfd4cc468d6fec6d2b4\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\RICARDO\.gradle\caches\transforms-3\26cd1c8888df0cfd4cc468d6fec6d2b4\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
-MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\RICARDO\.gradle\caches\transforms-3\f8942688e55a04bceaaef33db4a0c0c7\transformed\image-1.0.0-beta1\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\RICARDO\.gradle\caches\transforms-3\f8942688e55a04bceaaef33db4a0c0c7\transformed\image-1.0.0-beta1\AndroidManifest.xml:7:5-20
 	android:extractNativeLibs
-		INJECTED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml
+		INJECTED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.0] C:\Users\RICARDO\.gradle\caches\transforms-3\3fb07d1bc1744e16e12063eaaa3861cb\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:12:9-41
+		ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:10:9-41
 	android:fullBackupContent
-		ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:10:9-54
+		ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:8:9-54
 	android:roundIcon
-		ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:13:9-54
+		ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:11:9-54
 	tools:targetApi
-		ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:16:9-29
+		ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:14:9-29
 	android:icon
-		ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:9:9-43
 	android:allowBackup
-		ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:15:9-56
+		ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:13:9-56
 	android:dataExtractionRules
-		ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:9:9-65
+		ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:7:9-65
 activity#com.example.tesourosartsticos.UserActivity
-ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:17:9-19:40
+ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:15:9-17:40
 	android:exported
-		ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:19:13-37
+		ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:17:13-37
 	android:name
-		ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:18:13-41
+		ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:16:13-41
 activity#com.example.tesourosartsticos.Inicio
-ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:20:9-28:20
+ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:18:9-26:20
 	android:exported
-		ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:22:13-36
+		ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:20:13-36
 	android:name
-		ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:21:13-35
+		ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:19:13-35
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:23:13-27:29
+ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:21:13-25:29
 action#android.intent.action.MAIN
-ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:24:17-69
+ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:24:25-66
+		ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:26:17-77
+ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:24:17-77
 	android:name
-		ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:26:27-74
+		ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:24:27-74
 activity#com.example.tesourosartsticos.MainActivity
-ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:29:9-31:48
+ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:27:9-29:48
 	android:exported
-		ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:31:13-36
+		ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:29:13-36
 	android:name
-		ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:30:13-41
+		ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:28:13-41
 meta-data#preloaded_fonts
-ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:33:9-35:57
+ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:31:9-33:57
 	android:resource
-		ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:35:13-54
+		ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:33:13-54
 	android:name
-		ADDED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:34:13-43
+		ADDED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml:32:13-43
 uses-sdk
-INJECTED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml
-INJECTED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml
+INJECTED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml
+INJECTED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:8.2.2] C:\Users\RICARDO\.gradle\caches\transforms-3\7d9a5c5d5f7b87d82578e4f9bd567898\transformed\viewbinding-8.2.2\AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:viewbinding:8.2.2] C:\Users\RICARDO\.gradle\caches\transforms-3\7d9a5c5d5f7b87d82578e4f9bd567898\transformed\viewbinding-8.2.2\AndroidManifest.xml:5:5-44
 MERGED from [androidx.navigation:navigation-common:2.7.7] C:\Users\RICARDO\.gradle\caches\transforms-3\094c63a6af0fab57f2ddbdd9304ab4c6\transformed\navigation-common-2.7.7\AndroidManifest.xml:20:5-44
@@ -289,18 +247,6 @@ MERGED from [com.google.android.material:material:1.11.0] C:\Users\RICARDO\.grad
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\RICARDO\.gradle\caches\transforms-3\108868f104a89f7f89994bd5541b1cef\transformed\material-1.11.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\RICARDO\.gradle\caches\transforms-3\e8619fba180b562b20c682cfcf7b32eb\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\RICARDO\.gradle\caches\transforms-3\e8619fba180b562b20c682cfcf7b32eb\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.camera:camera-extensions:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\c2e0ae33fb81477c1600cfa52b932670\transformed\camera-extensions-1.3.3\AndroidManifest.xml:20:5-44
-MERGED from [androidx.camera:camera-extensions:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\c2e0ae33fb81477c1600cfa52b932670\transformed\camera-extensions-1.3.3\AndroidManifest.xml:20:5-44
-MERGED from [androidx.camera:camera-video:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\9f7b0b63e323782f2aaaa912064faad7\transformed\camera-video-1.3.3\AndroidManifest.xml:5:5-44
-MERGED from [androidx.camera:camera-video:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\9f7b0b63e323782f2aaaa912064faad7\transformed\camera-video-1.3.3\AndroidManifest.xml:5:5-44
-MERGED from [androidx.camera:camera-lifecycle:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\549d3a5a3f6ff92ef098504bdb8cdcfd\transformed\camera-lifecycle-1.3.3\AndroidManifest.xml:5:5-44
-MERGED from [androidx.camera:camera-lifecycle:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\549d3a5a3f6ff92ef098504bdb8cdcfd\transformed\camera-lifecycle-1.3.3\AndroidManifest.xml:5:5-44
-MERGED from [androidx.camera:camera-camera2:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\7ede877212df7284dc75b5e2bb4600fd\transformed\camera-camera2-1.3.3\AndroidManifest.xml:21:5-44
-MERGED from [androidx.camera:camera-camera2:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\7ede877212df7284dc75b5e2bb4600fd\transformed\camera-camera2-1.3.3\AndroidManifest.xml:21:5-44
-MERGED from [androidx.camera:camera-core:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\668c099151ca7bced1a0a314dcea4fcb\transformed\camera-core-1.3.3\AndroidManifest.xml:21:5-44
-MERGED from [androidx.camera:camera-core:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\668c099151ca7bced1a0a314dcea4fcb\transformed\camera-core-1.3.3\AndroidManifest.xml:21:5-44
-MERGED from [androidx.camera:camera-view:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\19a84434c727ab28148d0f6ae786e6ce\transformed\camera-view-1.3.3\AndroidManifest.xml:5:5-44
-MERGED from [androidx.camera:camera-view:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\19a84434c727ab28148d0f6ae786e6ce\transformed\camera-view-1.3.3\AndroidManifest.xml:5:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\RICARDO\.gradle\caches\transforms-3\8c014c8b4aebe50febbd1f94efe12ee9\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\RICARDO\.gradle\caches\transforms-3\8c014c8b4aebe50febbd1f94efe12ee9\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\RICARDO\.gradle\caches\transforms-3\56956d5365b597db3057af862f894709\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
@@ -309,32 +255,30 @@ MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\RICARDO\.gradle\ca
 MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\RICARDO\.gradle\caches\transforms-3\bd2b163dca88865b1b7da4c3460a2454\transformed\glide-4.12.0\AndroidManifest.xml:6:5-8:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\9bf5ead2b7d9ce0a4923e9a0d5ecff3f\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\9bf5ead2b7d9ce0a4923e9a0d5ecff3f\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\RICARDO\.gradle\caches\transforms-3\176fd331039f4e3a596e156f71c7c58c\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\RICARDO\.gradle\caches\transforms-3\176fd331039f4e3a596e156f71c7c58c\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:6:5-44
-MERGED from [com.google.mlkit:barcode-scanning-common:17.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\956fabc1df30c43e1aa6fd8637768459\transformed\barcode-scanning-common-17.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:barcode-scanning-common:17.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\956fabc1df30c43e1aa6fd8637768459\transformed\barcode-scanning-common-17.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:vision-common:17.3.0] C:\Users\RICARDO\.gradle\caches\transforms-3\bac64de2d76f6f731784a06aaca301be\transformed\vision-common-17.3.0\AndroidManifest.xml:6:5-44
-MERGED from [com.google.mlkit:vision-common:17.3.0] C:\Users\RICARDO\.gradle\caches\transforms-3\bac64de2d76f6f731784a06aaca301be\transformed\vision-common-17.3.0\AndroidManifest.xml:6:5-44
-MERGED from [com.google.mlkit:common:18.9.0] C:\Users\RICARDO\.gradle\caches\transforms-3\5011b724fc7a5965f1da71c3a78a58d0\transformed\common-18.9.0\AndroidManifest.xml:6:5-44
-MERGED from [com.google.mlkit:common:18.9.0] C:\Users\RICARDO\.gradle\caches\transforms-3\5011b724fc7a5965f1da71c3a78a58d0\transformed\common-18.9.0\AndroidManifest.xml:6:5-44
-MERGED from [com.google.firebase:firebase-storage-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\7f944b163150dd58042433d3458ea8c2\transformed\firebase-storage-ktx-21.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-storage-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\7f944b163150dd58042433d3458ea8c2\transformed\firebase-storage-ktx-21.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:19:5-44
-MERGED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:19:5-44
-MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\106607f01544830e2098d371f4b79c3b\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\106607f01544830e2098d371f4b79c3b\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:6:5-44
-MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:6:5-44
 MERGED from [com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\44e6841ce473df2dd5f996272f905772\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\44e6841ce473df2dd5f996272f905772\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\05716b40eed296989b1b2a80f1c5e8ff\transformed\firebase-auth-23.0.0\AndroidManifest.xml:21:5-23:151
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\05716b40eed296989b1b2a80f1c5e8ff\transformed\firebase-auth-23.0.0\AndroidManifest.xml:21:5-23:151
+MERGED from [androidx.fragment:fragment-ktx:1.6.2] C:\Users\RICARDO\.gradle\caches\transforms-3\c3047e337af66f2a708a0e1db29788a0\transformed\fragment-ktx-1.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment-ktx:1.6.2] C:\Users\RICARDO\.gradle\caches\transforms-3\c3047e337af66f2a708a0e1db29788a0\transformed\fragment-ktx-1.6.2\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-storage-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\7f944b163150dd58042433d3458ea8c2\transformed\firebase-storage-ktx-21.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-storage-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\7f944b163150dd58042433d3458ea8c2\transformed\firebase-storage-ktx-21.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\106607f01544830e2098d371f4b79c3b\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\106607f01544830e2098d371f4b79c3b\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:19:5-44
+MERGED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:19:5-44
+MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:6:5-44
 MERGED from [com.google.firebase:firebase-appcheck:18.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\ae0f28cf2371aff1e54832e85b90e2b7\transformed\firebase-appcheck-18.0.0\AndroidManifest.xml:18:5-44
 MERGED from [com.google.firebase:firebase-appcheck:18.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\ae0f28cf2371aff1e54832e85b90e2b7\transformed\firebase-appcheck-18.0.0\AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\2e23c4afaac70a508024f05ddd4813d8\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\2e23c4afaac70a508024f05ddd4813d8\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\a0642925ec5852411c54ae06e9b2dccb\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\a0642925ec5852411c54ae06e9b2dccb\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:19:5-44
+MERGED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:19:5-44
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] C:\Users\RICARDO\.gradle\caches\transforms-3\64b7bcf246538ec1a89e4312a9103a3b\transformed\firebase-appcheck-interop-17.1.0\AndroidManifest.xml:18:5-44
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] C:\Users\RICARDO\.gradle\caches\transforms-3\64b7bcf246538ec1a89e4312a9103a3b\transformed\firebase-appcheck-interop-17.1.0\AndroidManifest.xml:18:5-44
-MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\RICARDO\.gradle\caches\transforms-3\17ee8b5a354d3a065f8eeb59a9a4bc8b\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\RICARDO\.gradle\caches\transforms-3\17ee8b5a354d3a065f8eeb59a9a4bc8b\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.credentials:credentials:1.2.0-rc01] C:\Users\RICARDO\.gradle\caches\transforms-3\1a4877d7e8d3d287aded896a6cf6af4b\transformed\credentials-1.2.0-rc01\AndroidManifest.xml:5:5-44
 MERGED from [androidx.credentials:credentials:1.2.0-rc01] C:\Users\RICARDO\.gradle\caches\transforms-3\1a4877d7e8d3d287aded896a6cf6af4b\transformed\credentials-1.2.0-rc01\AndroidManifest.xml:5:5-44
 MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\RICARDO\.gradle\caches\transforms-3\02810eb08372403380c8b30a5483049f\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:21:5-44
@@ -343,36 +287,28 @@ MERGED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\RICARDO\
 MERGED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\RICARDO\.gradle\caches\transforms-3\c06c3f856290faabc2e7a7d7def0d0ae\transformed\play-services-auth-20.7.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] C:\Users\RICARDO\.gradle\caches\transforms-3\b0c3671b93bccf0d1d06a1535b98d799\transformed\play-services-auth-api-phone-18.0.2\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] C:\Users\RICARDO\.gradle\caches\transforms-3\b0c3671b93bccf0d1d06a1535b98d799\transformed\play-services-auth-api-phone-18.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\RICARDO\.gradle\caches\transforms-3\8d76f9e8bd42687475a1fa4f3d4ee409\transformed\recaptcha-18.4.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\RICARDO\.gradle\caches\transforms-3\8d76f9e8bd42687475a1fa4f3d4ee409\transformed\recaptcha-18.4.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.play:integrity:1.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\d9ffe17bbfdb58a705736528801cf57b\transformed\integrity-1.2.0\AndroidManifest.xml:4:5-44
+MERGED from [com.google.android.play:integrity:1.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\d9ffe17bbfdb58a705736528801cf57b\transformed\integrity-1.2.0\AndroidManifest.xml:4:5-44
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\RICARDO\.gradle\caches\transforms-3\17ee8b5a354d3a065f8eeb59a9a4bc8b\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\RICARDO\.gradle\caches\transforms-3\17ee8b5a354d3a065f8eeb59a9a4bc8b\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.gms:play-services-fido:20.1.0] C:\Users\RICARDO\.gradle\caches\transforms-3\84e2aa121c20a6f9451d2797bc949e99\transformed\play-services-fido-20.1.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-fido:20.1.0] C:\Users\RICARDO\.gradle\caches\transforms-3\84e2aa121c20a6f9451d2797bc949e99\transformed\play-services-fido-20.1.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\RICARDO\.gradle\caches\transforms-3\c1ee4393f0dbaf978aa0c399342208a5\transformed\play-services-auth-base-18.0.4\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\RICARDO\.gradle\caches\transforms-3\c1ee4393f0dbaf978aa0c399342208a5\transformed\play-services-auth-base-18.0.4\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\RICARDO\.gradle\caches\transforms-3\65bc641168e3472577b4e6d186eb6f44\transformed\play-services-base-18.1.0\AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\RICARDO\.gradle\caches\transforms-3\65bc641168e3472577b4e6d186eb6f44\transformed\play-services-base-18.1.0\AndroidManifest.xml:18:5-43
-MERGED from [androidx.fragment:fragment-ktx:1.6.2] C:\Users\RICARDO\.gradle\caches\transforms-3\c3047e337af66f2a708a0e1db29788a0\transformed\fragment-ktx-1.6.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment-ktx:1.6.2] C:\Users\RICARDO\.gradle\caches\transforms-3\c3047e337af66f2a708a0e1db29788a0\transformed\fragment-ktx-1.6.2\AndroidManifest.xml:20:5-44
-MERGED from [com.google.mlkit:vision-interfaces:16.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\c579f073886bff44e7e60d5f90009dc3\transformed\vision-interfaces-16.2.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:vision-interfaces:16.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\c579f073886bff44e7e60d5f90009dc3\transformed\vision-interfaces-16.2.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\2e23c4afaac70a508024f05ddd4813d8\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\2e23c4afaac70a508024f05ddd4813d8\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\a0642925ec5852411c54ae06e9b2dccb\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\a0642925ec5852411c54ae06e9b2dccb\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:19:5-44
-MERGED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:19:5-44
-MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\RICARDO\.gradle\caches\transforms-3\8d76f9e8bd42687475a1fa4f3d4ee409\transformed\recaptcha-18.4.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\RICARDO\.gradle\caches\transforms-3\8d76f9e8bd42687475a1fa4f3d4ee409\transformed\recaptcha-18.4.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.play:integrity:1.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\d9ffe17bbfdb58a705736528801cf57b\transformed\integrity-1.2.0\AndroidManifest.xml:4:5-44
-MERGED from [com.google.android.play:integrity:1.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\d9ffe17bbfdb58a705736528801cf57b\transformed\integrity-1.2.0\AndroidManifest.xml:4:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\f3181c4aabfa7edc49b74a88ecd0356f\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\f3181c4aabfa7edc49b74a88ecd0356f\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\2903b5c9feeda4495d036174d9842319\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\2903b5c9feeda4495d036174d9842319\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
 MERGED from [androidx.activity:activity-ktx:1.8.0] C:\Users\RICARDO\.gradle\caches\transforms-3\c364f2fbbf432b5b012934e570b05922\transformed\activity-ktx-1.8.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.activity:activity-ktx:1.8.0] C:\Users\RICARDO\.gradle\caches\transforms-3\c364f2fbbf432b5b012934e570b05922\transformed\activity-ktx-1.8.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\RICARDO\.gradle\caches\transforms-3\2156f96d39dcf8791e9fd2a333bc5aa2\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\RICARDO\.gradle\caches\transforms-3\2156f96d39dcf8791e9fd2a333bc5aa2\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\RICARDO\.gradle\caches\transforms-3\fbb1631e3e0011abcfee7e2665fe7244\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\RICARDO\.gradle\caches\transforms-3\fbb1631e3e0011abcfee7e2665fe7244\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\f3181c4aabfa7edc49b74a88ecd0356f\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\f3181c4aabfa7edc49b74a88ecd0356f\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\2903b5c9feeda4495d036174d9842319\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
-MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\2903b5c9feeda4495d036174d9842319\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] C:\Users\RICARDO\.gradle\caches\transforms-3\6420eb8081b6c704a72c7167bd8088ba\transformed\lifecycle-runtime-ktx-2.7.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] C:\Users\RICARDO\.gradle\caches\transforms-3\6420eb8081b6c704a72c7167bd8088ba\transformed\lifecycle-runtime-ktx-2.7.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\RICARDO\.gradle\caches\transforms-3\0fef53bcdcfb9c93dff1db1e774f9243\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:21:5-44
@@ -435,6 +371,8 @@ MERGED from [androidx.core:core-ktx:1.13.0] C:\Users\RICARDO\.gradle\caches\tran
 MERGED from [androidx.core:core-ktx:1.13.0] C:\Users\RICARDO\.gradle\caches\transforms-3\1d3148de80d12acc56cf28b46aa73680\transformed\core-ktx-1.13.0\AndroidManifest.xml:5:5-44
 MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\RICARDO\.gradle\caches\transforms-3\bbf14b05b035ee1f95e66bb3c255479d\transformed\gifdecoder-4.12.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\RICARDO\.gradle\caches\transforms-3\bbf14b05b035ee1f95e66bb3c255479d\transformed\gifdecoder-4.12.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\1ae2ba63c9aba0f1d0c4f92b77e321a4\transformed\exifinterface-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\1ae2ba63c9aba0f1d0c4f92b77e321a4\transformed\exifinterface-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\88ce8132119e0e723f6a92aa033083a2\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\88ce8132119e0e723f6a92aa033083a2\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\b72b8b57566e4c66b4e6687aef3d391c\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
@@ -445,16 +383,6 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\RICARDO\.gradle\ca
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\RICARDO\.gradle\caches\transforms-3\8ea6126d004aa2f5d5bf60ff9f6fbe80\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\e078c772bd92721ef56ff14c4fde9107\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\e078c772bd92721ef56ff14c4fde9107\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.exifinterface:exifinterface:1.3.2] C:\Users\RICARDO\.gradle\caches\transforms-3\a33e0b4ff9f6cf871ae2f67eca845b78\transformed\exifinterface-1.3.2\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.exifinterface:exifinterface:1.3.2] C:\Users\RICARDO\.gradle\caches\transforms-3\a33e0b4ff9f6cf871ae2f67eca845b78\transformed\exifinterface-1.3.2\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\eb75feaf8a13f0e78c224f5eb9c3b0f7\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\eb75feaf8a13f0e78c224f5eb9c3b0f7\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\RICARDO\.gradle\caches\transforms-3\909b02fcf478f42e0e905709b8502470\transformed\transport-runtime-2.2.6\AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\RICARDO\.gradle\caches\transforms-3\909b02fcf478f42e0e905709b8502470\transformed\transport-runtime-2.2.6\AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.android.datatransport:transport-api:2.2.1] C:\Users\RICARDO\.gradle\caches\transforms-3\01521883762a354eb426cfaf60fbb43b\transformed\transport-api-2.2.1\AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.android.datatransport:transport-api:2.2.1] C:\Users\RICARDO\.gradle\caches\transforms-3\01521883762a354eb426cfaf60fbb43b\transformed\transport-api-2.2.1\AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] C:\Users\RICARDO\.gradle\caches\transforms-3\9575be1ab7571b5abbdc59531b037b68\transformed\firebase-encoders-json-17.1.0\AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] C:\Users\RICARDO\.gradle\caches\transforms-3\9575be1ab7571b5abbdc59531b037b68\transformed\firebase-encoders-json-17.1.0\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-components:18.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\59e91215a67c2311c4bb53581613b269\transformed\firebase-components-18.0.0\AndroidManifest.xml:18:5-44
 MERGED from [com.google.firebase:firebase-components:18.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\59e91215a67c2311c4bb53581613b269\transformed\firebase-components-18.0.0\AndroidManifest.xml:18:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\f0865f3384a9537f9de6753a58f72fa8\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
@@ -475,104 +403,26 @@ MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\RICARDO
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\RICARDO\.gradle\caches\transforms-3\012c776a7aae6a370a87774dddd9a067\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
 MERGED from [io.grpc:grpc-android:1.57.2] C:\Users\RICARDO\.gradle\caches\transforms-3\052591edbb70ec85edd584e4841cc8d9\transformed\grpc-android-1.57.2\AndroidManifest.xml:5:5-44
 MERGED from [io.grpc:grpc-android:1.57.2] C:\Users\RICARDO\.gradle\caches\transforms-3\052591edbb70ec85edd584e4841cc8d9\transformed\grpc-android-1.57.2\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\RICARDO\.gradle\caches\transforms-3\f8942688e55a04bceaaef33db4a0c0c7\transformed\image-1.0.0-beta1\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\RICARDO\.gradle\caches\transforms-3\f8942688e55a04bceaaef33db4a0c0c7\transformed\image-1.0.0-beta1\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\57d97585ddd0a4c2d9ec87e56331b3af\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\57d97585ddd0a4c2d9ec87e56331b3af\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
 		ADDED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\05716b40eed296989b1b2a80f1c5e8ff\transformed\firebase-auth-23.0.0\AndroidManifest.xml:23:9-148
 	android:targetSdkVersion
-		INJECTED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml
+		INJECTED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\aaaa\teste3\Tesouro-Artisticos\app\src\main\AndroidManifest.xml
-queries
-ADDED from [androidx.camera:camera-extensions:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\c2e0ae33fb81477c1600cfa52b932670\transformed\camera-extensions-1.3.3\AndroidManifest.xml:22:5-26:15
-intent#action:name:androidx.camera.extensions.action.VENDOR_ACTION
-ADDED from [androidx.camera:camera-extensions:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\c2e0ae33fb81477c1600cfa52b932670\transformed\camera-extensions-1.3.3\AndroidManifest.xml:23:9-25:18
-action#androidx.camera.extensions.action.VENDOR_ACTION
-ADDED from [androidx.camera:camera-extensions:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\c2e0ae33fb81477c1600cfa52b932670\transformed\camera-extensions-1.3.3\AndroidManifest.xml:24:13-86
-	android:name
-		ADDED from [androidx.camera:camera-extensions:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\c2e0ae33fb81477c1600cfa52b932670\transformed\camera-extensions-1.3.3\AndroidManifest.xml:24:21-83
-uses-library#androidx.camera.extensions.impl
-ADDED from [androidx.camera:camera-extensions:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\c2e0ae33fb81477c1600cfa52b932670\transformed\camera-extensions-1.3.3\AndroidManifest.xml:29:9-31:40
-	android:required
-		ADDED from [androidx.camera:camera-extensions:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\c2e0ae33fb81477c1600cfa52b932670\transformed\camera-extensions-1.3.3\AndroidManifest.xml:31:13-37
-	android:name
-		ADDED from [androidx.camera:camera-extensions:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\c2e0ae33fb81477c1600cfa52b932670\transformed\camera-extensions-1.3.3\AndroidManifest.xml:30:13-59
-service#androidx.camera.core.impl.MetadataHolderService
-ADDED from [androidx.camera:camera-camera2:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\7ede877212df7284dc75b5e2bb4600fd\transformed\camera-camera2-1.3.3\AndroidManifest.xml:24:9-33:19
-MERGED from [androidx.camera:camera-core:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\668c099151ca7bced1a0a314dcea4fcb\transformed\camera-core-1.3.3\AndroidManifest.xml:29:9-33:78
-MERGED from [androidx.camera:camera-core:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\668c099151ca7bced1a0a314dcea4fcb\transformed\camera-core-1.3.3\AndroidManifest.xml:29:9-33:78
-	tools:node
-		ADDED from [androidx.camera:camera-camera2:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\7ede877212df7284dc75b5e2bb4600fd\transformed\camera-camera2-1.3.3\AndroidManifest.xml:29:13-31
-	android:enabled
-		ADDED from [androidx.camera:camera-camera2:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\7ede877212df7284dc75b5e2bb4600fd\transformed\camera-camera2-1.3.3\AndroidManifest.xml:26:13-36
-	android:exported
-		ADDED from [androidx.camera:camera-camera2:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\7ede877212df7284dc75b5e2bb4600fd\transformed\camera-camera2-1.3.3\AndroidManifest.xml:27:13-37
-	tools:ignore
-		ADDED from [androidx.camera:camera-camera2:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\7ede877212df7284dc75b5e2bb4600fd\transformed\camera-camera2-1.3.3\AndroidManifest.xml:28:13-75
-	android:name
-		ADDED from [androidx.camera:camera-camera2:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\7ede877212df7284dc75b5e2bb4600fd\transformed\camera-camera2-1.3.3\AndroidManifest.xml:25:13-75
-meta-data#androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER
-ADDED from [androidx.camera:camera-camera2:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\7ede877212df7284dc75b5e2bb4600fd\transformed\camera-camera2-1.3.3\AndroidManifest.xml:30:13-32:89
-	android:value
-		ADDED from [androidx.camera:camera-camera2:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\7ede877212df7284dc75b5e2bb4600fd\transformed\camera-camera2-1.3.3\AndroidManifest.xml:32:17-86
-	android:name
-		ADDED from [androidx.camera:camera-camera2:1.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\7ede877212df7284dc75b5e2bb4600fd\transformed\camera-camera2-1.3.3\AndroidManifest.xml:31:17-103
-service#com.google.mlkit.common.internal.MlKitComponentDiscoveryService
-ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\RICARDO\.gradle\caches\transforms-3\176fd331039f4e3a596e156f71c7c58c\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.mlkit:vision-common:17.3.0] C:\Users\RICARDO\.gradle\caches\transforms-3\bac64de2d76f6f731784a06aaca301be\transformed\vision-common-17.3.0\AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.mlkit:vision-common:17.3.0] C:\Users\RICARDO\.gradle\caches\transforms-3\bac64de2d76f6f731784a06aaca301be\transformed\vision-common-17.3.0\AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.mlkit:common:18.9.0] C:\Users\RICARDO\.gradle\caches\transforms-3\5011b724fc7a5965f1da71c3a78a58d0\transformed\common-18.9.0\AndroidManifest.xml:15:9-23:19
-MERGED from [com.google.mlkit:common:18.9.0] C:\Users\RICARDO\.gradle\caches\transforms-3\5011b724fc7a5965f1da71c3a78a58d0\transformed\common-18.9.0\AndroidManifest.xml:15:9-23:19
-	android:exported
-		ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\RICARDO\.gradle\caches\transforms-3\176fd331039f4e3a596e156f71c7c58c\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:11:13-37
-	tools:targetApi
-		ADDED from [com.google.mlkit:common:18.9.0] C:\Users\RICARDO\.gradle\caches\transforms-3\5011b724fc7a5965f1da71c3a78a58d0\transformed\common-18.9.0\AndroidManifest.xml:19:13-32
-	android:directBootAware
-		ADDED from [com.google.mlkit:common:18.9.0] C:\Users\RICARDO\.gradle\caches\transforms-3\5011b724fc7a5965f1da71c3a78a58d0\transformed\common-18.9.0\AndroidManifest.xml:17:13-43
-	android:name
-		ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\RICARDO\.gradle\caches\transforms-3\176fd331039f4e3a596e156f71c7c58c\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:10:13-91
-meta-data#com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar
-ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\RICARDO\.gradle\caches\transforms-3\176fd331039f4e3a596e156f71c7c58c\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:12:13-14:85
-	android:value
-		ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\RICARDO\.gradle\caches\transforms-3\176fd331039f4e3a596e156f71c7c58c\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:14:17-82
-	android:name
-		ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\RICARDO\.gradle\caches\transforms-3\176fd331039f4e3a596e156f71c7c58c\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:13:17-120
-meta-data#com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar
-ADDED from [com.google.mlkit:vision-common:17.3.0] C:\Users\RICARDO\.gradle\caches\transforms-3\bac64de2d76f6f731784a06aaca301be\transformed\vision-common-17.3.0\AndroidManifest.xml:12:13-14:85
-	android:value
-		ADDED from [com.google.mlkit:vision-common:17.3.0] C:\Users\RICARDO\.gradle\caches\transforms-3\bac64de2d76f6f731784a06aaca301be\transformed\vision-common-17.3.0\AndroidManifest.xml:14:17-82
-	android:name
-		ADDED from [com.google.mlkit:vision-common:17.3.0] C:\Users\RICARDO\.gradle\caches\transforms-3\bac64de2d76f6f731784a06aaca301be\transformed\vision-common-17.3.0\AndroidManifest.xml:13:17-124
-provider#com.google.mlkit.common.internal.MlKitInitProvider
-ADDED from [com.google.mlkit:common:18.9.0] C:\Users\RICARDO\.gradle\caches\transforms-3\5011b724fc7a5965f1da71c3a78a58d0\transformed\common-18.9.0\AndroidManifest.xml:9:9-13:38
-	android:authorities
-		ADDED from [com.google.mlkit:common:18.9.0] C:\Users\RICARDO\.gradle\caches\transforms-3\5011b724fc7a5965f1da71c3a78a58d0\transformed\common-18.9.0\AndroidManifest.xml:11:13-69
-	android:exported
-		ADDED from [com.google.mlkit:common:18.9.0] C:\Users\RICARDO\.gradle\caches\transforms-3\5011b724fc7a5965f1da71c3a78a58d0\transformed\common-18.9.0\AndroidManifest.xml:12:13-37
-	android:initOrder
-		ADDED from [com.google.mlkit:common:18.9.0] C:\Users\RICARDO\.gradle\caches\transforms-3\5011b724fc7a5965f1da71c3a78a58d0\transformed\common-18.9.0\AndroidManifest.xml:13:13-35
-	android:name
-		ADDED from [com.google.mlkit:common:18.9.0] C:\Users\RICARDO\.gradle\caches\transforms-3\5011b724fc7a5965f1da71c3a78a58d0\transformed\common-18.9.0\AndroidManifest.xml:10:13-78
-meta-data#com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar
-ADDED from [com.google.mlkit:common:18.9.0] C:\Users\RICARDO\.gradle\caches\transforms-3\5011b724fc7a5965f1da71c3a78a58d0\transformed\common-18.9.0\AndroidManifest.xml:20:13-22:85
-	android:value
-		ADDED from [com.google.mlkit:common:18.9.0] C:\Users\RICARDO\.gradle\caches\transforms-3\5011b724fc7a5965f1da71c3a78a58d0\transformed\common-18.9.0\AndroidManifest.xml:22:17-82
-	android:name
-		ADDED from [com.google.mlkit:common:18.9.0] C:\Users\RICARDO\.gradle\caches\transforms-3\5011b724fc7a5965f1da71c3a78a58d0\transformed\common-18.9.0\AndroidManifest.xml:21:17-120
+		INJECTED from D:\aaaa\teste2\Tesouro-Artisticos\app\src\main\AndroidManifest.xml
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [com.google.firebase:firebase-storage-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\7f944b163150dd58042433d3458ea8c2\transformed\firebase-storage-ktx-21.0.0\AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:27:9-36:19
-MERGED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:27:9-36:19
-MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\106607f01544830e2098d371f4b79c3b\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\106607f01544830e2098d371f4b79c3b\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:14:9-23:19
-MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:14:9-23:19
-MERGED from [com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\44e6841ce473df2dd5f996272f905772\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:8:9-14:19
-MERGED from [com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\44e6841ce473df2dd5f996272f905772\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:8:9-14:19
+ADDED from [com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\44e6841ce473df2dd5f996272f905772\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:8:9-14:19
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\05716b40eed296989b1b2a80f1c5e8ff\transformed\firebase-auth-23.0.0\AndroidManifest.xml:66:9-72:19
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\05716b40eed296989b1b2a80f1c5e8ff\transformed\firebase-auth-23.0.0\AndroidManifest.xml:66:9-72:19
+MERGED from [com.google.firebase:firebase-storage-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\7f944b163150dd58042433d3458ea8c2\transformed\firebase-storage-ktx-21.0.0\AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.firebase:firebase-storage-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\7f944b163150dd58042433d3458ea8c2\transformed\firebase-storage-ktx-21.0.0\AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\106607f01544830e2098d371f4b79c3b\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\106607f01544830e2098d371f4b79c3b\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:27:9-36:19
+MERGED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:27:9-36:19
+MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:14:9-23:19
+MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:14:9-23:19
 MERGED from [com.google.firebase:firebase-appcheck:18.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\ae0f28cf2371aff1e54832e85b90e2b7\transformed\firebase-appcheck-18.0.0\AndroidManifest.xml:22:9-31:19
 MERGED from [com.google.firebase:firebase-appcheck:18.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\ae0f28cf2371aff1e54832e85b90e2b7\transformed\firebase-appcheck-18.0.0\AndroidManifest.xml:22:9-31:19
 MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\2e23c4afaac70a508024f05ddd4813d8\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:9:9-15:19
@@ -580,83 +430,41 @@ MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\RICARDO\.g
 MERGED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:30:9-38:19
 MERGED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:30:9-38:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-storage-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\7f944b163150dd58042433d3458ea8c2\transformed\firebase-storage-ktx-21.0.0\AndroidManifest.xml:11:13-37
+		ADDED from [com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\44e6841ce473df2dd5f996272f905772\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:10:13-37
 	tools:targetApi
 		ADDED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:34:13-32
 	android:directBootAware
 		ADDED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:32:13-43
 	android:name
-		ADDED from [com.google.firebase:firebase-storage-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\7f944b163150dd58042433d3458ea8c2\transformed\firebase-storage-ktx-21.0.0\AndroidManifest.xml:10:13-84
-meta-data#com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageLegacyRegistrar
-ADDED from [com.google.firebase:firebase-storage-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\7f944b163150dd58042433d3458ea8c2\transformed\firebase-storage-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
-	android:value
-		ADDED from [com.google.firebase:firebase-storage-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\7f944b163150dd58042433d3458ea8c2\transformed\firebase-storage-ktx-21.0.0\AndroidManifest.xml:14:17-82
-	android:name
-		ADDED from [com.google.firebase:firebase-storage-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\7f944b163150dd58042433d3458ea8c2\transformed\firebase-storage-ktx-21.0.0\AndroidManifest.xml:13:17-125
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:10:5-79
-MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:10:5-79
-MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\05716b40eed296989b1b2a80f1c5e8ff\transformed\firebase-auth-23.0.0\AndroidManifest.xml:26:5-79
-MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\05716b40eed296989b1b2a80f1c5e8ff\transformed\firebase-auth-23.0.0\AndroidManifest.xml:26:5-79
-MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\RICARDO\.gradle\caches\transforms-3\8d76f9e8bd42687475a1fa4f3d4ee409\transformed\recaptcha-18.4.0\AndroidManifest.xml:8:5-79
-MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\RICARDO\.gradle\caches\transforms-3\8d76f9e8bd42687475a1fa4f3d4ee409\transformed\recaptcha-18.4.0\AndroidManifest.xml:8:5-79
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\eb75feaf8a13f0e78c224f5eb9c3b0f7\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:25:5-79
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\eb75feaf8a13f0e78c224f5eb9c3b0f7\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:25:5-79
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\RICARDO\.gradle\caches\transforms-3\909b02fcf478f42e0e905709b8502470\transformed\transport-runtime-2.2.6\AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\RICARDO\.gradle\caches\transforms-3\909b02fcf478f42e0e905709b8502470\transformed\transport-runtime-2.2.6\AndroidManifest.xml:22:5-79
-MERGED from [io.grpc:grpc-android:1.57.2] C:\Users\RICARDO\.gradle\caches\transforms-3\052591edbb70ec85edd584e4841cc8d9\transformed\grpc-android-1.57.2\AndroidManifest.xml:7:5-79
-MERGED from [io.grpc:grpc-android:1.57.2] C:\Users\RICARDO\.gradle\caches\transforms-3\052591edbb70ec85edd584e4841cc8d9\transformed\grpc-android-1.57.2\AndroidManifest.xml:7:5-79
-	android:name
-		ADDED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:23:22-76
-uses-permission#android.permission.INTERNET
-ADDED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:11:5-67
-MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:11:5-67
-MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\05716b40eed296989b1b2a80f1c5e8ff\transformed\firebase-auth-23.0.0\AndroidManifest.xml:25:5-67
-MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\05716b40eed296989b1b2a80f1c5e8ff\transformed\firebase-auth-23.0.0\AndroidManifest.xml:25:5-67
-MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\RICARDO\.gradle\caches\transforms-3\8d76f9e8bd42687475a1fa4f3d4ee409\transformed\recaptcha-18.4.0\AndroidManifest.xml:7:5-67
-MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\RICARDO\.gradle\caches\transforms-3\8d76f9e8bd42687475a1fa4f3d4ee409\transformed\recaptcha-18.4.0\AndroidManifest.xml:7:5-67
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\eb75feaf8a13f0e78c224f5eb9c3b0f7\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:26:5-67
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\eb75feaf8a13f0e78c224f5eb9c3b0f7\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:26:5-67
-	android:name
-		ADDED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:24:22-64
-meta-data#com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar
-ADDED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:30:13-32:85
-	android:value
-		ADDED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:32:17-82
-	android:name
-		ADDED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:31:17-118
-meta-data#com.google.firebase.components:com.google.firebase.storage.StorageRegistrar
-ADDED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:33:13-35:85
-	android:value
-		ADDED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:35:17-82
-	android:name
-		ADDED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:34:17-107
-meta-data#com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreLegacyRegistrar
-ADDED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\106607f01544830e2098d371f4b79c3b\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:12:13-14:85
-	android:value
-		ADDED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\106607f01544830e2098d371f4b79c3b\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:14:17-82
-	android:name
-		ADDED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\106607f01544830e2098d371f4b79c3b\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:13:17-129
-meta-data#com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar
-ADDED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:17:13-19:85
-	android:value
-		ADDED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:19:17-82
-	android:name
-		ADDED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:18:17-122
-meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
-ADDED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:20:13-22:85
-	android:value
-		ADDED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:22:17-82
-	android:name
-		ADDED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:21:17-111
+		ADDED from [com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\44e6841ce473df2dd5f996272f905772\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:9:13-84
 meta-data#com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthLegacyRegistrar
 ADDED from [com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\44e6841ce473df2dd5f996272f905772\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:11:13-13:85
 	android:value
 		ADDED from [com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\44e6841ce473df2dd5f996272f905772\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:13:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\44e6841ce473df2dd5f996272f905772\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:12:17-119
+uses-permission#android.permission.INTERNET
+ADDED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\05716b40eed296989b1b2a80f1c5e8ff\transformed\firebase-auth-23.0.0\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\RICARDO\.gradle\caches\transforms-3\8d76f9e8bd42687475a1fa4f3d4ee409\transformed\recaptcha-18.4.0\AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\RICARDO\.gradle\caches\transforms-3\8d76f9e8bd42687475a1fa4f3d4ee409\transformed\recaptcha-18.4.0\AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\05716b40eed296989b1b2a80f1c5e8ff\transformed\firebase-auth-23.0.0\AndroidManifest.xml:25:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\05716b40eed296989b1b2a80f1c5e8ff\transformed\firebase-auth-23.0.0\AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\RICARDO\.gradle\caches\transforms-3\8d76f9e8bd42687475a1fa4f3d4ee409\transformed\recaptcha-18.4.0\AndroidManifest.xml:8:5-79
+MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\RICARDO\.gradle\caches\transforms-3\8d76f9e8bd42687475a1fa4f3d4ee409\transformed\recaptcha-18.4.0\AndroidManifest.xml:8:5-79
+MERGED from [io.grpc:grpc-android:1.57.2] C:\Users\RICARDO\.gradle\caches\transforms-3\052591edbb70ec85edd584e4841cc8d9\transformed\grpc-android-1.57.2\AndroidManifest.xml:7:5-79
+MERGED from [io.grpc:grpc-android:1.57.2] C:\Users\RICARDO\.gradle\caches\transforms-3\052591edbb70ec85edd584e4841cc8d9\transformed\grpc-android-1.57.2\AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\05716b40eed296989b1b2a80f1c5e8ff\transformed\firebase-auth-23.0.0\AndroidManifest.xml:26:22-76
 activity#com.google.firebase.auth.internal.GenericIdpActivity
 ADDED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\05716b40eed296989b1b2a80f1c5e8ff\transformed\firebase-auth-23.0.0\AndroidManifest.xml:29:9-46:20
 	android:excludeFromRecents
@@ -711,6 +519,42 @@ ADDED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\RICARDO\.gradle\c
 		ADDED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\05716b40eed296989b1b2a80f1c5e8ff\transformed\firebase-auth-23.0.0\AndroidManifest.xml:71:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\05716b40eed296989b1b2a80f1c5e8ff\transformed\firebase-auth-23.0.0\AndroidManifest.xml:70:17-109
+meta-data#com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageLegacyRegistrar
+ADDED from [com.google.firebase:firebase-storage-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\7f944b163150dd58042433d3458ea8c2\transformed\firebase-storage-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\7f944b163150dd58042433d3458ea8c2\transformed\firebase-storage-ktx-21.0.0\AndroidManifest.xml:14:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\7f944b163150dd58042433d3458ea8c2\transformed\firebase-storage-ktx-21.0.0\AndroidManifest.xml:13:17-125
+meta-data#com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreLegacyRegistrar
+ADDED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\106607f01544830e2098d371f4b79c3b\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:12:13-14:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\106607f01544830e2098d371f4b79c3b\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:14:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\106607f01544830e2098d371f4b79c3b\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:13:17-129
+meta-data#com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar
+ADDED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:30:13-32:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:32:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:31:17-118
+meta-data#com.google.firebase.components:com.google.firebase.storage.StorageRegistrar
+ADDED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:33:13-35:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:35:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\932d6f5f5ed6e3a20a7619f8e7b4a7d9\transformed\firebase-storage-21.0.0\AndroidManifest.xml:34:17-107
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar
+ADDED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:17:13-19:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:19:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:18:17-122
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:20:13-22:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:22:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\334bd95d9745d8b94757206ec832cc76\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:21:17-111
 meta-data#com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar
 ADDED from [com.google.firebase:firebase-appcheck:18.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\ae0f28cf2371aff1e54832e85b90e2b7\transformed\firebase-appcheck-18.0.0\AndroidManifest.xml:25:13-27:85
 	android:value
@@ -723,6 +567,30 @@ ADDED from [com.google.firebase:firebase-appcheck:18.0.0] C:\Users\RICARDO\.grad
 		ADDED from [com.google.firebase:firebase-appcheck:18.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\ae0f28cf2371aff1e54832e85b90e2b7\transformed\firebase-appcheck-18.0.0\AndroidManifest.xml:30:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-appcheck:18.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\ae0f28cf2371aff1e54832e85b90e2b7\transformed\firebase-appcheck-18.0.0\AndroidManifest.xml:29:17-117
+meta-data#com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar
+ADDED from [com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\2e23c4afaac70a508024f05ddd4813d8\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+	android:value
+		ADDED from [com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\2e23c4afaac70a508024f05ddd4813d8\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\2e23c4afaac70a508024f05ddd4813d8\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+meta-data#com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar
+ADDED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+	android:value
+		ADDED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
 service#androidx.credentials.playservices.CredentialProviderMetadataHolder
 ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\RICARDO\.gradle\caches\transforms-3\02810eb08372403380c8b30a5483049f\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
 	android:enabled
@@ -773,6 +641,10 @@ ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\RICARDO\.
 		ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\RICARDO\.gradle\caches\transforms-3\c06c3f856290faabc2e7a7d7def0d0ae\transformed\play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
 	android:name
 		ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\RICARDO\.gradle\caches\transforms-3\c06c3f856290faabc2e7a7d7def0d0ae\transformed\play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
+uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
+ADDED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\RICARDO\.gradle\caches\transforms-3\8d76f9e8bd42687475a1fa4f3d4ee409\transformed\recaptcha-18.4.0\AndroidManifest.xml:9:5-98
+	android:name
+		ADDED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\RICARDO\.gradle\caches\transforms-3\8d76f9e8bd42687475a1fa4f3d4ee409\transformed\recaptcha-18.4.0\AndroidManifest.xml:9:22-95
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\RICARDO\.gradle\caches\transforms-3\65bc641168e3472577b4e6d186eb6f44\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
 	android:exported
@@ -781,34 +653,6 @@ ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\RICARDO\.
 		ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\RICARDO\.gradle\caches\transforms-3\65bc641168e3472577b4e6d186eb6f44\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
 	android:name
 		ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\RICARDO\.gradle\caches\transforms-3\65bc641168e3472577b4e6d186eb6f44\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
-meta-data#com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar
-ADDED from [com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\2e23c4afaac70a508024f05ddd4813d8\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
-	android:value
-		ADDED from [com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\2e23c4afaac70a508024f05ddd4813d8\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
-	android:name
-		ADDED from [com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\2e23c4afaac70a508024f05ddd4813d8\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
-provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
-	android:authorities
-		ADDED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
-	android:exported
-		ADDED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
-	android:directBootAware
-		ADDED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
-	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
-	android:name
-		ADDED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
-meta-data#com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar
-ADDED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
-	android:value
-		ADDED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
-	android:name
-		ADDED from [com.google.firebase:firebase-common:21.0.0] C:\Users\RICARDO\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
-uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
-ADDED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\RICARDO\.gradle\caches\transforms-3\8d76f9e8bd42687475a1fa4f3d4ee409\transformed\recaptcha-18.4.0\AndroidManifest.xml:9:5-98
-	android:name
-		ADDED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\RICARDO\.gradle\caches\transforms-3\8d76f9e8bd42687475a1fa4f3d4ee409\transformed\recaptcha-18.4.0\AndroidManifest.xml:9:22-95
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\RICARDO\.gradle\caches\transforms-3\2903b5c9feeda4495d036174d9842319\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\RICARDO\.gradle\caches\transforms-3\0fef53bcdcfb9c93dff1db1e774f9243\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
@@ -917,31 +761,3 @@ action#androidx.profileinstaller.action.BENCHMARK_OPERATION
 ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\RICARDO\.gradle\caches\transforms-3\049b32537d18db14e9710410c893ce61\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
 	android:name
 		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\RICARDO\.gradle\caches\transforms-3\049b32537d18db14e9710410c893ce61\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
-service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
-ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\eb75feaf8a13f0e78c224f5eb9c3b0f7\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\RICARDO\.gradle\caches\transforms-3\909b02fcf478f42e0e905709b8502470\transformed\transport-runtime-2.2.6\AndroidManifest.xml:36:9-38:40
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\RICARDO\.gradle\caches\transforms-3\909b02fcf478f42e0e905709b8502470\transformed\transport-runtime-2.2.6\AndroidManifest.xml:36:9-38:40
-	android:exported
-		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\eb75feaf8a13f0e78c224f5eb9c3b0f7\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
-	android:name
-		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\eb75feaf8a13f0e78c224f5eb9c3b0f7\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
-meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
-ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\eb75feaf8a13f0e78c224f5eb9c3b0f7\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
-	android:value
-		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\eb75feaf8a13f0e78c224f5eb9c3b0f7\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
-	android:name
-		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\RICARDO\.gradle\caches\transforms-3\eb75feaf8a13f0e78c224f5eb9c3b0f7\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
-service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
-ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\RICARDO\.gradle\caches\transforms-3\909b02fcf478f42e0e905709b8502470\transformed\transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
-	android:exported
-		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\RICARDO\.gradle\caches\transforms-3\909b02fcf478f42e0e905709b8502470\transformed\transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
-	android:permission
-		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\RICARDO\.gradle\caches\transforms-3\909b02fcf478f42e0e905709b8502470\transformed\transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
-	android:name
-		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\RICARDO\.gradle\caches\transforms-3\909b02fcf478f42e0e905709b8502470\transformed\transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
-receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
-ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\RICARDO\.gradle\caches\transforms-3\909b02fcf478f42e0e905709b8502470\transformed\transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
-	android:exported
-		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\RICARDO\.gradle\caches\transforms-3\909b02fcf478f42e0e905709b8502470\transformed\transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
-	android:name
-		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\RICARDO\.gradle\caches\transforms-3\909b02fcf478f42e0e905709b8502470\transformed\transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
