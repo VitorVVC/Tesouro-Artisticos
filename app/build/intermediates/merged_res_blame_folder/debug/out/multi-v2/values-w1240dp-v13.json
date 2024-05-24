@@ -1,16 +1,16 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.tesourosartsticos.app-mergeDebugResources-55:/values-w1240dp-v13/values-w1240dp-v13.xml",
+            "outputFile": "com.example.tesourosartsticos.app-mergeDebugResources-61:/values-w1240dp-v13/values-w1240dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\giova\\StudioProjects\\Tesouro-Artisticos\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
+                    "source": "D:\\aaaa\\teste3\\Tesouro-Artisticos\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
-                        "startOffsets": "16",
+                        "startOffsets": "17",
                         "endColumns": "58",
-                        "endOffsets": "70"
+                        "endOffsets": "71"
                     },
                     "to": {
                         "startLines": "2",

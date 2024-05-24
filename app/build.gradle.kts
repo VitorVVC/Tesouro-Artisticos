@@ -70,5 +70,14 @@ dependencies {
     implementation("com.google.firebase:firebase-auth-ktx") // Adicionado!
     implementation(platform("com.google.firebase:firebase-bom:32.3.1"))// Adicionado!
 
-
+    //Leitor
+    implementation("com.google.guava:guava:31.0.1-android")
+    implementation("androidx.camera:camera-core:1.3.3")
+    implementation("androidx.camera:camera-camera2:1.3.3")
+    implementation("androidx.camera:camera-lifecycle:1.3.3")
+    implementation("androidx.camera:camera-video:1.3.3")
+    implementation("androidx.camera:camera-view:1.3.3")
+    implementation("androidx.camera:camera-extensions:1.3.3")
+    implementation("com.google.mlkit:vision-common:17.3.0")
+    implementation("com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0")
 }

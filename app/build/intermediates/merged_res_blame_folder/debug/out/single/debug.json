@@ -1,234 +1,218 @@
 [
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\layout_tela_login.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\layout\\tela_login.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/drawable_background_oval_1.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/drawable/background_oval_1.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\drawable_logo_ta.png.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\drawable\\logo_ta.png"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/layout_fragment_administrador.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_administrador.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\layout_fragment_modificar_carta.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\layout\\fragment_modificar_carta.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/layout_activity_inicio.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/activity_inicio.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\font_nunito_sans.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\font\\nunito_sans.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/layout_fragment_settings.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_settings.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\layout_activity_inicio.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\layout\\activity_inicio.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\drawable_back.png.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\drawable\\back.png"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\layout_fragment_adicionar_quiz.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\layout\\fragment_adicionar_quiz.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/drawable_arc_3.png.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/drawable/arc_3.png"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/drawable_baseline_photo_album_24.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/drawable/baseline_photo_album_24.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\drawable_baseline_add_a_photo_24.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\drawable\\baseline_add_a_photo_24.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/layout_activity_main.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\layout_fragment_quiz.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\layout\\fragment_quiz.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/layout_fragment_ranking.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_ranking.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/xml_backup_rules.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/xml/backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\drawable_baseline_settings_24.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\drawable\\baseline_settings_24.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/drawable_baseline_home_24.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/drawable/baseline_home_24.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/layout_tela_login.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/tela_login.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\layout_fragment_settings.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\layout\\fragment_settings.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/drawable_imagem_fundo.jpeg.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/drawable/imagem_fundo.jpeg"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\layout_activity_user.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\layout\\activity_user.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/layout_fragment_adicionar_quiz.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_adicionar_quiz.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\layout_fragment_figurinha_obra.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\layout\\fragment_figurinha_obra.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/layout_fragment_camera.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_camera.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\drawable_baseline_home_24.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\drawable\\baseline_home_24.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/layout_fragment_figurinha_obra.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_figurinha_obra.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\drawable_baseline_photo_album_24.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\drawable\\baseline_photo_album_24.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/drawable_baseline_add_a_photo_24.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/drawable/baseline_add_a_photo_24.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\layout_fragment_ranking.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\layout\\fragment_ranking.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\drawable_arc_3.png.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\drawable\\arc_3.png"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/navigation_adm_nav.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/navigation/adm_nav.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/drawable_perfil_img.png.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/drawable/perfil_img.png"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\layout_fragment_album.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\layout\\fragment_album.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/layout_item_obra.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/item_obra.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\layout_fragment_perfil.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\layout\\fragment_perfil.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/layout_fragment_figurinha_lock.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_figurinha_lock.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\layout_fragment_tela_colecao.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\layout\\fragment_tela_colecao.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/layout_fragment_album.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_album.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/drawable_baseline_settings_24.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/drawable/baseline_settings_24.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/layout_fragment_quiz.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_quiz.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/layout_fragment_modificar_carta.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_modificar_carta.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\navigation_user_nav.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\navigation\\user_nav.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/layout_fragment_sobre.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_sobre.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\navigation_adm_nav.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\navigation\\adm_nav.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/layout_fragment_ajuda.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_ajuda.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\layout\\activity_main.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\drawable_arc_1.png.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\drawable\\arc_1.png"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/menu_bottom_menu.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/menu/bottom_menu.xml"
     },
     {
-        "merged": "com.example.tesourosartsticos.app-merged_res-57:/navigation_adm_nav.xml.flat",
-        "source": "com.example.tesourosartsticos.app-main-59:/navigation/adm_nav.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/layout_fragment_user_settings.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_user_settings.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\layout_fragment_administrador.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\layout\\fragment_administrador.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/drawable_borda_arredondada.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/drawable/borda_arredondada.xml"
     },
     {
-        "merged": "com.example.tesourosartsticos.app-merged_res-57:/navigation_user_nav.xml.flat",
-        "source": "com.example.tesourosartsticos.app-main-59:/navigation/user_nav.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/drawable_back.png.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/drawable/back.png"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\layout_fragment_sobre.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\layout\\fragment_sobre.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/layout_fragment_adicionar_figurinha.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_adicionar_figurinha.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\xml\\data_extraction_rules.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/layout_activity_user.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/activity_user.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\drawable_background_oval_1.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\drawable\\background_oval_1.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\navigation_nav_login.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\navigation\\nav_login.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/layout_fragment_tela_colecao.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_tela_colecao.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\layout_fragment_user_settings.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\layout\\fragment_user_settings.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/font_nunito_sans.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/font/nunito_sans.xml"
     },
     {
-        "merged": "com.example.tesourosartsticos.app-merged_res-57:/layout_fragment_settings.xml.flat",
-        "source": "com.example.tesourosartsticos.app-main-59:/layout/fragment_settings.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/layout_fragment_home.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\drawable_imagem_fundo.jpeg.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\drawable\\imagem_fundo.jpeg"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/drawable_arc_1.png.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/drawable/arc_1.png"
     },
     {
-        "merged": "com.example.tesourosartsticos.app-merged_res-57:/layout_fragment_user_settings.xml.flat",
-        "source": "com.example.tesourosartsticos.app-main-59:/layout/fragment_user_settings.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\layout_fragment_camera.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\layout\\fragment_camera.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/layout_fragment_perfil.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/layout/fragment_perfil.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\layout_fragment_home.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\layout\\fragment_home.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\layout_item_obra.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\layout\\item_obra.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\menu_bottom_menu.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\menu\\bottom_menu.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\drawable_perfil_img.png.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\drawable\\perfil_img.png"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/drawable_logo_ta.png.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/drawable/logo_ta.png"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\drawable_borda_arredondada.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\drawable\\borda_arredondada.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/navigation_user_nav.xml.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/navigation/user_nav.xml"
     },
     {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\layout_fragment_tela_login.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\layout\\fragment_tela_login.xml"
-    },
-    {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\mipmap-mdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\layout_fragment_adicionar_figurinha.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\layout\\fragment_adicionar_figurinha.xml"
-    },
-    {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\drawable\\ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-merged_res-57:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\giova\\.gradle\\daemon\\8.2\\com.example.tesourosartsticos.app-main-59:\\xml\\backup_rules.xml"
+        "merged": "com.example.tesourosartsticos.app-merged_res-63:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.tesourosartsticos.app-main-65:/mipmap-xxxhdpi/ic_launcher_round.webp"
     }
 ]
