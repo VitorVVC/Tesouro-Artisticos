@@ -32,6 +32,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.TesourosArtísticos" >
         <activity
+            android:name="com.example.tesourosartsticos.UserActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.tesourosartsticos.Inicio"
             android:exported="true" >
             <intent-filter>
@@ -42,8 +45,7 @@
         </activity>
         <activity
             android:name="com.example.tesourosartsticos.MainActivity"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
 
         <meta-data
             android:name="preloaded_fonts"
