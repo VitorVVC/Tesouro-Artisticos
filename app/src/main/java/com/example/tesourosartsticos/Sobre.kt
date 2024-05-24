@@ -5,10 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.ImageButton
-import androidx.navigation.Navigation
-import androidx.navigation.fragment.findNavController
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -17,10 +13,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [Home.newInstance] factory method to
+ * Use the [Sobre.newInstance] factory method to
  * create an instance of this fragment.
  */
-class Home : Fragment() {
+class Sobre : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -38,20 +34,7 @@ class Home : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_home, container, false)
-
-        val btnRaking = view.findViewById<Button>(R.id.btn_ranking)
-        btnRaking.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.navigateToRanking)
-
-        }
-
-        val btnPerfil = view.findViewById<ImageButton>(R.id.imageButton)
-        btnPerfil.setOnClickListener{
-            Navigation.findNavController(view).navigate(R.id.navigateToPerfil)
-        }
-
-        return view
+        return inflater.inflate(R.layout.fragment_sobre, container, false)
     }
 
     companion object {
@@ -61,12 +44,12 @@ class Home : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment Home.
+         * @return A new instance of fragment Sobre.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            Home().apply {
+            Sobre().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

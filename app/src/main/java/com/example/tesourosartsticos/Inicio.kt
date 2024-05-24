@@ -1,3 +1,5 @@
+package com.example.tesourosartsticos
+
 import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
@@ -5,23 +7,14 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.tesourosartsticos.MainActivity
-import com.example.tesourosartsticos.R
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-import io.github.cdimascio.dotenv.Dotenv
 
 class Inicio : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio)
-
-        val dotenv = Dotenv.configure()
-            .directory(".") // diretório atual
-            .ignoreIfMalformed()
-            .ignoreIfMissing()
-            .load()
 
         val firebasePathAdm = "A4DHpnfLZ9PIZzM7zuqB"
 
@@ -68,7 +61,9 @@ class Inicio : AppCompatActivity() {
                             finish()
                         } else {
                             Toast.makeText(this, "Login como usuário bem-sucedido", Toast.LENGTH_SHORT).show()
-                            // Criar fluxo para USER
+                            val intent = Intent(this, UserActivity::class.java)
+                            startActivity(intent)
+                            finish()
                         }
                     } else {
                         Toast.makeText(this, "Nome de usuário ou senha incorretos", Toast.LENGTH_SHORT).show()
