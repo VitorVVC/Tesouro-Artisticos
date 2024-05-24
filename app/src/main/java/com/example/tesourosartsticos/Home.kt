@@ -43,6 +43,7 @@ class Home : Fragment() {
         val btnRaking = view.findViewById<Button>(R.id.btn_ranking)
         btnRaking.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.navigateToRanking)
+
         }
 
         val btnPerfil = view.findViewById<ImageButton>(R.id.imageButton)
