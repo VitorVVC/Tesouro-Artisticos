@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".support_adm">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/probUmTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Problema 1 Título"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/probUmDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Problema 1 Descrição"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/probUmTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/probDoisTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Problema 2 Título"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/probUmDesc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/probDoisDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Problema 2 Descrição"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/probDoisTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/probTresTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Problema 3 Título"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/probDoisDesc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/probTresDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Problema 3 Descrição"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/probTresTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/probQuatroTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Problema 4 Título"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/probTresDesc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/probQuatroDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Problema 4 Descrição"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/probQuatroTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/probCincoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Problema 5 Título"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/probQuatroDesc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/probCincoDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Problema 5 Descrição"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/probCincoTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btnVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voltar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
