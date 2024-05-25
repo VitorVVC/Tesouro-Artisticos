@@ -11,46 +11,46 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnTema"
             android:layout_width="250dp"
             android:layout_height="64dp"
-            android:text="Tema"
+            android:text="TEMA"
             android:textSize="25sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:layout_constraintVertical_bias="0.154" />
+            app:layout_constraintTop_toBottomOf="@+id/configText"
+            app:layout_constraintVertical_bias="0.188" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnSobre"
             android:layout_width="250dp"
             android:layout_height="64dp"
-            android:text="Sobre"
+            android:text="SOBRE"
             android:textSize="25sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.478" />
+            app:layout_constraintVertical_bias="0.499" />
 
         <Button
             android:id="@+id/btnAdm"
             android:layout_width="250dp"
             android:layout_height="64dp"
-            android:text="Gerenciamento ADMIN"
+            android:text="ADMINISTRADOR"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.605" />
+            app:layout_constraintVertical_bias="0.733" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/configText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/borda_arredondada"
@@ -64,6 +64,19 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.118" />
+
+        <Button
+            android:id="@+id/btnSuporte"
+            android:layout_width="250dp"
+            android:layout_height="64dp"
+            android:text="SUPORTE"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.616" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

@@ -82,7 +82,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btnSobre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="141dp"
