@@ -12,6 +12,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.google.firebase.firestore.FieldValue
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import java.util.UUID
 
 private const val ARG_PARAM1 = "param1"
@@ -46,8 +49,6 @@ class support : Fragment() {
         val tituloTxT = titulo.text.toString();
         val descricaoTxT = descricao.text.toString();
 
-
-
         btnConcluido.setOnClickListener {
             if (TextUtils.isEmpty(tituloTxT) || TextUtils.isEmpty(nomeUserTxT) || TextUtils.isEmpty(
                     descricaoTxT
@@ -76,6 +77,23 @@ class support : Fragment() {
                 Toast.makeText(requireContext(), "WhatsApp não instalado", Toast.LENGTH_SHORT).show()
             }
         }
+
+        val sup = mapOf(
+            "nome" to nomeUserTxT,
+            "titulo" to tituloTxT,
+            "descricao" to descricaoTxT,
+            "dataCriacao" to FieldValue.serverTimestamp()
+        )
+
+        // Adicionar obra ao Firestore
+        val db = Firebase.firestore
+        db.collection("Suporte").add(sup)
+            .addOnSuccessListener { documentReference ->
+                val pathGerado = documentReference.id // Captura o path gerado
+            }
+            .addOnFailureListener { e ->
+                Toast.makeText(requireContext(), "Erro adicionar pedido de suporte: ${e.message}", Toast.LENGTH_SHORT).show()
+            }
 
         return view;
     }
