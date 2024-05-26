@@ -9,7 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#6D6969">
+        android:background="#FBF7F7">
 
         <Button
             android:id="@+id/btnVoltar"
@@ -67,19 +67,38 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.605" />
 
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="330dp"
-            android:layout_height="80dp"
-            android:clickable="false"
-            android:text="OPÇÕES DE ADMINISTRADOR"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="463dp"
+            android:layout_height="392dp"
+            android:layout_marginEnd="1dp"
+            android:src="@drawable/triangulo_background_2"
+            app:layout_constraintBottom_toTopOf="@+id/btnGerenciarRank"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.493"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.069" />
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="178dp"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="176dp"
+                android:layout_marginBottom="674dp"
+                android:text="Opções do Admin"
+                android:textColor="#070707"
+                android:textSize="35dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

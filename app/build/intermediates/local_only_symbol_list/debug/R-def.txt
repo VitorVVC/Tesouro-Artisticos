@@ -8,9 +8,11 @@ color black
 color white
 dimen activity_horizontal_margin
 dimen activity_vertical_margin
+drawable account_circle
 drawable arc_1
 drawable arc_3
 drawable back
+drawable back_1
 drawable background_oval_1
 drawable baseline_add_a_photo_24
 drawable baseline_home_24
@@ -22,6 +24,8 @@ drawable ic_launcher_foreground
 drawable imagem_fundo
 drawable logo_ta
 drawable perfil_img
+drawable triangulo_background_1
+drawable triangulo_background_2
 font nunito_sans
 id action_modificar_carta_to_quiz
 id adicionar_figurinha
@@ -49,7 +53,7 @@ id btn_ranking
 id button
 id button2
 id button3
-id button5
+id button4
 id button6
 id camera
 id colecao
@@ -65,9 +69,14 @@ id headerObra
 id home
 id imageButton
 id imageView
+id imageView2
+id imageView3
 id imageView4
 id imageView5
 id imageView6
+id imageView7
+id imageView8
+id imageView9
 id imagemImageView
 id inputImage
 id inputName
@@ -109,8 +118,11 @@ id tela_login
 id textInputLayout
 id textView
 id textView10
+id textView11
+id textView12
 id textView13
 id textView14
+id textView16
 id textView2
 id textView3
 id textView4

@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -31,6 +32,9 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final ImageButton imageButton;
 
   @NonNull
+  public final ImageView imageView8;
+
+  @NonNull
   public final Button lastObra;
 
   @NonNull
@@ -43,12 +47,14 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final TextView qntMoedas;
 
   private FragmentHomeBinding(@NonNull FrameLayout rootView, @NonNull Button btnRanking,
-      @NonNull Button button3, @NonNull ImageButton imageButton, @NonNull Button lastObra,
-      @NonNull TextView moeda, @NonNull TextView nome, @NonNull TextView qntMoedas) {
+      @NonNull Button button3, @NonNull ImageButton imageButton, @NonNull ImageView imageView8,
+      @NonNull Button lastObra, @NonNull TextView moeda, @NonNull TextView nome,
+      @NonNull TextView qntMoedas) {
     this.rootView = rootView;
     this.btnRanking = btnRanking;
     this.button3 = button3;
     this.imageButton = imageButton;
+    this.imageView8 = imageView8;
     this.lastObra = lastObra;
     this.moeda = moeda;
     this.nome = nome;
@@ -100,6 +106,12 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imageView8;
+      ImageView imageView8 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView8 == null) {
+        break missingId;
+      }
+
       id = R.id.lastObra;
       Button lastObra = ViewBindings.findChildViewById(rootView, id);
       if (lastObra == null) {
@@ -125,7 +137,7 @@ public final class FragmentHomeBinding implements ViewBinding {
       }
 
       return new FragmentHomeBinding((FrameLayout) rootView, btnRanking, button3, imageButton,
-          lastObra, moeda, nome, qntMoedas);
+          imageView8, lastObra, moeda, nome, qntMoedas);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

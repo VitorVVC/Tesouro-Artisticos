@@ -43,9 +43,13 @@ public final class FragmentAdicionarFigurinhaBinding implements ViewBinding {
   @NonNull
   public final TextView textView;
 
+  @NonNull
+  public final TextView textView12;
+
   private FragmentAdicionarFigurinhaBinding(@NonNull FrameLayout rootView, @NonNull Button button6,
       @NonNull EditText editAuthor, @NonNull EditText editDescription, @NonNull EditText editTitle,
-      @NonNull ImageView imageView, @NonNull Button inputImage, @NonNull TextView textView) {
+      @NonNull ImageView imageView, @NonNull Button inputImage, @NonNull TextView textView,
+      @NonNull TextView textView12) {
     this.rootView = rootView;
     this.button6 = button6;
     this.editAuthor = editAuthor;
@@ -54,6 +58,7 @@ public final class FragmentAdicionarFigurinhaBinding implements ViewBinding {
     this.imageView = imageView;
     this.inputImage = inputImage;
     this.textView = textView;
+    this.textView12 = textView12;
   }
 
   @Override
@@ -125,8 +130,14 @@ public final class FragmentAdicionarFigurinhaBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textView12;
+      TextView textView12 = ViewBindings.findChildViewById(rootView, id);
+      if (textView12 == null) {
+        break missingId;
+      }
+
       return new FragmentAdicionarFigurinhaBinding((FrameLayout) rootView, button6, editAuthor,
-          editDescription, editTitle, imageView, inputImage, textView);
+          editDescription, editTitle, imageView, inputImage, textView, textView12);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

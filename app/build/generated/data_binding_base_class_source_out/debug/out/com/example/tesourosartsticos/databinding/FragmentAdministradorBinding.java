@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -32,17 +34,22 @@ public final class FragmentAdministradorBinding implements ViewBinding {
   public final Button btnVoltar;
 
   @NonNull
-  public final Button button5;
+  public final ImageView imageView7;
+
+  @NonNull
+  public final TextView textView16;
 
   private FragmentAdministradorBinding(@NonNull FrameLayout rootView,
       @NonNull Button btnAdicionarFigurinha, @NonNull Button btnChamados,
-      @NonNull Button btnGerenciarRank, @NonNull Button btnVoltar, @NonNull Button button5) {
+      @NonNull Button btnGerenciarRank, @NonNull Button btnVoltar, @NonNull ImageView imageView7,
+      @NonNull TextView textView16) {
     this.rootView = rootView;
     this.btnAdicionarFigurinha = btnAdicionarFigurinha;
     this.btnChamados = btnChamados;
     this.btnGerenciarRank = btnGerenciarRank;
     this.btnVoltar = btnVoltar;
-    this.button5 = button5;
+    this.imageView7 = imageView7;
+    this.textView16 = textView16;
   }
 
   @Override
@@ -96,14 +103,20 @@ public final class FragmentAdministradorBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.button5;
-      Button button5 = ViewBindings.findChildViewById(rootView, id);
-      if (button5 == null) {
+      id = R.id.imageView7;
+      ImageView imageView7 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView7 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView16;
+      TextView textView16 = ViewBindings.findChildViewById(rootView, id);
+      if (textView16 == null) {
         break missingId;
       }
 
       return new FragmentAdministradorBinding((FrameLayout) rootView, btnAdicionarFigurinha,
-          btnChamados, btnGerenciarRank, btnVoltar, button5);
+          btnChamados, btnGerenciarRank, btnVoltar, imageView7, textView16);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -27,6 +29,9 @@ public final class FragmentAdicionarQuizBinding implements ViewBinding {
   public final Button btnVoltar;
 
   @NonNull
+  public final ImageView imageView3;
+
+  @NonNull
   public final EditText opCorreta;
 
   @NonNull
@@ -41,18 +46,23 @@ public final class FragmentAdicionarQuizBinding implements ViewBinding {
   @NonNull
   public final EditText perguntaQuiz;
 
+  @NonNull
+  public final TextView textView11;
+
   private FragmentAdicionarQuizBinding(@NonNull FrameLayout rootView, @NonNull Button btnCriar,
-      @NonNull Button btnVoltar, @NonNull EditText opCorreta, @NonNull EditText opErradaDois,
-      @NonNull EditText opErradaTres, @NonNull EditText opErradaUm,
-      @NonNull EditText perguntaQuiz) {
+      @NonNull Button btnVoltar, @NonNull ImageView imageView3, @NonNull EditText opCorreta,
+      @NonNull EditText opErradaDois, @NonNull EditText opErradaTres, @NonNull EditText opErradaUm,
+      @NonNull EditText perguntaQuiz, @NonNull TextView textView11) {
     this.rootView = rootView;
     this.btnCriar = btnCriar;
     this.btnVoltar = btnVoltar;
+    this.imageView3 = imageView3;
     this.opCorreta = opCorreta;
     this.opErradaDois = opErradaDois;
     this.opErradaTres = opErradaTres;
     this.opErradaUm = opErradaUm;
     this.perguntaQuiz = perguntaQuiz;
+    this.textView11 = textView11;
   }
 
   @Override
@@ -94,6 +104,12 @@ public final class FragmentAdicionarQuizBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imageView3;
+      ImageView imageView3 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView3 == null) {
+        break missingId;
+      }
+
       id = R.id.opCorreta;
       EditText opCorreta = ViewBindings.findChildViewById(rootView, id);
       if (opCorreta == null) {
@@ -124,8 +140,14 @@ public final class FragmentAdicionarQuizBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textView11;
+      TextView textView11 = ViewBindings.findChildViewById(rootView, id);
+      if (textView11 == null) {
+        break missingId;
+      }
+
       return new FragmentAdicionarQuizBinding((FrameLayout) rootView, btnCriar, btnVoltar,
-          opCorreta, opErradaDois, opErradaTres, opErradaUm, perguntaQuiz);
+          imageView3, opCorreta, opErradaDois, opErradaTres, opErradaUm, perguntaQuiz, textView11);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

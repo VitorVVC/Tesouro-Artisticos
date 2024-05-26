@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -22,6 +23,12 @@ public final class FragmentRankingBinding implements ViewBinding {
 
   @NonNull
   public final Button btnVoltar;
+
+  @NonNull
+  public final ImageView imageView6;
+
+  @NonNull
+  public final ImageView imageView9;
 
   @NonNull
   public final TextView textView;
@@ -42,10 +49,13 @@ public final class FragmentRankingBinding implements ViewBinding {
   public final TextView textView7;
 
   private FragmentRankingBinding(@NonNull FrameLayout rootView, @NonNull Button btnVoltar,
-      @NonNull TextView textView, @NonNull TextView textView13, @NonNull TextView textView14,
-      @NonNull TextView textView2, @NonNull TextView textView4, @NonNull TextView textView7) {
+      @NonNull ImageView imageView6, @NonNull ImageView imageView9, @NonNull TextView textView,
+      @NonNull TextView textView13, @NonNull TextView textView14, @NonNull TextView textView2,
+      @NonNull TextView textView4, @NonNull TextView textView7) {
     this.rootView = rootView;
     this.btnVoltar = btnVoltar;
+    this.imageView6 = imageView6;
+    this.imageView9 = imageView9;
     this.textView = textView;
     this.textView13 = textView13;
     this.textView14 = textView14;
@@ -87,6 +97,18 @@ public final class FragmentRankingBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imageView6;
+      ImageView imageView6 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView6 == null) {
+        break missingId;
+      }
+
+      id = R.id.imageView9;
+      ImageView imageView9 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView9 == null) {
+        break missingId;
+      }
+
       id = R.id.textView;
       TextView textView = ViewBindings.findChildViewById(rootView, id);
       if (textView == null) {
@@ -123,8 +145,8 @@ public final class FragmentRankingBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentRankingBinding((FrameLayout) rootView, btnVoltar, textView, textView13,
-          textView14, textView2, textView4, textView7);
+      return new FragmentRankingBinding((FrameLayout) rootView, btnVoltar, imageView6, imageView9,
+          textView, textView13, textView14, textView2, textView4, textView7);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

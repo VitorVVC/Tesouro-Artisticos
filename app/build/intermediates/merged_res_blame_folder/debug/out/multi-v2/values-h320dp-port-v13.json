@@ -4,7 +4,7 @@
             "outputFile": "com.example.tesourosartsticos.app-mergeDebugResources-55:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
             "map": [
                 {
-                    "source": "/Users/vitorvargas/.gradle/caches/transforms-3/108868f104a89f7f89994bd5541b1cef/transformed/material-1.11.0/res/values-h320dp-port-v13/values-h320dp-port-v13.xml",
+                    "source": "C:\\Users\\ravi1\\.gradle\\caches\\transforms-3\\108868f104a89f7f89994bd5541b1cef\\transformed\\material-1.11.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

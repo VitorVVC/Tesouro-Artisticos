@@ -12,8 +12,8 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="278dp"
+            android:layout_height="70dp"
             android:background="@drawable/borda_arredondada"
             android:gravity="center"
             android:text="Adicionar Figurinha"
@@ -28,8 +28,8 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="177dp"
-            android:layout_height="208dp"
+            android:layout_width="144dp"
+            android:layout_height="181dp"
             android:layout_marginTop="15dp"
             app:layout_constraintBottom_toTopOf="@+id/inputImage"
             app:layout_constraintEnd_toEndOf="parent"
@@ -41,15 +41,15 @@
 
         <Button
             android:id="@+id/inputImage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
             android:layout_marginTop="60dp"
-            android:text="Selecionar Imagem"
+            android:text="Adicionar Img"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:layout_constraintVertical_bias="0.324" />
+            app:layout_constraintVertical_bias="0.288" />
 
         <TextView
             android:id="@+id/textView12"
@@ -72,7 +72,9 @@
             app:layout_constraintBottom_toTopOf="@+id/editAuthor"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTitle" />
+            app:layout_constraintTop_toBottomOf="@+id/editTitle"
+            app:layout_constraintVertical_bias="0.687"
+            tools:ignore="DuplicateIds" />
 
         <TextView
             android:id="@+id/textView12"
@@ -85,10 +87,10 @@
             android:text="Descrição"
             app:layout_constraintBottom_toTopOf="@+id/editDescription"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editAuthor"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.421"
+            tools:ignore="DuplicateIds" />
 
         <EditText
             android:id="@+id/editTitle"
@@ -96,46 +98,47 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
+            android:minHeight="48dp"
             android:text="Nome da Obra"
             android:textAlignment="center"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inputImage"
-            app:layout_constraintVertical_bias="0.144" />
+            tools:layout_editor_absoluteY="429dp"
+            tools:ignore="MissingConstraints" />
 
         <EditText
             android:id="@+id/editDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="88dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="36dp"
             android:ems="10"
             android:inputType="text"
+            android:minHeight="48dp"
             android:text="Descrição"
             android:textAlignment="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTitle"
-            app:layout_constraintVertical_bias="0.198" />
+            app:layout_constraintTop_toBottomOf="@+id/textView12"
+            app:layout_constraintVertical_bias="0.825" />
 
         <EditText
             android:id="@+id/editAuthor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="56dp"
             android:ems="10"
             android:inputType="text"
+            android:minHeight="48dp"
             android:text="Nome do Autor"
             android:textAlignment="center"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTitle"
-            app:layout_constraintVertical_bias="0.005" />
+            app:layout_constraintTop_toBottomOf="@+id/editTitle" />
 
         <Button
             android:id="@+id/button6"
@@ -145,10 +148,10 @@
             android:text="Próximo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.919"
+            app:layout_constraintHorizontal_bias="0.974"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editDescription"
-            app:layout_constraintVertical_bias="0.914" />
+            app:layout_constraintVertical_bias="1.0" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
