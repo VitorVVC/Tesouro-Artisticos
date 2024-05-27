@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".Ajuda">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="731dp">
+
+        <TextView
+            android:id="@+id/textHelpTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:text="Ajuda"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textHelpSubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="Perguntas Frequentes"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textHelpTitle" />
+
+        <TextView
+            android:id="@+id/textFAQ1"
+            android:layout_width="330dp"
+            android:layout_height="348dp"
+            android:layout_marginTop="56dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel eros turpis. Praesent interdum sollicitudin quam, at aliquet nisi rutrum ac. Nunc nisi magna, accumsan a posuere quis, blandit id est. Pellentesque elementum nisl eu felis euismod rutrum. In massa nunc, maximus rutrum sem elementum, pretium mollis urna. Integer eget semper diam, nec dapibus nisi. In molestie eu elit rhoncus accumsan. Mauris laoreet rhoncus orci, at venenatis ligula sagittis a. Maecenas vel ex ultrices, dapibus lorem in, aliquam risus. Aenean dui tortor, gravida tincidunt ligula vitae, vehicula tincidunt mi. Vestibulum auctor erat sed felis bibendum eleifend. Nunc eu condimentum ligula."
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textHelpSubTitle" />
+
+        <Button
+            android:id="@+id/buttonContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fale conosco @"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textFAQ1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
