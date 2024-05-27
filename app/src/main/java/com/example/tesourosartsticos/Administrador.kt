@@ -31,6 +31,7 @@ class Administrador : Fragment() {
         val view = inflater.inflate(R.layout.fragment_administrador, container, false)
 
         val btnAdicionarFigurinha = view.findViewById<Button>(R.id.btnAdicionarFigurinha)
+        val btnChamados = view.findViewById<Button>(R.id.btnChamados);
 
         btnAdicionarFigurinha.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.navToAddFigurinha)
@@ -39,6 +40,11 @@ class Administrador : Fragment() {
         val btnVoltar = view.findViewById<Button>(R.id.btnVoltar)
         btnVoltar.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.backToSettings)
+        }
+
+        btnChamados.setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.backToSettings) // REDIRECIONAR PARA O FRAGMENTO DE GERENCIAR CHAMADOS
+
         }
 
         return view

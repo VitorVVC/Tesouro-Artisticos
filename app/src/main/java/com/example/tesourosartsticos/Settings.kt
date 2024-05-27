@@ -1,5 +1,6 @@
 package com.example.tesourosartsticos
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,18 +9,11 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.Navigation
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [Settings.newInstance] factory method to
- * create an instance of this fragment.
- */
 class Settings : Fragment() {
-    // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
 
@@ -31,18 +25,35 @@ class Settings : Fragment() {
         }
     }
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_settings, container, false)
 
-        val btnAdm = view.findViewById<Button>(R.id.btnAdm)
+        val btnSuporte = view.findViewById<Button>(R.id.btnSuporte);
+        val btnAdm = view.findViewById<Button>(R.id.btnAdm);
+        val btnTema = view.findViewById<Button>(R.id.btnTema);
+        val btnSobre = view.findViewById<Button>(R.id.btnSobre);
 
         btnAdm.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.navigateToAdmin)
         }
+
+        btnSuporte.setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.settings); // ALTERAR PARA SUPPORT
+        }
+
+        // TODO
+        btnTema.setOnClickListener {
+
+        }
+
+        btnSobre.setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.navToSobre)
+        }
+
 
         return view
     }

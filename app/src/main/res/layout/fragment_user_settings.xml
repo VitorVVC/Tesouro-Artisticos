@@ -14,30 +14,43 @@
             android:id="@+id/button"
             android:layout_width="250dp"
             android:layout_height="64dp"
-            android:text="Tema"
+            android:text="TEMA"
             android:textSize="25sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/configText"
             app:layout_constraintVertical_bias="0.154" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnSobre"
             android:layout_width="250dp"
             android:layout_height="64dp"
-            android:text="Sobre"
+            android:text="SOBRE"
             android:textSize="25sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.478" />
+            app:layout_constraintVertical_bias="0.484" />
+
+        <Button
+            android:id="@+id/btnSuporte"
+            android:layout_width="250dp"
+            android:layout_height="64dp"
+            android:text="SUPORTE"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.604" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/configText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/borda_arredondada"

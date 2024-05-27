@@ -12,7 +12,21 @@ import androidx.navigation.Navigation
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
-class Ranking : Fragment() {
+private const val ARG_PARAM1 = "param1"
+private const val ARG_PARAM2 = "param2"
+
+class gerenciar_ranking : Fragment() {
+    // TODO: Rename and change types of parameters
+    private var param1: String? = null
+    private var param2: String? = null
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        arguments?.let {
+            param1 = it.getString(ARG_PARAM1)
+            param2 = it.getString(ARG_PARAM2)
+        }
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -20,6 +34,7 @@ class Ranking : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_ranking, container, false)
         val btnVoltar = view.findViewById<Button>(R.id.btnVoltar)
+        val btnRefresh = view.findViewById<Button>(R.id.btnRefresh)
         val topUmTextView = view.findViewById<TextView>(R.id.topUm)
         val topDoisTextView = view.findViewById<TextView>(R.id.topDois)
         val topTresTextView = view.findViewById<TextView>(R.id.topTres)
@@ -30,6 +45,16 @@ class Ranking : Fragment() {
             Navigation.findNavController(view).navigate(R.id.backToHome)
         }
 
+        btnRefresh.setOnClickListener {
+            loadRanking(topUmTextView, topDoisTextView, topTresTextView, topQuatroTextView, topCincoTextView)
+        }
+
+        loadRanking(topUmTextView, topDoisTextView, topTresTextView, topQuatroTextView, topCincoTextView)
+
+        return view
+    }
+
+    private fun loadRanking(topUmTextView: TextView, topDoisTextView: TextView, topTresTextView: TextView, topQuatroTextView: TextView, topCincoTextView: TextView) {
         val db = Firebase.firestore
         db.collection("Logins")
             .whereEqualTo("albumCompleto", true)
@@ -48,7 +73,6 @@ class Ranking : Fragment() {
                     topQuatroTextView.text = rankingTexts[3]
                     topCincoTextView.text = rankingTexts[4]
                 } else {
-                    // Se houver menos de cinco usuários no ranking, apenas defina o texto disponível
                     for (i in rankingTexts.indices) {
                         when (i) {
                             0 -> topUmTextView.text = rankingTexts[i]
@@ -63,7 +87,16 @@ class Ranking : Fragment() {
             .addOnFailureListener { exception ->
                 Log.w("Ranking", "Error getting documents: ", exception)
             }
+    }
 
-        return view
+    companion object {
+        @JvmStatic
+        fun newInstance(param1: String, param2: String) =
+            gerenciar_ranking().apply {
+                arguments = Bundle().apply {
+                    putString(ARG_PARAM1, param1)
+                    putString(ARG_PARAM2, param2)
+                }
+            }
     }
 }

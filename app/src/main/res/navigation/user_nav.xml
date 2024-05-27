@@ -55,7 +55,7 @@
     </fragment>
     <fragment
         android:id="@+id/perfil"
-        android:name="com.example.tesourosartsticos.perfil"
+        android:name="com.example.tesourosartsticos.Perfil"
         android:label="fragment_perfil"
         tools:layout="@layout/fragment_perfil" >
         <action
@@ -105,10 +105,28 @@
             app:popUpTo="@id/settings"
             app:enterAnim="@anim/nav_default_enter_anim"
             app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/navToUserSupport"
+            app:destination="@id/userSupport"
+            app:popUpTo="@id/settings"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/sobre"
         android:name="com.example.tesourosartsticos.Sobre"
         android:label="fragment_sobre"
         tools:layout="@layout/fragment_sobre" />
+    <fragment
+        android:id="@+id/userSupport"
+        android:name="com.example.tesourosartsticos.UserSupport"
+        android:label="fragment_user_support"
+        tools:layout="@layout/fragment_user_support" >
+        <action
+            android:id="@+id/backToUserSettings"
+            app:destination="@id/settings"
+            app:popUpTo="@id/userSupport"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpToInclusive="true"/>
+    </fragment>
 </navigation>

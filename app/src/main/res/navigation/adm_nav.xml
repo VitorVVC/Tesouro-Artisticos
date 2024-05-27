@@ -36,7 +36,7 @@
             app:popUpTo="@id/settings"
             app:popUpToInclusive="true"/>
         <action
-            android:id="@+id/action_settings_to_sobre2"
+            android:id="@+id/navToSobre"
             app:destination="@id/sobre2"
             app:popUpTo="@id/settings"
             app:enterAnim="@anim/nav_default_enter_anim"
@@ -79,7 +79,7 @@
     </fragment>
     <fragment
         android:id="@+id/perfil"
-        android:name="com.example.tesourosartsticos.perfil"
+        android:name="com.example.tesourosartsticos.Perfil"
         android:label="fragment_perfil"
         tools:layout="@layout/fragment_perfil" >
         <action
