@@ -30,16 +30,23 @@
             android:id="@+id/btnRefresh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_background"
             android:text="Refresh"
-            app:layout_constraintTop_toBottomOf="@id/configText"
-            app:layout_constraintStart_toStartOf="parent"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintVertical_bias="0.05" />
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/configText"
+            app:layout_constraintVertical_bias="0.023" />
 
         <TextView
             android:id="@+id/topUm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/funda_estilizado"
+            android:gravity="center"
             android:text="Pessoa 1"
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -47,69 +54,78 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnRefresh"
-            app:layout_constraintVertical_bias="0.1" />
+            app:layout_constraintVertical_bias="0.07" />
 
         <TextView
             android:id="@+id/topDois"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="23dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/funda_estilizado"
+            android:gravity="center"
             android:text="Pessoa 2"
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.444" />
+            app:layout_constraintTop_toBottomOf="@+id/topUm"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/topTres"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="83dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/funda_estilizado"
+            android:gravity="center"
             android:text="Pessoa 3"
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.45" />
+            app:layout_constraintTop_toBottomOf="@+id/topDois"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/topQuatro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/funda_estilizado"
+            android:gravity="center"
             android:text="Pessoa 4"
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.607" />
+            app:layout_constraintTop_toBottomOf="@+id/topTres"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/topCinco"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="31dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/funda_estilizado"
+            android:gravity="center"
             android:text="Pessoa 5"
             android:textSize="30dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.692" />
+            app:layout_constraintTop_toBottomOf="@+id/topQuatro" />
 
         <Button
             android:id="@+id/btnVoltar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="513dp"
+            android:background="@drawable/button_background"
             android:text="Voltar"
+            app:backgroundTint="@null"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.049"

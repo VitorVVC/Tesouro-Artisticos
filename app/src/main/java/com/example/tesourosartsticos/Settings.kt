@@ -42,7 +42,7 @@ class Settings : Fragment() {
         }
 
         btnSuporte.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.settings); // ALTERAR PARA SUPPORT
+            Navigation.findNavController(view).navigate(R.id.action_administrador_to_admSupport);
         }
 
         // TODO

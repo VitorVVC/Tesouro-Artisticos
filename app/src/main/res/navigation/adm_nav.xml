@@ -76,6 +76,18 @@
             app:enterAnim="@anim/nav_default_enter_anim"
             app:popUpTo="@id/administrador"
             app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_administrador_to_gerenciar_ranking"
+            app:destination="@id/gerenciar_ranking"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/administrador"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_administrador_to_admSupport"
+            app:destination="@id/admSupport"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/administrador"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/perfil"
@@ -126,7 +138,14 @@
         <action
             android:id="@+id/navToAddQuiz"
             app:destination="@id/adicionar_figurinha"
+            app:enterAnim="@anim/nav_default_enter_anim"
             app:popUpTo="@id/adicionar_figurinha2"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_adicionar_figurinha2_to_administrador"
+            app:destination="@id/administrador"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/modificar_carta"
             app:popUpToInclusive="true"/>
     </fragment>
     <fragment
@@ -158,4 +177,28 @@
         android:name="com.example.tesourosartsticos.Sobre"
         android:label="fragment_sobre"
         tools:layout="@layout/fragment_sobre" />
+    <fragment
+        android:id="@+id/admSupport"
+        android:name="com.example.tesourosartsticos.AdmSupport"
+        android:label="fragment_adm_support"
+        tools:layout="@layout/fragment_adm_support" >
+        <action
+            android:id="@+id/action_admSupport_to_administrador"
+            app:destination="@id/administrador"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/admSupport"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/gerenciar_ranking"
+        android:name="com.example.tesourosartsticos.gerenciar_ranking"
+        android:label="fragment_gerenciar_ranking"
+        tools:layout="@layout/fragment_gerenciar_ranking" >
+        <action
+            android:id="@+id/action_gerenciar_ranking_to_administrador"
+            app:destination="@id/administrador"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/gerenciar_ranking"
+            app:popUpToInclusive="true"/>
+    </fragment>
 </navigation>
