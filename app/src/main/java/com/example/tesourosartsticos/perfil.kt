@@ -1,4 +1,3 @@
-// Perfil Fragment
 package com.example.tesourosartsticos
 
 import android.annotation.SuppressLint
@@ -9,20 +8,20 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.navigation.Navigation
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 
-private const val ARG_USER_NAME = "userName"
-private const val ARG_USER_TYPE = "userType"
+class PerfilFragment : Fragment() {
 
-class Perfil : Fragment() {
-    private var userName: String? = null
-    private var userType: String? = null
+    private var userPath: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            userName = it.getString(ARG_USER_NAME)
-            userType = it.getString(ARG_USER_TYPE)
+        getUserPath { path ->
+            userPath = path
+            loadUserProfile()
         }
     }
 
@@ -33,12 +32,6 @@ class Perfil : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_perfil, container, false)
 
-        // Exibir informações do usuário
-        val userNameTextView = view.findViewById<TextView>(R.id.userName);
-        val userTypeTextView = view.findViewById<TextView>(R.id.userType);
-        userNameTextView.text = userName
-        userTypeTextView.text = userType
-
         val btnVoltar = view.findViewById<ImageView>(R.id.imageView6)
         btnVoltar.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.backToHome)
@@ -47,14 +40,45 @@ class Perfil : Fragment() {
         return view
     }
 
-    companion object {
-        @JvmStatic
-        fun newInstance(userName: String?, userType: String?) =
-            Perfil().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_USER_NAME, userName)
-                    putString(ARG_USER_TYPE, userType)
+    private fun getUserPath(callback: (String) -> Unit) {
+        val db = Firebase.firestore
+        db.collection("UserPaths").document("currentUser")
+            .get()
+            .addOnSuccessListener { document ->
+                val userPath = document.getString("userPath")
+                if (userPath != null) {
+                    callback(userPath)
+                } else {
+                    Toast.makeText(requireContext(), "Erro ao recuperar o caminho do usuário", Toast.LENGTH_SHORT).show()
                 }
             }
+            .addOnFailureListener { e ->
+                Toast.makeText(requireContext(), "Erro ao recuperar o caminho do usuário: ${e.message}", Toast.LENGTH_SHORT).show()
+            }
+    }
+
+    private fun loadUserProfile() {
+        if (userPath != null) {
+            val db = Firebase.firestore
+            db.collection("Logins").document(userPath!!)
+                .get()
+                .addOnSuccessListener { document ->
+                    val userName = document.getString("nome")
+                    val userType = if (document.id == "A4DHpnfLZ9PIZzM7zuqB") "Admin" else "User"
+
+                    val userNameTextView = view?.findViewById<TextView>(R.id.userName)
+                    val userTypeTextView = view?.findViewById<TextView>(R.id.userType)
+                    userNameTextView?.text = userName
+                    userTypeTextView?.text = userType
+                }
+                .addOnFailureListener { e ->
+                    Toast.makeText(requireContext(), "Erro ao carregar dados do usuário: ${e.message}", Toast.LENGTH_SHORT).show()
+                }
+        }
+    }
+
+    companion object {
+        @JvmStatic
+        fun newInstance() = PerfilFragment()
     }
 }
