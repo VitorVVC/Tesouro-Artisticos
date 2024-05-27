@@ -79,6 +79,8 @@
             android:id="@+id/btnConcluido"
             android:layout_width="260dp"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            app:backgroundTint="@null"
             android:text="CONCLUIDO"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

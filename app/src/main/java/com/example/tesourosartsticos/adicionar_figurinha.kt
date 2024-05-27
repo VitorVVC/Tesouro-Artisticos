@@ -46,6 +46,10 @@ class adicionar_figurinha : Fragment() {
 
         val btnProximo = view.findViewById<Button>(R.id.button6)
         val btnSelectImage = view.findViewById<Button>(R.id.inputImage)
+        val btnVoltar = view.findViewById<Button>(R.id.btnVoltar)
+        btnVoltar.setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.action_adicionar_figurinha2_to_administrador)
+        }
 
         btnSelectImage.setOnClickListener {
             openImageChooser()
