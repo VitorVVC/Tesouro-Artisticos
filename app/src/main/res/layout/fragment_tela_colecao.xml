@@ -13,18 +13,21 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycleItems"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="330dp"
+            android:layout_height="417dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/headerColecao" />
+            app:layout_constraintTop_toBottomOf="@+id/headerColecao"
+            app:layout_constraintVertical_bias="0.622" />
 
         <TextView
             android:id="@+id/headerColecao"
             android:layout_width="320dp"
             android:layout_height="76dp"
-            android:background="#D9D9D9"
+            android:background="@drawable/borda_arredondada"
+            android:textColor="#fff"
             android:fontFamily="@font/nunito_sans"
             android:gravity="center"
             android:text="COLEÇÃO"

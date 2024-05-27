@@ -21,17 +21,16 @@
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.118" />
+            app:layout_constraintVertical_bias="0.05" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="334dp"
             android:layout_height="137dp"
             android:layout_marginTop="33dp"
-            android:layout_marginBottom="336dp"
             android:text="Bem-vindo ao nosso aplicativo de colecionar figurinhas, uma plataforma inovadora que une tecnologia, arte e educação! Somos apaixonados por cultura e acreditamos no poder transformador da arte na vida das pessoas. Nosso objetivo é promover a adesão dos alunos à arte, transformando a experiência de visitar a galeria da faculdade UNIFOR em algo interativo e envolvente."
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -42,14 +41,16 @@
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="51dp"
-            android:layout_height="27dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
+            android:background="@drawable/funda_estilizado"
+            android:gravity="center"
             android:text="Nós"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintHorizontal_bias="0.111"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/title"
             app:layout_constraintVertical_bias="0.0" />
@@ -59,21 +60,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
+            android:background="@drawable/funda_estilizado"
+            android:gravity="center"
             android:text="Objetivo"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.112"
+            app:layout_constraintHorizontal_bias="0.111"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:layout_constraintVertical_bias="0.025" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="342dp"
             android:layout_height="134dp"
-            android:layout_marginTop="31dp"
-            android:layout_marginBottom="104dp"
+            android:layout_marginTop="40dp"
             android:text="Nossa missão é conectar os alunos com o vasto mundo das artes, tornando as obras de arte da galeria da UNIFOR acessíveis de uma maneira única e divertida. Queremos despertar o interesse e a curiosidade pela cultura artística, incentivando uma maior participação e apreciação das criações dos artistas"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

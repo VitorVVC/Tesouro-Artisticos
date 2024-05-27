@@ -49,8 +49,7 @@ class AdmSupport : Fragment() {
         val probTresDesc = view.findViewById<TextView>(R.id.probTresDesc)
         val probQuatroTitle = view.findViewById<TextView>(R.id.probQuatroTitle)
         val probQuatroDesc = view.findViewById<TextView>(R.id.probQuatroDesc)
-        val probCincoTitle = view.findViewById<TextView>(R.id.probCincoTitle)
-        val probCincoDesc = view.findViewById<TextView>(R.id.probCincoDesc)
+
         val btnVoltar = view.findViewById<Button>(R.id.btnVoltar)
 
         btnVoltar.setOnClickListener {
@@ -84,10 +83,6 @@ class AdmSupport : Fragment() {
                         3 -> {
                             probQuatroTitle.text = titulo
                             probQuatroDesc.text = descricao
-                        }
-                        4 -> {
-                            probCincoTitle.text = titulo
-                            probCincoDesc.text = descricao
                         }
                     }
                 }

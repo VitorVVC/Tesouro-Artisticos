@@ -43,7 +43,7 @@ class Sobre : Fragment() {
             Navigation.findNavController(view).navigate(R.id.settings)
         }
 
-        return view;
+        return view
     }
 
     companion object {
