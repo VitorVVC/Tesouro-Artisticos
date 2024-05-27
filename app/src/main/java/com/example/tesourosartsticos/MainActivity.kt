@@ -14,48 +14,22 @@ class MainActivity : AppCompatActivity() {
 
     private var userName: String? = null
     private var userType: String? = null
+    private var userPath: String? = null;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         // Receber o caminho do usuário do Intent
-        val userPath = intent.getStringExtra("USER_PATH")
+        userPath = intent.getStringExtra("USER_PATH")
 
         if (userPath != null) {
             // Buscar dados do usuário no Firestore
-            fetchUserData(userPath) { success ->
-                if (success) {
-                    setupNavigation()
-                } else {
-                    Toast.makeText(this, "Erro ao buscar dados do usuário", Toast.LENGTH_SHORT).show()
-                }
-            }
+            fetchUserData(userPath!!)
         } else {
             Toast.makeText(this, "Erro ao obter caminho do usuário", Toast.LENGTH_SHORT).show()
         }
-    }
 
-    private fun fetchUserData(userPath: String, callback: (Boolean) -> Unit) {
-        val db = Firebase.firestore
-        db.collection("Logins").document(userPath).get()
-            .addOnSuccessListener { document ->
-                if (document != null && document.exists()) {
-                    userName = document.getString("nome")
-                    userType = if (document.id == "A4DHpnfLZ9PIZzM7zuqB") "Admin" else "User"
-                    callback(true)
-                } else {
-                    Log.e("MainActivity", "Documento não encontrado ou não existe")
-                    callback(false)
-                }
-            }
-            .addOnFailureListener { e ->
-                Log.e("MainActivity", "Erro ao buscar dados do usuário: ${e.message}", e)
-                callback(false)
-            }
-    }
-
-    private fun setupNavigation() {
         // Configuração do NavHostFragment
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView5) as? NavHostFragment
             ?: throw IllegalStateException("NavHostFragment não encontrado")
@@ -75,5 +49,21 @@ class MainActivity : AppCompatActivity() {
                 navController.navigate(destination.id, bundle)
             }
         }
+    }
+
+    private fun fetchUserData(userPath: String) {
+        val db = Firebase.firestore
+        db.collection("Logins").document(userPath).get()
+            .addOnSuccessListener { document ->
+                if (document != null && document.exists()) {
+                    userName = document.getString("nome")
+                    userType = if (document.id == "A4DHpnfLZ9PIZzM7zuqB") "Admin" else "User"
+                } else {
+                    Toast.makeText(this, "Erro ao buscar dados do usuário", Toast.LENGTH_SHORT).show()
+                }
+            }
+            .addOnFailureListener { e ->
+                Toast.makeText(this, "Erro ao buscar dados do usuário: ${e.message}", Toast.LENGTH_SHORT).show()
+            }
     }
 }
