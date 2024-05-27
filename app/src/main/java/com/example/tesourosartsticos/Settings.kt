@@ -50,11 +50,9 @@ class Settings : Fragment() {
 
         }
 
-        // TODO
         btnSobre.setOnClickListener {
-
+            Navigation.findNavController(view).navigate(R.id.navToSobre)
         }
-
 
 
         return view
