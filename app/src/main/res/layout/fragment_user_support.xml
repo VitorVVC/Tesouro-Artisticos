@@ -5,8 +5,7 @@
     android:id="@+id/name"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".support_user">
-    <!--    CONFERIR O CONTEXT -->
+    tools:context=".UserSupport">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

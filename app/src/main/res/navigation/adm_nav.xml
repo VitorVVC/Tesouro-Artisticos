@@ -36,7 +36,7 @@
             app:popUpTo="@id/settings"
             app:popUpToInclusive="true"/>
         <action
-            android:id="@+id/action_settings_to_sobre2"
+            android:id="@+id/navToSobre"
             app:destination="@id/sobre2"
             app:popUpTo="@id/settings"
             app:enterAnim="@anim/nav_default_enter_anim"
