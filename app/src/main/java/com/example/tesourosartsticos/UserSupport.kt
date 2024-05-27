@@ -1,5 +1,6 @@
 package com.example.tesourosartsticos
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -28,6 +29,7 @@ class UserSupport : Fragment() {
         }
     }
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -39,6 +41,12 @@ class UserSupport : Fragment() {
         val descricao = view.findViewById<EditText>(R.id.descricao)
         val btnWpp = view.findViewById<Button>(R.id.btnWpp)
         val btnConcluido = view.findViewById<Button>(R.id.btnConcluido)
+
+        val btnVoltar = view.findViewById<Button>(R.id.btnVoltar)
+
+        btnVoltar.setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.settings)
+        }
 
         btnConcluido.setOnClickListener {
             val nomeUserTxT = nomeUser.text.toString()
