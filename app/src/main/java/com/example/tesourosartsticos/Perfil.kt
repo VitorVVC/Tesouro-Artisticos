@@ -1,14 +1,13 @@
 package com.example.tesourosartsticos
 
-import android.annotation.SuppressLint
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
+import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -22,37 +21,42 @@ class Perfil : Fragment() {
         arguments?.let {
             userPath = it.getString("USER_PATH")
         }
-        loadUserProfile()
     }
 
-    @SuppressLint("MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        // Inflar a view primeiro
         val view = inflater.inflate(R.layout.fragment_perfil, container, false)
 
-        val btnVoltar = view.findViewById<ImageView>(R.id.imageView6)
+        val btnVoltar = view.findViewById<Button>(R.id.btnVoltar)
         btnVoltar.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.backToHome)
+            Navigation.findNavController(view).navigate(R.id.home)
         }
 
         return view
     }
 
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // Carrega os dados do perfil do usuário
+        loadUserProfile()
+    }
+
     private fun loadUserProfile() {
-        if (userPath != null) {
+        userPath?.let { path ->
             val db = Firebase.firestore
-            db.collection("Logins").document(userPath!!)
+            db.collection("Logins").document(path)
                 .get()
                 .addOnSuccessListener { document ->
                     val userName = document.getString("nome")
                     val userType = if (document.id == "A4DHpnfLZ9PIZzM7zuqB") "Admin" else "User"
 
-                    val userNameTextView = view?.findViewById<TextView>(R.id.userName)
-                    val userTypeTextView = view?.findViewById<TextView>(R.id.userType)
-                    userNameTextView?.text = userName
-                    userTypeTextView?.text = userType
+                    view?.findViewById<TextView>(R.id.userName)?.text = userName
+                    view?.findViewById<TextView>(R.id.userType)?.text = userType
                 }
                 .addOnFailureListener { e ->
                     Toast.makeText(requireContext(), "Erro ao carregar dados do usuário: ${e.message}", Toast.LENGTH_SHORT).show()
