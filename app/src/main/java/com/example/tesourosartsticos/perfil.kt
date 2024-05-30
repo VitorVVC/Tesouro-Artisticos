@@ -19,10 +19,10 @@ class Perfil : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        getUserPath { path ->
-            userPath = path
-            loadUserProfile()
+        arguments?.let {
+            userPath = it.getString("USER_PATH")
         }
+        loadUserProfile()
     }
 
     @SuppressLint("MissingInflatedId")
@@ -38,23 +38,6 @@ class Perfil : Fragment() {
         }
 
         return view
-    }
-
-    private fun getUserPath(callback: (String) -> Unit) {
-        val db = Firebase.firestore
-        db.collection("UserPaths").document("currentUser")
-            .get()
-            .addOnSuccessListener { document ->
-                val userPath = document.getString("userPath")
-                if (userPath != null) {
-                    callback(userPath)
-                } else {
-                    Toast.makeText(requireContext(), "Erro ao recuperar o caminho do usuário", Toast.LENGTH_SHORT).show()
-                }
-            }
-            .addOnFailureListener { e ->
-                Toast.makeText(requireContext(), "Erro ao recuperar o caminho do usuário: ${e.message}", Toast.LENGTH_SHORT).show()
-            }
     }
 
     private fun loadUserProfile() {
@@ -79,6 +62,10 @@ class Perfil : Fragment() {
 
     companion object {
         @JvmStatic
-        fun newInstance(userPath: String) = Perfil()
+        fun newInstance(userPath: String) = Perfil().apply {
+            arguments = Bundle().apply {
+                putString("USER_PATH", userPath)
+            }
+        }
     }
 }
