@@ -16,7 +16,7 @@ data class Obra(
     val titulo: String,
     val imageUrl: String,
     val autor: String?,
-    val descricao: String?,
+    val descricao: String?
 )
 
 class ObrasAdapter(private val obraList: List<Obra>) :

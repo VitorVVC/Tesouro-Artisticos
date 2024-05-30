@@ -41,6 +41,7 @@ class FigurinhaObra : Fragment() {
         firestore = FirebaseFirestore.getInstance()
     }
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -68,7 +69,6 @@ class FigurinhaObra : Fragment() {
             Navigation.findNavController(view).navigate(R.id.colecao)
         }
 
-        // Consultar as obras do usuário
         userPath?.let { userPath ->
             val obrasUserCollectionRef = firestore.collection("Logins/$userPath/ObrasUser")
             obrasUserCollectionRef.get()
@@ -79,6 +79,7 @@ class FigurinhaObra : Fragment() {
                         imageUrl = document.getString("imageUrl")
                         autor = document.getString("autor")
                         descricao = document.getString("descricao")
+                        val progress = document.getLong("progresso")?.toInt() ?: 0 // Valor padrão é 0
 
                         // Atualizar os campos na UI
                         tituloTextView.text = titulo
@@ -88,6 +89,14 @@ class FigurinhaObra : Fragment() {
                             .load(imageUrl)
                             .override(300, 300)
                             .into(imagemImageView)
+
+                        // Atualizar a progressBar com base no progresso
+                        progressBar.progress = when (progress) {
+                            0 -> 0
+                            1 -> progressBar.max / 2
+                            2 -> progressBar.max
+                            else -> 0 // Defina um valor padrão para outros casos
+                        }
 
                         // Sair do loop após a primeira obra encontrada
                         break
@@ -100,7 +109,6 @@ class FigurinhaObra : Fragment() {
 
         return view
     }
-
 
     companion object {
         @JvmStatic
