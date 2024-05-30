@@ -21,6 +21,12 @@ data class Obra(
 
 class ObrasAdapter(private val obraList: List<Obra>) :
     RecyclerView.Adapter<ObrasAdapter.ViewHolderClass>() {
+    private var userPath: String? = null
+
+    fun setUserPath(userPath: String?) {
+        this.userPath = userPath
+    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolderClass {
         val itemView =
             LayoutInflater.from(parent.context).inflate(R.layout.item_obra, parent, false)
@@ -57,5 +63,4 @@ class ObrasAdapter(private val obraList: List<Obra>) :
             }
         }
     }
-
 }

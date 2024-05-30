@@ -2,9 +2,12 @@ package com.example.tesourosartsticos
 
 import android.os.Bundle
 import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
+import com.example.tesourosartsticos.models.UserViewModel
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -17,6 +20,10 @@ class MainActivity : AppCompatActivity() {
 
         // Receber o caminho do usuário do Intent
         userPath = intent.getStringExtra("USER_PATH")
+        // Inicializar o ViewModel
+        var userViewModel = ViewModelProvider(this).get(UserViewModel::class.java)
+        // Configurar o userPath no ViewModel
+        userViewModel.userPath = userPath
 
         if (userPath == null) {
             Toast.makeText(this, "Erro ao obter caminho do usuário", Toast.LENGTH_SHORT).show()
@@ -43,5 +50,23 @@ class MainActivity : AppCompatActivity() {
                     .commit()
             }
         }
+
+        bottomNavView.setOnNavigationItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.colecao -> {
+                    // Passar o userPath para a tela de coleção usando o ViewModel
+                    userViewModel.userPath?.let { userPath ->
+                        val bundle = Bundle().apply {
+                            putString("USER_PATH", userPath)
+                        }
+                        navController.navigate(R.id.colecao, bundle)
+                    }
+                    true
+                }
+                // Outros casos para outros itens do menu bottom
+                else -> false
+            }
+        }
+
     }
 }

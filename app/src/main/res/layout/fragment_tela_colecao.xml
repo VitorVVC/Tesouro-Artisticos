@@ -20,7 +20,7 @@
             app:layout_constraintHorizontal_bias="0.493"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/headerColecao"
-            app:layout_constraintVertical_bias="0.622" />
+            app:layout_constraintVertical_bias="0.78" />
 
         <TextView
             android:id="@+id/headerColecao"
@@ -40,20 +40,20 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.064" />
 
+        <!-- Layout do item da RecyclerView -->
         <Button
             android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="170dp"
+            android:layout_height="56dp"
             android:backgroundTint="#1C1B1F"
             android:text="MUDAR ORDENAÇÃO"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.203"
+            app:layout_constraintHorizontal_bias="0.186"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/headerColecao"
-            app:layout_constraintVertical_bias="0.053" />
+            app:layout_constraintVertical_bias="0.017" />
 
-        <!-- Layout do item da RecyclerView -->
         <include layout="@layout/item_obra" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
