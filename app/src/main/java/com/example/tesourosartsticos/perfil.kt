@@ -13,7 +13,7 @@ import androidx.navigation.Navigation
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
-class PerfilFragment : Fragment() {
+class Perfil : Fragment() {
 
     private var userPath: String? = null
 
@@ -79,6 +79,6 @@ class PerfilFragment : Fragment() {
 
     companion object {
         @JvmStatic
-        fun newInstance() = PerfilFragment()
+        fun newInstance(userPath: String) = Perfil()
     }
 }

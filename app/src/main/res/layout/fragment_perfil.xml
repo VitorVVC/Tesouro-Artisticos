@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Perfil">
 
-    <!-- TODO: Update blank fragment layout -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -28,7 +27,7 @@
 
                     <ImageView
                         android:id="@+id/imageView4"
-                        android:layout_width="415dp"
+                        android:layout_width="0dp"
                         android:layout_height="93dp"
                         android:layout_marginBottom="-22dp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -45,9 +44,9 @@
                         android:layout_marginTop="13dp"
                         android:layout_marginBottom="-33dp"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="@+id/imageView4"
-                        app:layout_constraintHorizontal_bias="0.497"
-                        app:layout_constraintStart_toStartOf="@+id/imageView4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.761"
                         app:srcCompat="@drawable/perfil_img" />
@@ -60,9 +59,9 @@
                         android:text="Perfil"
                         android:textColor="@color/white"
                         android:textSize="20sp"
-                        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+                        app:layout_constraintBottom_toTopOf="@id/imageView5"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -96,7 +95,7 @@
                     android:text="Seu Nome"
                     android:textAlignment="center"
                     android:textColor="#518872"
-                    android:textSize="26dp"
+                    android:textSize="26sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -107,65 +106,44 @@
                     android:text="Seu Tipo de User"
                     android:textAlignment="center"
                     android:textColor="#518872"
-                    android:textSize="26dp"
+                    android:textSize="26sp"
                     android:textStyle="bold" />
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/textView8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="32dp"
-                        android:layout_marginTop="40dp"
-                        android:layout_marginEnd="244dp"
-                        android:text="Obras Favoritas"
-                        android:textColor="#518772"
-                        android:textSize="20dp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="244dp"
+                    android:text="Obras Favoritas"
+                    android:textColor="#518772"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
                 <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/favoriteWorksRecyclerView"
                     android:layout_width="match_parent"
-                    android:layout_height="98dp" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" />
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/textView5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="32dp"
-                        android:layout_marginTop="15dp"
-                        android:layout_marginEnd="139dp"
-                        android:text="Figurinhas Desbloqueadas"
-                        android:textColor="#518772"
-                        android:textSize="20dp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="139dp"
+                    android:text="Figurinhas Desbloqueadas"
+                    android:textColor="#518772"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
                 <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/unlockedStickersRecyclerView"
                     android:layout_width="match_parent"
-                    android:layout_height="98dp" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
-
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" />
 
             </LinearLayout>
         </ScrollView>
