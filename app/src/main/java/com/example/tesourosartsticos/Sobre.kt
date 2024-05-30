@@ -37,7 +37,11 @@ class Sobre : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_sobre, container, false)
+        val btnVoltar = view.findViewById<Button>(R.id.btnVoltar)
 
+        btnVoltar.setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.settings)
+        }
 
         return view
     }

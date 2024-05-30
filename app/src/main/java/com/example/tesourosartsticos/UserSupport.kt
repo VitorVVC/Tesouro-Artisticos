@@ -1,5 +1,6 @@
 package com.example.tesourosartsticos
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -16,58 +17,64 @@ import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [UserSupport.newInstance] factory method to
- * create an instance of this fragment.
- */
 class UserSupport : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+    private var ARG_PARAM1: String? = null
+    private var ARG_PARAM2: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
+            ARG_PARAM1 = it.getString(ARG_PARAM1)
+            ARG_PARAM2 = it.getString(ARG_PARAM2)
         }
     }
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_user_support, container, false)
-        val nomeUser = view.findViewById<EditText>(R.id.nameText);
-        val titulo = view.findViewById<EditText>(R.id.titulo);
-        val descricao = view.findViewById<EditText>(R.id.descricao);
-        val btnWpp = view.findViewById<Button>(R.id.btnWpp);
-        val btnConcluido = view.findViewById<Button>(R.id.btnConcluido);
+        val nomeUser = view.findViewById<EditText>(R.id.nameText)
+        val titulo = view.findViewById<EditText>(R.id.titulo)
+        val descricao = view.findViewById<EditText>(R.id.descricao)
+        val btnWpp = view.findViewById<Button>(R.id.btnWpp)
+        val btnConcluido = view.findViewById<Button>(R.id.btnConcluido)
 
-        val nomeUserTxT = nomeUser.text.toString();
-        val tituloTxT = titulo.text.toString();
-        val descricaoTxT = descricao.text.toString();
+        val btnVoltar = view.findViewById<Button>(R.id.btnVoltar)
+
+        btnVoltar.setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.settings)
+        }
 
         btnConcluido.setOnClickListener {
-            if (TextUtils.isEmpty(tituloTxT) || TextUtils.isEmpty(nomeUserTxT) || TextUtils.isEmpty(
-                    descricaoTxT
-                )
-            ) {
-                Toast.makeText(
-                    requireContext(),
-                    "Preencha todos os campos e selecione uma imagem",
-                    Toast.LENGTH_SHORT
-                ).show()
+            val nomeUserTxT = nomeUser.text.toString()
+            val tituloTxT = titulo.text.toString()
+            val descricaoTxT = descricao.text.toString()
+
+            if (TextUtils.isEmpty(tituloTxT) || TextUtils.isEmpty(nomeUserTxT) || TextUtils.isEmpty(descricaoTxT)) {
+                Toast.makeText(requireContext(), "Preencha todos os campos", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
-            Navigation.findNavController(view).navigate(R.id.backToUserSettings)
+
+            val sup = hashMapOf(
+                "nome" to nomeUserTxT,
+                "titulo" to tituloTxT,
+                "descricao" to descricaoTxT,
+                "dataCriacao" to FieldValue.serverTimestamp()
+            )
+
+            // Adicionar pedido de suporte ao Firestore
+            val db = Firebase.firestore
+            db.collection("Suporte").add(sup)
+                .addOnSuccessListener { documentReference ->
+                    val pathGerado = documentReference.id // Captura o path gerado
+                    Navigation.findNavController(view).navigate(R.id.backToUserSettings)
+                }
+                .addOnFailureListener { e ->
+                    Toast.makeText(requireContext(), "Erro adicionar pedido de suporte: ${e.message}", Toast.LENGTH_SHORT).show()
+                }
         }
 
         btnWpp.setOnClickListener {
@@ -85,36 +92,10 @@ class UserSupport : Fragment() {
             }
         }
 
-        val sup = mapOf(
-            "nome" to nomeUserTxT,
-            "titulo" to tituloTxT,
-            "descricao" to descricaoTxT,
-            "dataCriacao" to FieldValue.serverTimestamp()
-        )
-
-        // Adicionar obra ao Firestore
-        val db = Firebase.firestore
-        db.collection("Suporte").add(sup)
-            .addOnSuccessListener { documentReference ->
-                val pathGerado = documentReference.id // Captura o path gerado
-            }
-            .addOnFailureListener { e ->
-                Toast.makeText(requireContext(), "Erro adicionar pedido de suporte: ${e.message}", Toast.LENGTH_SHORT).show()
-            }
-
-        return view;
+        return view
     }
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment UserSupport.
-         */
-        // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
             UserSupport().apply {

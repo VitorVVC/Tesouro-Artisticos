@@ -1,17 +1,20 @@
-// Início da tela de login (Inicio)
-package com.example.tesourosartsticos
+package com.example.tesourosartsticos;
 
 import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.tesourosartsticos.MainActivity
+import com.example.tesourosartsticos.R
+import com.example.tesourosartsticos.UserActivity
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
-class Inicio : AppCompatActivity() {
+class InicioActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,29 +43,32 @@ class Inicio : AppCompatActivity() {
                 .addOnSuccessListener { querySnapshot ->
                     var isAdmin = false
                     var loginEncontrado = false
+                    var userId: String? = null
+
                     for (document in querySnapshot.documents) {
                         val loginCorreto = document.getString("nome")
                         val senhaCorreta = document.getString("senha")
 
                         if (nome == loginCorreto && senha == senhaCorreta) {
                             loginEncontrado = true
-                            if (document.id == firebasePathAdm) {
+                            userId = document.id
+                            Log.d("USER_PATH", "Valor de userPath: $userId")
+                            if (userId == firebasePathAdm) {
                                 isAdmin = true
                             }
                             break
                         }
                     }
                     if (loginEncontrado) {
-                        val intent = if (isAdmin) {
-                            Intent(this, MainActivity::class.java)
+                        val intent: Intent
+                        if (isAdmin) {
+                            Toast.makeText(this, "Login como administrador bem-sucedido", Toast.LENGTH_SHORT).show()
+                            intent = Intent(this, MainActivity::class.java)
                         } else {
-                            Intent(this, UserActivity::class.java)
+                            Toast.makeText(this, "Login como usuário bem-sucedido", Toast.LENGTH_SHORT).show()
+                            intent = Intent(this, UserActivity::class.java)
                         }
-
-                        // Passar informações do usuário
-                        intent.putExtra("USER_NAME", nome)
-                        intent.putExtra("USER_TYPE", if (isAdmin) "Admin" else "User")
-
+                        intent.putExtra("USER_PATH", userId)
                         startActivity(intent)
                         finish()
                     } else {

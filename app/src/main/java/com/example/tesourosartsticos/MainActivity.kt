@@ -1,6 +1,7 @@
 package com.example.tesourosartsticos
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
@@ -8,31 +9,38 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
 
+    private var userPath: String? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Receber dados do Intent
-        val userName = intent.getStringExtra("USER_NAME")
-        val userType = intent.getStringExtra("USER_TYPE")
+        // Receber o caminho do usuário do Intent
+        userPath = intent.getStringExtra("USER_PATH")
 
-        // Verifique se fragmentContainerView5 está presente no layout
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView5) as? NavHostFragment
-            ?: throw IllegalStateException("NavHostFragment não encontrado")
+        if (userPath == null) {
+            Toast.makeText(this, "Erro ao obter caminho do usuário", Toast.LENGTH_SHORT).show()
+            finish()
+            return
+        }
+
+        // Configuração do NavHostFragment
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.fragmentContainerView5) as? NavHostFragment
+                ?: throw IllegalStateException("NavHostFragment não encontrado")
 
         val navController = navHostFragment.navController
-
         val bottomNavView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         bottomNavView.setupWithNavController(navController)
 
-        // Passar os dados para os fragmentos quando necessário
+        // Passar o caminho do usuário para o fragmento "perfil" quando necessário
         navController.addOnDestinationChangedListener { _, destination, _ ->
             if (destination.id == R.id.perfil) {
-                val bundle = Bundle().apply {
-                    putString("USER_NAME", userName)
-                    putString("USER_TYPE", userType)
-                }
-                navController.navigate(destination.id, bundle)
+                val perfilFragment = Perfil.newInstance(userPath!!)
+                supportFragmentManager.beginTransaction()
+                    .replace(R.id.fragmentContainerView5, perfilFragment)
+                    .addToBackStack(null)
+                    .commit()
             }
         }
     }
