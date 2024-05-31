@@ -11,7 +11,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.TextView
-import androidx.navigation.Navigation
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.google.firebase.firestore.FirebaseFirestore
@@ -21,6 +21,7 @@ private const val ARG_IMAGE_URL = "imageUrl"
 private const val ARG_AUTOR = "autor"
 private const val ARG_DESCRICAO = "descricao"
 private const val USER_PATH = "USER_PATH"
+private const val COMPLETE_QUIZ = "completeQuiz"
 
 class FigurinhaObra : Fragment() {
     private var titulo: String? = null
@@ -29,19 +30,22 @@ class FigurinhaObra : Fragment() {
     private var descricao: String? = null
     private var userPath: String? = null
     private var obraPath: String? = null // Adicionando a variável para o caminho da obra
+    private var completeQuiz: Boolean = false // Adicionando a variável para indicar se o quiz foi completado
     private lateinit var firestore: FirebaseFirestore
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            titulo = it.getString("titulo")
-            imageUrl = it.getString("imageUrl")
-            autor = it.getString("autor")
-            descricao = it.getString("descricao")
-            userPath = it.getString("userPath")
+            titulo = it.getString(ARG_TITULO)
+            imageUrl = it.getString(ARG_IMAGE_URL)
+            autor = it.getString(ARG_AUTOR)
+            descricao = it.getString(ARG_DESCRICAO)
+            userPath = it.getString(USER_PATH)
             obraPath = it.getString("obraPath") // Obtendo o caminho da obra
+            completeQuiz = it.getBoolean(COMPLETE_QUIZ) // Recuperando completeQuiz do Bundle
         }
         firestore = FirebaseFirestore.getInstance()
+        fetchCompleteQuiz() // Recuperando completeQuiz do banco de dados
     }
 
     @SuppressLint("MissingInflatedId")
@@ -51,13 +55,27 @@ class FigurinhaObra : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_figurinha_obra, container, false)
 
-
         var progressBar: ProgressBar = view.findViewById(R.id.progressBar)
         val tituloTextView: Button = view.findViewById(R.id.headerObra)
         val imagemImageView: ImageView = view.findViewById(R.id.obraImage)
         val autorTextView: TextView = view.findViewById(R.id.autor)
         val detalhesTextView: TextView = view.findViewById(R.id.descricao)
         val bordaImage: Button = view.findViewById(R.id.borda)
+
+        val btnGoToQuiz: Button = view.findViewById(R.id.btnGoToQuiz);
+        btnGoToQuiz.setOnClickListener {
+            if (!completeQuiz) {
+                // Navegar para o quiz da obra específica
+                val bundle = Bundle().apply {
+                    putString(USER_PATH, userPath)
+                    putString("obraPath", obraPath)
+                }
+                findNavController().navigate(R.id.quiz, bundle)
+            } else {
+                // Exibir mensagem informando que o usuário já completou o quiz
+                Toast.makeText(context, "Você já completou este quiz.", Toast.LENGTH_SHORT).show()
+            }
+        }
 
         tituloTextView.text = titulo
         autorTextView.text = autor
@@ -94,7 +112,7 @@ class FigurinhaObra : Fragment() {
                                 .load(imageUrl)
                                 .override(300, 300)
                                 .into(imagemImageView)
-
+                            completeQuiz = document.getBoolean("completeQuiz") ?: false // Recuperando completeQuiz do banco de dados
 
                         } else {
                             Log.e("ERROR", "Documento não encontrado.")
@@ -109,6 +127,22 @@ class FigurinhaObra : Fragment() {
         return view
     }
 
+    private fun fetchCompleteQuiz() {
+        userPath?.let { userPath ->
+            obraPath?.let { obraPath ->
+                val obraDocumentRef =
+                    firestore.collection("Logins/$userPath/ObrasUser").document(obraPath)
+                obraDocumentRef.get()
+                    .addOnSuccessListener { document ->
+                        completeQuiz = document.getBoolean("completeQuiz") ?: false // Recuperando completeQuiz do banco de dados
+                    }
+                    .addOnFailureListener { exception ->
+                        Log.e("ERROR", "Erro ao obter completeQuiz do banco de dados", exception)
+                    }
+            }
+        }
+    }
+
     companion object {
         @JvmStatic
         fun newInstance(
@@ -117,7 +151,8 @@ class FigurinhaObra : Fragment() {
             autor: String,
             descricao: String,
             userPath: String,
-            obraPath: String // Adicionando o novo parâmetro
+            obraPath: String, // Adicionando o novo parâmetro
+            completeQuiz: Boolean // Adicionando o novo parâmetro
         ) =
             FigurinhaObra().apply {
                 arguments = Bundle().apply {
@@ -127,6 +162,7 @@ class FigurinhaObra : Fragment() {
                     putString(ARG_DESCRICAO, descricao)
                     putString(USER_PATH, userPath)
                     putString("obraPath", obraPath) // Adicionando ao Bundle
+                    putBoolean(COMPLETE_QUIZ, completeQuiz) // Adicionando ao Bundle
                 }
             }
     }
