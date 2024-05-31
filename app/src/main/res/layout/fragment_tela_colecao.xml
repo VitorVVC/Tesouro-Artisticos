@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".tela_colecao">
+    tools:context=".TelaColecao">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -13,19 +13,18 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycleItems"
-            android:layout_width="330dp"
-            android:layout_height="417dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.493"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/headerColecao"
             app:layout_constraintVertical_bias="0.78" />
 
         <TextView
             android:id="@+id/headerColecao"
-            android:layout_width="320dp"
-            android:layout_height="76dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@drawable/borda_arredondada"
             android:textColor="#fff"
             android:fontFamily="@font/nunito_sans"
@@ -33,14 +32,12 @@
             android:text="COLEÇÃO"
             android:textAlignment="center"
             android:textSize="34sp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/recycleItems"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.064" />
 
-        <!-- Layout do item da RecyclerView -->
         <Button
             android:id="@+id/button"
             android:layout_width="170dp"
@@ -53,8 +50,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/headerColecao"
             app:layout_constraintVertical_bias="0.017" />
-
-        <include layout="@layout/item_obra" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -2,7 +2,6 @@ package com.example.tesourosartsticos
 
 import android.os.Bundle
 import android.widget.Toast
-import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment
@@ -20,8 +19,9 @@ class MainActivity : AppCompatActivity() {
 
         // Receber o caminho do usuário do Intent
         userPath = intent.getStringExtra("USER_PATH")
+
         // Inicializar o ViewModel
-        var userViewModel = ViewModelProvider(this).get(UserViewModel::class.java)
+        val userViewModel = ViewModelProvider(this).get(UserViewModel::class.java)
         // Configurar o userPath no ViewModel
         userViewModel.userPath = userPath
 
@@ -32,9 +32,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Configuração do NavHostFragment
-        val navHostFragment =
-            supportFragmentManager.findFragmentById(R.id.fragmentContainerView5) as? NavHostFragment
-                ?: throw IllegalStateException("NavHostFragment não encontrado")
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView5) as? NavHostFragment
+        if (navHostFragment == null) {
+            throw IllegalStateException("NavHostFragment não encontrado")
+        }
 
         val navController = navHostFragment.navController
         val bottomNavView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
@@ -67,6 +68,5 @@ class MainActivity : AppCompatActivity() {
                 else -> false
             }
         }
-
     }
 }
