@@ -12,6 +12,7 @@ import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -27,16 +28,18 @@ class FigurinhaObra : Fragment() {
     private var autor: String? = null
     private var descricao: String? = null
     private var userPath: String? = null
+    private var obraPath: String? = null // Adicionando a variável para o caminho da obra
     private lateinit var firestore: FirebaseFirestore
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            titulo = it.getString(ARG_TITULO)
-            imageUrl = it.getString(ARG_IMAGE_URL)
-            autor = it.getString(ARG_AUTOR)
-            descricao = it.getString(ARG_DESCRICAO)
-            userPath = it.getString(USER_PATH)
+            titulo = it.getString("titulo")
+            imageUrl = it.getString("imageUrl")
+            autor = it.getString("autor")
+            descricao = it.getString("descricao")
+            userPath = it.getString("userPath")
+            obraPath = it.getString("obraPath") // Obtendo o caminho da obra
         }
         firestore = FirebaseFirestore.getInstance()
     }
@@ -64,47 +67,40 @@ class FigurinhaObra : Fragment() {
             .override(300, 300)
             .into(imagemImageView)
 
-        val btnVoltar = view.findViewById<Button>(R.id.btnVoltar)
-        btnVoltar.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.colecao)
-        }
-
         userPath?.let { userPath ->
-            val obrasUserCollectionRef = firestore.collection("Logins/$userPath/ObrasUser")
-            obrasUserCollectionRef.get()
-                .addOnSuccessListener { documents ->
-                    for (document in documents) {
-                        // Atualizar as variáveis com os dados da primeira obra encontrada
-                        titulo = document.getString("titulo")
-                        imageUrl = document.getString("imageUrl")
-                        autor = document.getString("autor")
-                        descricao = document.getString("descricao")
-                        val progress = document.getLong("progresso")?.toInt() ?: 0 // Valor padrão é 0
+            obraPath?.let { obraPath ->
+                val obraDocumentRef = firestore.collection("Logins/$userPath/ObrasUser").document(obraPath)
+                obraDocumentRef.get()
+                    .addOnSuccessListener { document ->
+                        if (document != null) {
+                            titulo = document.getString("titulo")
+                            imageUrl = document.getString("imageUrl")
+                            autor = document.getString("autor")
+                            descricao = document.getString("descricao")
+                            val progress = document.getLong("progresso")?.toInt() ?: 0
 
-                        // Atualizar os campos na UI
-                        tituloTextView.text = titulo
-                        autorTextView.text = autor
-                        detalhesTextView.text = descricao
-                        Glide.with(this@FigurinhaObra)
-                            .load(imageUrl)
-                            .override(300, 300)
-                            .into(imagemImageView)
+                            tituloTextView.text = titulo
+                            autorTextView.text = autor
+                            detalhesTextView.text = descricao
+                            Glide.with(this@FigurinhaObra)
+                                .load(imageUrl)
+                                .override(300, 300)
+                                .into(imagemImageView)
 
-                        // Atualizar a progressBar com base no progresso
-                        progressBar.progress = when (progress) {
-                            0 -> 0
-                            1 -> progressBar.max / 2
-                            2 -> progressBar.max
-                            else -> 0 // Defina um valor padrão para outros casos
+                            progressBar.progress = when (progress) {
+                                0 -> 0
+                                1 -> progressBar.max / 2
+                                2 -> progressBar.max
+                                else -> 75
+                            }
+                        } else {
+                            Log.e("ERROR", "Documento não encontrado.")
                         }
-
-                        // Sair do loop após a primeira obra encontrada
-                        break
                     }
-                }
-                .addOnFailureListener { exception ->
-                    Log.e("ERROR", "Erro ao obter obras do usuário", exception)
-                }
+                    .addOnFailureListener { exception ->
+                        Log.e("ERROR", "Erro ao obter obra do usuário", exception)
+                    }
+            }
         }
 
         return view
@@ -117,7 +113,8 @@ class FigurinhaObra : Fragment() {
             imageUrl: String,
             autor: String,
             descricao: String,
-            userPath: String
+            userPath: String,
+            obraPath: String // Adicionando o novo parâmetro
         ) =
             FigurinhaObra().apply {
                 arguments = Bundle().apply {
@@ -126,6 +123,7 @@ class FigurinhaObra : Fragment() {
                     putString(ARG_AUTOR, autor)
                     putString(ARG_DESCRICAO, descricao)
                     putString(USER_PATH, userPath)
+                    putString("obraPath", obraPath) // Adicionando ao Bundle
                 }
             }
     }

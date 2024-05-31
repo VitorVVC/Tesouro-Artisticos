@@ -16,7 +16,8 @@ data class Obra(
     val titulo: String,
     val imageUrl: String,
     val autor: String?,
-    val descricao: String?
+    val descricao: String?,
+    val documentPath: String
 )
 
 class ObrasAdapter(private val obraList: List<Obra>) :
@@ -57,6 +58,8 @@ class ObrasAdapter(private val obraList: List<Obra>) :
                     putString("imageUrl", obra.imageUrl)
                     putString("autor", obra.autor)
                     putString("descricao", obra.descricao)
+                    putString("obraPath", obra.documentPath) // Passando o caminho do documento
+                    putString("userPath", userPath) // Passando o caminho do usuário
                 }
                 itemView.findNavController()
                     .navigate(R.id.fragment_figurinha_obra, bundle)

@@ -39,7 +39,13 @@ class TelaColecao : Fragment() {
         val recyclerView = view.findViewById<RecyclerView>(R.id.recycleItems)
         recyclerView.layoutManager = LinearLayoutManager(context)
 
-        // Consulta as obras específicas da coleção do usuário
+        // Carregar e configurar as obras
+        loadObras()
+
+        return view
+    }
+
+    private fun loadObras() {
         userViewModel.userPath?.let { userPath ->
             val db = Firebase.firestore
             db.collection("Logins").document(userPath).collection("ObrasUser")
@@ -53,26 +59,25 @@ class TelaColecao : Fragment() {
                         val autor = document.getString("autor")
                         val descricao = document.getString("descricao")
                         if (nome != null && imageUrl != null) {
-                            val obra = Obra(nome, imageUrl, autor, descricao)
+                            val obra = Obra(nome, imageUrl, autor, descricao, document.id)
                             obrasList.add(obra)
                         } else {
                             Log.w(TAG, "Obra com informações faltando: $document")
                         }
                     }
                     Log.d(TAG, "Número de obras carregadas: ${obrasList.size}")
-                    setupRecyclerView(view, obrasList)
+                    // Configurar o adaptador da RecyclerView
+                    setupRecyclerView(obrasList)
                 }
                 .addOnFailureListener { exception ->
                     Log.e(TAG, "Erro ao obter documentos: ", exception)
                 }
         }
-
-        return view
     }
 
-    private fun setupRecyclerView(view: View, obrasList: List<Obra>) {
-        val recyclerView = view.findViewById<RecyclerView>(R.id.recycleItems)
+    private fun setupRecyclerView(obrasList: List<Obra>) {
         val adapter = ObrasAdapter(obrasList)
+        val recyclerView = requireView().findViewById<RecyclerView>(R.id.recycleItems)
         recyclerView.adapter = adapter
     }
 

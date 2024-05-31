@@ -33,9 +33,7 @@ class MainActivity : AppCompatActivity() {
 
         // Configuração do NavHostFragment
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView5) as? NavHostFragment
-        if (navHostFragment == null) {
-            throw IllegalStateException("NavHostFragment não encontrado")
-        }
+            ?: throw IllegalStateException("NavHostFragment não encontrado")
 
         val navController = navHostFragment.navController
         val bottomNavView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
