@@ -51,12 +51,13 @@ class FigurinhaObra : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_figurinha_obra, container, false)
 
+
+        var progressBar: ProgressBar = view.findViewById(R.id.progressBar)
         val tituloTextView: Button = view.findViewById(R.id.headerObra)
         val imagemImageView: ImageView = view.findViewById(R.id.obraImage)
         val autorTextView: TextView = view.findViewById(R.id.autor)
         val detalhesTextView: TextView = view.findViewById(R.id.descricao)
         val bordaImage: Button = view.findViewById(R.id.borda)
-        val progressBar: ProgressBar = view.findViewById(R.id.progressBar)
 
         tituloTextView.text = titulo
         autorTextView.text = autor
@@ -69,7 +70,8 @@ class FigurinhaObra : Fragment() {
 
         userPath?.let { userPath ->
             obraPath?.let { obraPath ->
-                val obraDocumentRef = firestore.collection("Logins/$userPath/ObrasUser").document(obraPath)
+                val obraDocumentRef =
+                    firestore.collection("Logins/$userPath/ObrasUser").document(obraPath)
                 obraDocumentRef.get()
                     .addOnSuccessListener { document ->
                         if (document != null) {
@@ -79,6 +81,12 @@ class FigurinhaObra : Fragment() {
                             descricao = document.getString("descricao")
                             val progress = document.getLong("progresso")?.toInt() ?: 0
 
+                            progressBar.progress = when (progress) {
+                                0 -> 0
+                                1 -> progressBar.max / 2
+                                2 -> progressBar.max
+                                else -> 75
+                            }
                             tituloTextView.text = titulo
                             autorTextView.text = autor
                             detalhesTextView.text = descricao
@@ -87,12 +95,7 @@ class FigurinhaObra : Fragment() {
                                 .override(300, 300)
                                 .into(imagemImageView)
 
-                            progressBar.progress = when (progress) {
-                                0 -> 0
-                                1 -> progressBar.max / 2
-                                2 -> progressBar.max
-                                else -> 75
-                            }
+
                         } else {
                             Log.e("ERROR", "Documento não encontrado.")
                         }
