@@ -32,8 +32,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Configuração do NavHostFragment
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView5) as? NavHostFragment
-            ?: throw IllegalStateException("NavHostFragment não encontrado")
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.fragmentContainerView5) as? NavHostFragment
+                ?: throw IllegalStateException("NavHostFragment não encontrado")
 
         val navController = navHostFragment.navController
         val bottomNavView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
@@ -49,7 +50,6 @@ class MainActivity : AppCompatActivity() {
                     .commit()
             }
         }
-
         bottomNavView.setOnNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.colecao -> {
@@ -62,7 +62,9 @@ class MainActivity : AppCompatActivity() {
                     }
                     true
                 }
-                // Outros casos para outros itens do menu bottom
+//                R.id.camera -> {}
+//                R.id.settings -> {}
+//                R.id.home -> {}
                 else -> false
             }
         }
