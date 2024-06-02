@@ -1,10 +1,14 @@
 package com.example.tesourosartsticos
 
+import android.content.ContentValues
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
+import com.example.tesourosartsticos.models.UserViewModel
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -17,6 +21,13 @@ class MainActivity : AppCompatActivity() {
 
         // Receber o caminho do usuário do Intent
         userPath = intent.getStringExtra("USER_PATH")
+
+        // Inicializar o ViewModel
+        val userViewModel = ViewModelProvider(this).get(UserViewModel::class.java)
+        // Configurar o userPath no ViewModel
+        userViewModel.userPath = userPath
+        Log.d(ContentValues.TAG, "onCreate ( MainActivity ): userPath=$userPath")
+
 
         if (userPath == null) {
             Toast.makeText(this, "Erro ao obter caminho do usuário", Toast.LENGTH_SHORT).show()
@@ -41,6 +52,24 @@ class MainActivity : AppCompatActivity() {
                     .replace(R.id.fragmentContainerView5, perfilFragment)
                     .addToBackStack(null)
                     .commit()
+            }
+        }
+        bottomNavView.setOnNavigationItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.colecao -> {
+                    // Passar o userPath para a tela de coleção usando o ViewModel
+                    userViewModel.userPath?.let { userPath ->
+                        val bundle = Bundle().apply {
+                            putString("USER_PATH", userPath)
+                        }
+                        navController.navigate(R.id.colecao, bundle)
+                    }
+                    true
+                }
+//                R.id.camera -> {}
+//                R.id.settings -> {}
+//                R.id.home -> {}
+                else -> false
             }
         }
     }

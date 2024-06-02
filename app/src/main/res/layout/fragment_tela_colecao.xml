@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".tela_colecao">
+    tools:context=".TelaColecao">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -13,48 +13,44 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycleItems"
-            android:layout_width="330dp"
-            android:layout_height="417dp"
+            android:layout_width="346dp"
+            android:layout_height="330dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.493"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/headerColecao"
-            app:layout_constraintVertical_bias="0.622" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.651" />
 
         <TextView
             android:id="@+id/headerColecao"
-            android:layout_width="320dp"
-            android:layout_height="76dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@drawable/borda_arredondada"
-            android:textColor="#fff"
             android:fontFamily="@font/nunito_sans"
             android:gravity="center"
             android:text="COLEÇÃO"
             android:textAlignment="center"
+            android:textColor="#fff"
             android:textSize="34sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.064" />
+            app:layout_constraintVertical_bias="0.046" />
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/btnOrdenar"
+            android:layout_width="170dp"
+            android:layout_height="56dp"
             android:backgroundTint="#1C1B1F"
             android:text="MUDAR ORDENAÇÃO"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.203"
+            app:layout_constraintHorizontal_bias="0.124"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/headerColecao"
-            app:layout_constraintVertical_bias="0.053" />
-
-        <!-- Layout do item da RecyclerView -->
-        <include layout="@layout/item_obra" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.217" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

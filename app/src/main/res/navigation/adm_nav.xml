@@ -159,10 +159,16 @@
             app:popUpTo="@id/fragment_figurinha_obra"
             app:enterAnim="@anim/nav_default_enter_anim"
             app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/backToColecao"
+            app:destination="@id/colecao"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/fragment_figurinha_obra"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/colecao"
-        android:name="com.example.tesourosartsticos.tela_colecao"
+        android:name="com.example.tesourosartsticos.TelaColecao"
         android:label="fragment_tela_colecao"
         tools:layout="@layout/fragment_tela_colecao" >
         <action

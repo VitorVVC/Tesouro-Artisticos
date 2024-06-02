@@ -56,8 +56,10 @@
             android:layout_height="35dp"
             android:layout_marginTop="16dp"
             android:indeterminate="false"
+            android:indeterminateDrawable="@android:drawable/progress_horizontal"
             android:max="100"
             android:progress="0"
+            android:progressDrawable="@android:drawable/progress_horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/borda" />
@@ -87,19 +89,16 @@
             app:layout_constraintVertical_bias="0.723" />
 
         <Button
-            android:id="@+id/btnVoltar"
+            android:id="@+id/btnGoToQuiz"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="513dp"
-            android:background="@drawable/button_background"
-            app:backgroundTint="@null"
-            android:text="Voltar"
+            android:text="Responda o quiz"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintHorizontal_bias="0.471"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.835" />
+            app:layout_constraintVertical_bias="0.863" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
