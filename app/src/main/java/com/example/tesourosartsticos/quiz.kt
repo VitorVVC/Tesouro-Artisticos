@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.RadioButton
 import android.widget.RadioGroup
+import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -50,6 +51,34 @@ class quiz : Fragment() {
         val opErradaUm: RadioButton = view.findViewById(R.id.opErradaUm)
         val opErradaDois: RadioButton = view.findViewById(R.id.opErradaDois)
         val opErradaTres: RadioButton = view.findViewById(R.id.opErradaTres)
+        val txtPergunta: TextView = view.findViewById(R.id.perguntaQuiz)
+
+        // Carregar perguntas do Firestore
+        userPath?.let { userPath ->
+            obraPath?.let { obraPath ->
+                val documentReference =
+                    firestore.collection("Logins/$userPath/ObrasUser")
+                        .document(obraPath)
+                        .collection("QuizObrasUser")
+                        .document(obraPath)
+
+                documentReference.get()
+                    .addOnSuccessListener { document ->
+                        if (document != null && document.exists()) {
+                            txtPergunta.text = document.getString("perguntaQuiz")
+                            opCorreta.text = document.getString("opCorreta")
+                            opErradaUm.text = document.getString("opErradaUm")
+                            opErradaDois.text = document.getString("opErradaDois")
+                            opErradaTres.text = document.getString("opErradaTres")
+                        } else {
+                            Log.d(TAG, "Documento não encontrado")
+                        }
+                    }
+                    .addOnFailureListener { e ->
+                        Log.w(TAG, "Erro ao obter documento", e)
+                    }
+            }
+        }
 
         btnEnviar.setOnClickListener {
             val selectedRadioButtonId = radioGroup.checkedRadioButtonId
