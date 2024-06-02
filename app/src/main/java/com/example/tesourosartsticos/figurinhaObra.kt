@@ -1,6 +1,7 @@
 package com.example.tesourosartsticos
 
 import android.annotation.SuppressLint
+import android.content.ContentValues.TAG
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -40,12 +41,13 @@ class FigurinhaObra : Fragment() {
             imageUrl = it.getString(ARG_IMAGE_URL)
             autor = it.getString(ARG_AUTOR)
             descricao = it.getString(ARG_DESCRICAO)
-            userPath = it.getString(USER_PATH)
+            userPath = it.getString("userPath")
             obraPath = it.getString("obraPath") // Obtendo o caminho da obra
             completeQuiz = it.getBoolean(COMPLETE_QUIZ) // Recuperando completeQuiz do Bundle
         }
         firestore = FirebaseFirestore.getInstance()
         fetchCompleteQuiz() // Recuperando completeQuiz do banco de dados
+        Log.d(TAG, "onCreate (figurinhaObra.kt): userPath=$userPath, obraPath=$obraPath")
     }
 
     @SuppressLint("MissingInflatedId")
@@ -55,20 +57,21 @@ class FigurinhaObra : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_figurinha_obra, container, false)
 
-        var progressBar: ProgressBar = view.findViewById(R.id.progressBar)
+        val progressBar: ProgressBar = view.findViewById(R.id.progressBar)
         val tituloTextView: Button = view.findViewById(R.id.headerObra)
         val imagemImageView: ImageView = view.findViewById(R.id.obraImage)
         val autorTextView: TextView = view.findViewById(R.id.autor)
         val detalhesTextView: TextView = view.findViewById(R.id.descricao)
         val bordaImage: Button = view.findViewById(R.id.borda)
 
-        val btnGoToQuiz: Button = view.findViewById(R.id.btnGoToQuiz);
+        val btnGoToQuiz: Button = view.findViewById(R.id.btnGoToQuiz)
         btnGoToQuiz.setOnClickListener {
             if (!completeQuiz) {
                 // Navegar para o quiz da obra específica
                 val bundle = Bundle().apply {
                     putString(USER_PATH, userPath)
                     putString("obraPath", obraPath)
+                    putBoolean(COMPLETE_QUIZ, completeQuiz)
                 }
                 findNavController().navigate(R.id.quiz, bundle)
             } else {

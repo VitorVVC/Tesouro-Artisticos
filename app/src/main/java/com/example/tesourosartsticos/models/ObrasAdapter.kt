@@ -17,16 +17,12 @@ data class Obra(
     val imageUrl: String,
     val autor: String?,
     val descricao: String?,
-    val documentPath: String
+    val documentPath: String?,
+    val userPath:String?
 )
 
 class ObrasAdapter(private val obraList: List<Obra>) :
     RecyclerView.Adapter<ObrasAdapter.ViewHolderClass>() {
-    private var userPath: String? = null
-
-    fun setUserPath(userPath: String?) {
-        this.userPath = userPath
-    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolderClass {
         val itemView =
@@ -59,7 +55,7 @@ class ObrasAdapter(private val obraList: List<Obra>) :
                     putString("autor", obra.autor)
                     putString("descricao", obra.descricao)
                     putString("obraPath", obra.documentPath) // Passando o caminho do documento
-                    putString("userPath", userPath) // Passando o caminho do usuário
+                    putString("userPath", obra.userPath) // Passando o caminho do usuário
                 }
                 itemView.findNavController()
                     .navigate(R.id.fragment_figurinha_obra, bundle)

@@ -64,7 +64,15 @@ class TelaColecao : Fragment() {
                                 val autor = document.getString("autor")
                                 val descricao = document.getString("descricao")
                                 if (nome != null && imageUrl != null) {
-                                    val obra = Obra(nome, imageUrl, autor, descricao, document.id)
+                                    val obra =
+                                        Obra(
+                                            nome,
+                                            imageUrl,
+                                            autor,
+                                            descricao,
+                                            document.id,
+                                            userPath
+                                        )
                                     obrasList.add(obra)
                                 } else {
                                     Log.w(TAG, "Obra com informações faltando: $document")
@@ -103,7 +111,7 @@ class TelaColecao : Fragment() {
                         val autor = document.getString("autor")
                         val descricao = document.getString("descricao")
                         if (nome != null && imageUrl != null) {
-                            val obra = Obra(nome, imageUrl, autor, descricao, document.id)
+                            val obra = Obra(nome, imageUrl, autor, descricao, document.id, userPath)
                             obrasList.add(obra)
                         } else {
                             Log.w(TAG, "Obra com informações faltando: $document")

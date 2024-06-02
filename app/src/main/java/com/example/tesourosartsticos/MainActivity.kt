@@ -1,6 +1,8 @@
 package com.example.tesourosartsticos
 
+import android.content.ContentValues
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
@@ -24,6 +26,8 @@ class MainActivity : AppCompatActivity() {
         val userViewModel = ViewModelProvider(this).get(UserViewModel::class.java)
         // Configurar o userPath no ViewModel
         userViewModel.userPath = userPath
+        Log.d(ContentValues.TAG, "onCreate ( MainActivity ): userPath=$userPath")
+
 
         if (userPath == null) {
             Toast.makeText(this, "Erro ao obter caminho do usuário", Toast.LENGTH_SHORT).show()
