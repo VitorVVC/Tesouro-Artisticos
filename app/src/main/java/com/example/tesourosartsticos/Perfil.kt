@@ -32,7 +32,7 @@ class Perfil : Fragment() {
 
         val btnVoltar = view.findViewById<Button>(R.id.btnVoltar)
         btnVoltar.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.home)
+            Navigation.findNavController(view).navigate(R.id.backToHome)
         }
 
         return view

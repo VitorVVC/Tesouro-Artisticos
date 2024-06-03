@@ -8,6 +8,7 @@
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/imagem_fundo"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

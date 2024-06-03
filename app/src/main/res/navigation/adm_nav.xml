@@ -150,7 +150,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_figurinha_obra"
-        android:name="com.example.tesourosartsticos.FigurinhaObra"
+        android:name="com.example.tesourosartsticos.figurinhaObra"
         android:label="fragment_figurinha_obra"
         tools:layout="@layout/fragment_figurinha_obra">
         <action
