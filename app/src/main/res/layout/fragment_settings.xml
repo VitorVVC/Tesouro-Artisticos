@@ -47,15 +47,15 @@
             android:layout_width="250dp"
             android:layout_height="64dp"
             android:background="@drawable/button_background"
-            app:backgroundTint="@null"
             android:text="ADMINISTRADOR"
             android:textSize="24sp"
+            app:backgroundTint="@null"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.755" />
+            app:layout_constraintVertical_bias="0.644" />
 
         <TextView
             android:id="@+id/configText"
@@ -73,20 +73,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.118" />
 
-        <Button
-            android:id="@+id/btnSuporte"
-            android:layout_width="250dp"
-            android:layout_height="64dp"
-            android:text="SUPORTE"
-            android:background="@drawable/button_background"
-            app:backgroundTint="@null"
-            android:textSize="25sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.635" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
