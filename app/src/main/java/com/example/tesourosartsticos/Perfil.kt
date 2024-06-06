@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import com.google.firebase.firestore.ktx.firestore
@@ -32,7 +33,8 @@ class Perfil : Fragment() {
 
         val btnVoltar = view.findViewById<Button>(R.id.btnVoltar)
         btnVoltar.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.backToHome)
+
+            Navigation.findNavController(view).navigate(R.id.home)
         }
 
         return view
@@ -41,7 +43,8 @@ class Perfil : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        val settings = view.context.getSharedPreferences("perfil", AppCompatActivity.MODE_PRIVATE)
+        var valor = settings.getString("chave","0")
         // Carrega os dados do perfil do usuário
         loadUserProfile()
     }

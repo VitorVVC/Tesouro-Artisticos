@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
             supportFragmentManager.findFragmentById(R.id.fragmentContainerView5) as? NavHostFragment
                 ?: throw IllegalStateException("NavHostFragment não encontrado")
 
+
         val navController = navHostFragment.navController
         val bottomNavView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         bottomNavView.setupWithNavController(navController)
@@ -47,11 +48,15 @@ class MainActivity : AppCompatActivity() {
         // Passar o caminho do usuário para o fragmento "perfil" quando necessário
         navController.addOnDestinationChangedListener { _, destination, _ ->
             if (destination.id == R.id.perfil) {
-                val perfilFragment = Perfil.newInstance(userPath!!)
-                supportFragmentManager.beginTransaction()
-                    .replace(R.id.fragmentContainerView5, perfilFragment)
-                    .addToBackStack(null)
-                    .commit()
+                val settings = getSharedPreferences("perfil", MODE_PRIVATE)
+                val prefEditor = settings.edit()
+                prefEditor.putString("chave","valor")
+                prefEditor.apply()
+//                val perfilFragment = Perfil.newInstance(userPath!!)
+//                supportFragmentManager.beginTransaction()
+//                    .replace(R.id.fragmentContainerView5, perfilFragment)
+//                    .addToBackStack(null)
+//                    .commit()
             }
         }
         bottomNavView.setOnNavigationItemSelectedListener { menuItem ->
@@ -66,9 +71,18 @@ class MainActivity : AppCompatActivity() {
                     }
                     true
                 }
-//                R.id.camera -> {}
-//                R.id.settings -> {}
-//                R.id.home -> {}
+                R.id.camera -> {
+                    navController.navigate(R.id.camera)
+                    true
+                }
+                R.id.settings -> {
+                    navController.navigate(R.id.settings)
+                    true
+                }
+                R.id.home -> {
+                    navController.navigate(R.id.home)
+                    true
+                }
                 else -> false
             }
         }
