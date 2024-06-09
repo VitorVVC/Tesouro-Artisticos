@@ -22,10 +22,13 @@
             app:enterAnim="@anim/nav_default_enter_anim"
             app:popUpTo="@id/home"
             app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_home_to_fragment_figurinha_obra2"
+            app:destination="@id/fragment_figurinha_obra" />
     </fragment>
     <fragment
         android:id="@+id/colecao"
-        android:name="com.example.tesourosartsticos.tela_colecao"
+        android:name="com.example.tesourosartsticos.TelaColecao"
         android:label="fragment_tela_colecao"
         tools:layout="@layout/fragment_tela_colecao" >
 
@@ -40,7 +43,11 @@
         android:id="@+id/camera"
         android:name="com.example.tesourosartsticos.Camera"
         android:label="fragment_camera"
-        tools:layout="@layout/fragment_camera" />
+        tools:layout="@layout/fragment_camera" >
+        <action
+            android:id="@+id/action_camera_to_fragment_figurinha_obra2"
+            app:destination="@id/fragment_figurinha_obra" />
+    </fragment>
     <fragment
         android:id="@+id/ranking"
         android:name="com.example.tesourosartsticos.Ranking"
@@ -84,7 +91,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_figurinha_obra"
-        android:name="com.example.tesourosartsticos.FigurinhaObra"
+        android:name="com.example.tesourosartsticos.figurinhaObra"
         android:label="fragment_figurinha_obra"
         tools:layout="@layout/fragment_figurinha_obra">
         <action

@@ -8,13 +8,17 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/imagem_fundo"
+        >
 
         <Button
             android:id="@+id/button"
             android:layout_width="250dp"
             android:layout_height="64dp"
             android:text="TEMA"
+            android:background="@drawable/button_background"
+            app:backgroundTint="@null"
             android:textSize="25sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -27,6 +31,8 @@
             android:id="@+id/btnSobre"
             android:layout_width="250dp"
             android:layout_height="64dp"
+            android:background="@drawable/button_background"
+            app:backgroundTint="@null"
             android:text="SOBRE"
             android:textSize="25sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -40,6 +46,9 @@
             android:id="@+id/btnSuporte"
             android:layout_width="250dp"
             android:layout_height="64dp"
+            android:background="@drawable/button_background"
+            app:backgroundTint="@null"
+            android:gravity="center"
             android:text="SUPORTE"
             android:textSize="25sp"
             app:layout_constraintBottom_toBottomOf="parent"

@@ -37,18 +37,12 @@ class Settings : Fragment() {
         val btnTema = view.findViewById<Button>(R.id.btnTema);
         val btnSobre = view.findViewById<Button>(R.id.btnSobre);
 
+        val colorChange = false
+
         btnAdm.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.navigateToAdmin)
         }
 
-        btnSuporte.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.settings); // ALTERAR PARA SUPPORT
-        }
-
-        // TODO
-        btnTema.setOnClickListener {
-
-        }
 
         btnSobre.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.navToSobre)

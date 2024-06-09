@@ -1,5 +1,6 @@
 package com.example.tesourosartsticos
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -28,11 +29,12 @@ class gerenciar_ranking : Fragment() {
         }
     }
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_ranking, container, false)
+        val view = inflater.inflate(R.layout.fragment_gerenciar_ranking, container, false)
         val btnVoltar = view.findViewById<Button>(R.id.btnVoltar)
         val btnRefresh = view.findViewById<Button>(R.id.btnRefresh)
         val topUmTextView = view.findViewById<TextView>(R.id.topUm)
@@ -42,7 +44,7 @@ class gerenciar_ranking : Fragment() {
         val topCincoTextView = view.findViewById<TextView>(R.id.topCinco)
 
         btnVoltar.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.backToHome)
+            Navigation.findNavController(view).navigate(R.id.action_gerenciar_ranking_to_administrador)
         }
 
         btnRefresh.setOnClickListener {

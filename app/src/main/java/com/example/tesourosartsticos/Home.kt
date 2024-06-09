@@ -1,14 +1,20 @@
 package com.example.tesourosartsticos
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.Toast
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,22 +27,24 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class Home : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+    private var userPath: String? = null
+    private var Value: String = "P1SjFADs7A1jh46gnRK3"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
+            userPath = it.getString("USER_PATH")
         }
+
+
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
@@ -51,8 +59,38 @@ class Home : Fragment() {
             Navigation.findNavController(view).navigate(R.id.navigateToPerfil)
         }
 
+        val lastObra = view.findViewById<Button>(R.id.lastObra)
+        lastObra.setOnClickListener{
+            val db = Firebase.firestore
+            db.collection("Logins/$userPath/ObrasUser").document(Value).get()
+                .addOnSuccessListener { document ->
+                    if (document.exists()) {
+                        val obraTitle = document.getString("titulo") ?: "Título não encontrado"
+                        val obraImageUrl = document.getString("imageUrl")
+                        val obraAutor = document.getString("autor")
+                        val obraDescricao = document.getString("descricao")
+
+                        val bundle = Bundle().apply {
+                            putString("titulo", obraTitle)
+                            putString("imageUrl", obraImageUrl)
+                            putString("autor", obraAutor)
+                            putString("descricao", obraDescricao)
+                            putString("userPath", userPath)
+                            putString("obraPath", Value)
+                        }
+                        findNavController().navigate(R.id.fragment_figurinha_obra, bundle)
+                    }
+                }
+                .addOnFailureListener { exception ->
+                    Toast.makeText(requireContext(), "Erro ao acessar o banco de dados: ${exception.message}", Toast.LENGTH_SHORT).show()
+                }
+        }
         return view
     }
+
+
+
+
 
     companion object {
         /**
@@ -65,11 +103,10 @@ class Home : Fragment() {
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
-        fun newInstance(param1: String, param2: String) =
+        fun newInstance(userPath: String) =
             Home().apply {
                 arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
+                    putString("USER_PATH", userPath)
                 }
             }
     }

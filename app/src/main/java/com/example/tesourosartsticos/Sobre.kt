@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.navigation.Navigation
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -34,7 +36,14 @@ class Sobre : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_sobre, container, false)
+        val view = inflater.inflate(R.layout.fragment_sobre, container, false)
+        val btnVoltar = view.findViewById<Button>(R.id.btnVoltar)
+
+        btnVoltar.setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.settings)
+        }
+
+        return view
     }
 
     companion object {
