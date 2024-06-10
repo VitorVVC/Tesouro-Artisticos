@@ -5,24 +5,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.tesourosartsticos.R
 
-public data class Obra(
-    val titulo: String,
-    val imageUrl: String,
-    val autor: String?,
-    val descricao: String?,
-    val documentPath: String?,
-    val userPath:String?
-)
 
-class ObrasAdapter(private val obraList: List<Obra>) :
-    RecyclerView.Adapter<ObrasAdapter.ViewHolderClass>() {
+class AdmObrasAdapter(private val obraList: List<Obra>) :
+    RecyclerView.Adapter<AdmObrasAdapter.ViewHolderClass>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolderClass {
         val itemView =
