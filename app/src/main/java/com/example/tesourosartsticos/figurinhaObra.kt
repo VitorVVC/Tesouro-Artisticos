@@ -24,7 +24,7 @@ private const val ARG_DESCRICAO = "descricao"
 private const val USER_PATH = "USER_PATH"
 private const val COMPLETE_QUIZ = "completeQuiz"
 
-class FigurinhaObra : Fragment() {
+class figurinhaObra : Fragment() {
     private var titulo: String? = null
     private var imageUrl: String? = null
     private var autor: String? = null
@@ -111,7 +111,7 @@ class FigurinhaObra : Fragment() {
                             tituloTextView.text = titulo
                             autorTextView.text = autor
                             detalhesTextView.text = descricao
-                            Glide.with(this@FigurinhaObra)
+                            Glide.with(this@figurinhaObra)
                                 .load(imageUrl)
                                 .override(300, 300)
                                 .into(imagemImageView)
@@ -157,7 +157,7 @@ class FigurinhaObra : Fragment() {
             obraPath: String, // Adicionando o novo parâmetro
             completeQuiz: Boolean // Adicionando o novo parâmetro
         ) =
-            FigurinhaObra().apply {
+            figurinhaObra().apply {
                 arguments = Bundle().apply {
                     putString(ARG_TITULO, titulo)
                     putString(ARG_IMAGE_URL, imageUrl)

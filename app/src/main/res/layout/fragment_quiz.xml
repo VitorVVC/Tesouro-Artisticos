@@ -7,9 +7,9 @@
     tools:context=".quiz">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/imagem_fundo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#6D6969"
         android:textAlignment="center">
 
         <Button
@@ -29,7 +29,9 @@
             android:id="@+id/btnResponderQuiz"
             android:layout_width="250dp"
             android:layout_height="85dp"
-            android:backgroundTint="#D9D9D9"
+
+            app:backgroundTint="@null"
+            android:background="@drawable/borda_arredondada"
             android:text="Responder Quiz"
             android:textColor="#000000"
             android:textSize="24sp"
@@ -73,7 +75,7 @@
                 android:layout_height="50dp"
                 android:backgroundTint="#2B2929"
                 android:text="Opção UM"
-                android:textColor="#FFFFFF" />
+                android:textColor="#000" />
 
             <RadioButton
                 android:id="@+id/opErradaUm"
@@ -81,7 +83,7 @@
                 android:layout_height="50dp"
                 android:backgroundTint="#2B2929"
                 android:text="Opção DOIS"
-                android:textColor="#FFFFFF" />
+                android:textColor="#000" />
 
             <RadioButton
                 android:id="@+id/opErradaDois"
@@ -89,7 +91,7 @@
                 android:layout_height="50dp"
                 android:backgroundTint="#2B2929"
                 android:text="Opção TRÊS"
-                android:textColor="#FFFFFF" />
+                android:textColor="#000" />
 
             <RadioButton
                 android:id="@+id/opErradaTres"
@@ -97,7 +99,7 @@
                 android:layout_height="50dp"
                 android:backgroundTint="#2B2929"
                 android:text="Opção QUATRO"
-                android:textColor="#FFFFFF" />
+                android:textColor="#000" />
 
         </RadioGroup>
 
@@ -107,6 +109,8 @@
             android:id="@+id/btnEnviarQuiz"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            app:backgroundTint="@null"
             android:text="Enviar Quiz"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

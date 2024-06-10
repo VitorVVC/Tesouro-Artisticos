@@ -6,9 +6,10 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 tools:context=".adicionar_quiz">
     <androidx.constraintlayout.widget.ConstraintLayout
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#6D6969"
+        android:background="@drawable/imagem_fundo"
         android:textAlignment="center">
 
         <Button
@@ -125,6 +126,7 @@ tools:context=".adicionar_quiz">
             app:layout_constraintVertical_bias="0.651" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout
+        >
 
 </FrameLayout>

@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/colecao"
-        android:name="com.example.tesourosartsticos.tela_colecao"
+        android:name="com.example.tesourosartsticos.TelaColecao"
         android:label="fragment_tela_colecao"
         tools:layout="@layout/fragment_tela_colecao" >
 
@@ -84,7 +84,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_figurinha_obra"
-        android:name="com.example.tesourosartsticos.FigurinhaObra"
+        android:name="com.example.tesourosartsticos.figurinhaObra"
         android:label="fragment_figurinha_obra"
         tools:layout="@layout/fragment_figurinha_obra">
         <action

@@ -10,6 +10,8 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.example.tesourosartsticos.models.UserViewModel
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,14 +28,16 @@ class MainActivity : AppCompatActivity() {
         val userViewModel = ViewModelProvider(this).get(UserViewModel::class.java)
         // Configurar o userPath no ViewModel
         userViewModel.userPath = userPath
-        Log.d(ContentValues.TAG, "onCreate ( MainActivity ): userPath=$userPath")
-
+        Log.d(ContentValues.TAG, "onCreate (MainActivity): userPath=$userPath")
 
         if (userPath == null) {
             Toast.makeText(this, "Erro ao obter caminho do usuário", Toast.LENGTH_SHORT).show()
             finish()
             return
         }
+
+        // Carregar o nome do usuário e salvar em SharedPreferences
+        loadUserName(userPath!!)
 
         // Configuração do NavHostFragment
         val navHostFragment =
@@ -44,16 +48,6 @@ class MainActivity : AppCompatActivity() {
         val bottomNavView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         bottomNavView.setupWithNavController(navController)
 
-        // Passar o caminho do usuário para o fragmento "perfil" quando necessário
-        navController.addOnDestinationChangedListener { _, destination, _ ->
-            if (destination.id == R.id.perfil) {
-                val perfilFragment = Perfil.newInstance(userPath!!)
-                supportFragmentManager.beginTransaction()
-                    .replace(R.id.fragmentContainerView5, perfilFragment)
-                    .addToBackStack(null)
-                    .commit()
-            }
-        }
         bottomNavView.setOnNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.colecao -> {
@@ -66,11 +60,40 @@ class MainActivity : AppCompatActivity() {
                     }
                     true
                 }
-                // R.id.camera -> {}
-                // R.id.settings -> {}
-                // R.id.home -> {}
+                R.id.camera -> {
+                    navController.navigate(R.id.camera)
+                    true
+                }
+                R.id.settings -> {
+                    navController.navigate(R.id.settings)
+                    true
+                }
+                R.id.home -> {
+                    navController.navigate(R.id.home)
+                    true
+                }
                 else -> false
             }
         }
+    }
+
+    private fun loadUserName(userPath: String) {
+        val db = Firebase.firestore
+        db.collection("Logins").document(userPath)
+            .get()
+            .addOnSuccessListener { document ->
+                val userName = document.getString("nome")
+                if (userName != null) {
+                    val settings = getSharedPreferences("perfil", MODE_PRIVATE)
+                    val prefEditor = settings.edit()
+                    prefEditor.putString("user_name", userName)
+                    prefEditor.apply()
+                } else {
+                    Toast.makeText(this, "Nome do usuário não encontrado", Toast.LENGTH_SHORT).show()
+                }
+            }
+            .addOnFailureListener { e ->
+                Toast.makeText(this, "Erro ao carregar dados do usuário: ${e.message}", Toast.LENGTH_SHORT).show()
+            }
     }
 }

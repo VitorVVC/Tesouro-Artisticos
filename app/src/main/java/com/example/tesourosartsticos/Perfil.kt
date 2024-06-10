@@ -1,5 +1,6 @@
 package com.example.tesourosartsticos
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import com.google.firebase.firestore.ktx.firestore
@@ -38,11 +40,17 @@ class Perfil : Fragment() {
         return view
     }
 
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Carrega os dados do perfil do usuário
+        // Recuperar o nome do usuário do SharedPreferences
+        val settings = view.context.getSharedPreferences("perfil", AppCompatActivity.MODE_PRIVATE)
+        val userName = settings.getString("user_name", "Nome não encontrado")
+
+        // Definir o nome do usuário no TextView
+        view.findViewById<TextView>(R.id.userName)?.text = userName
+
+        // Carregar os dados do perfil do usuário do Firestore
         loadUserProfile()
     }
 
@@ -55,6 +63,13 @@ class Perfil : Fragment() {
                     val userName = document.getString("nome")
                     val userType = if (document.id == "A4DHpnfLZ9PIZzM7zuqB") "Admin" else "User"
 
+                    // Salvar o nome do usuário no SharedPreferences
+                    val settings = activity?.getSharedPreferences("perfil", Context.MODE_PRIVATE)
+                    val prefEditor = settings?.edit()
+                    prefEditor?.putString("user_name", userName)
+                    prefEditor?.apply()
+
+                    // Definir os valores no TextView
                     view?.findViewById<TextView>(R.id.userName)?.text = userName
                     view?.findViewById<TextView>(R.id.userType)?.text = userType
                 }
