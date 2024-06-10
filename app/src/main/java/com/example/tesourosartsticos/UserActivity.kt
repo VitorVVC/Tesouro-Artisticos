@@ -19,7 +19,7 @@ class UserActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_user)
 
         // Receber o caminho do usuário do Intent
         userPath = intent.getStringExtra("USER_PATH")
