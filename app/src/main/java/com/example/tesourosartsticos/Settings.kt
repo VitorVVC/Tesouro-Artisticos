@@ -1,12 +1,16 @@
 package com.example.tesourosartsticos
 
 import android.annotation.SuppressLint
+import android.os.Build
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
+import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.Navigation
 
 
@@ -25,12 +29,16 @@ class Settings : Fragment() {
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.Q)
     @SuppressLint("MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_settings, container, false)
+
+        val settings = view.context.getSharedPreferences("perfil", AppCompatActivity.MODE_PRIVATE)
+        val userName = settings.getString("user_name", "Nome não encontrado")
 
         val btnSuporte = view.findViewById<Button>(R.id.btnSuporte);
         val btnAdm = view.findViewById<Button>(R.id.btnAdm);
@@ -39,6 +47,9 @@ class Settings : Fragment() {
 
         val colorChange = false
 
+        if (userName != "adm"){
+            btnAdm.setTransitionVisibility(View.INVISIBLE)
+        }
         btnAdm.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.navigateToAdmin)
         }
@@ -51,6 +62,7 @@ class Settings : Fragment() {
 
         return view
     }
+
 
     companion object {
         /**
