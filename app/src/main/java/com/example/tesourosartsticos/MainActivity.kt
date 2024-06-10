@@ -66,9 +66,9 @@ class MainActivity : AppCompatActivity() {
                     }
                     true
                 }
-//                R.id.camera -> {}
-//                R.id.settings -> {}
-//                R.id.home -> {}
+                // R.id.camera -> {}
+                // R.id.settings -> {}
+                // R.id.home -> {}
                 else -> false
             }
         }
