@@ -10,7 +10,9 @@
         android:id="@+id/qrCodeTxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Aponte para o QRCode"/>
+        android:text="Aponte para o QRCode"
+        android:textAlignment="center"
+        android:textSize="20sp" />
 
     <androidx.camera.view.PreviewView
         android:layout_width="match_parent"

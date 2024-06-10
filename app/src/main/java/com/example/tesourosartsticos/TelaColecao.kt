@@ -11,6 +11,7 @@ import android.widget.Button
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.tesourosartsticos.R
 import com.example.tesourosartsticos.models.Obra
 import com.example.tesourosartsticos.models.ObrasAdapter
 import com.example.tesourosartsticos.models.UserViewModel
@@ -22,7 +23,6 @@ private const val TAG = "TelaColecaoFragment"
 class TelaColecao : Fragment() {
     private val userViewModel: UserViewModel by viewModels()
     private var isOrdenadoPorNome = false
-    private var recyclerView: RecyclerView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,15 +37,11 @@ class TelaColecao : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_tela_colecao, container, false)
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+        val view = inflater.inflate(R.layout.fragment_tela_colecao, container, false)
 
         // Setup RecyclerView
-        recyclerView = view.findViewById(R.id.recycleItems)
-        recyclerView?.layoutManager = LinearLayoutManager(context)
+        val recyclerView = view.findViewById<RecyclerView>(R.id.recycleItems)
+        recyclerView.layoutManager = LinearLayoutManager(context)
 
         val btnOrdenar = view.findViewById<Button>(R.id.btnOrdenar)
         btnOrdenar.setOnClickListener {
@@ -68,7 +64,15 @@ class TelaColecao : Fragment() {
                                 val autor = document.getString("autor")
                                 val descricao = document.getString("descricao")
                                 if (nome != null && imageUrl != null) {
-                                    val obra = Obra(nome, imageUrl, autor, descricao, document.id, userPath)
+                                    val obra =
+                                        Obra(
+                                            nome,
+                                            imageUrl,
+                                            autor,
+                                            descricao,
+                                            document.id,
+                                            userPath
+                                        )
                                     obrasList.add(obra)
                                 } else {
                                     Log.w(TAG, "Obra com informações faltando: $document")
@@ -89,6 +93,8 @@ class TelaColecao : Fragment() {
 
         // Carregar e configurar as obras
         loadObras()
+
+        return view
     }
 
     private fun loadObras() {
@@ -122,23 +128,17 @@ class TelaColecao : Fragment() {
     }
 
     private fun setupRecyclerView(obrasList: List<Obra>) {
-        recyclerView?.let {
-            val adapter = ObrasAdapter(obrasList)
-            it.adapter = adapter
-        }
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        recyclerView = null
+        val adapter = ObrasAdapter(obrasList)
+        val recyclerView = requireView().findViewById<RecyclerView>(R.id.recycleItems)
+        recyclerView.adapter = adapter
     }
 
     companion object {
         @JvmStatic
-        fun newInstance(userPath: String) =
+        fun newInstance(userP: String) =
             TelaColecao().apply {
                 arguments = Bundle().apply {
-                    putString("USER_PATH", userPath)
+                    putString("USER_PATH", userP)
                 }
             }
     }

@@ -10,6 +10,9 @@
         android:name="com.example.tesourosartsticos.Home"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
+        <argument
+            android:name="userPath"
+            app:argType="string" />
         <action
             android:id="@+id/navigateToRanking"
             app:destination="@id/ranking"
@@ -174,6 +177,9 @@
             app:enterAnim="@anim/nav_default_enter_anim"
             app:popUpTo="@id/fragment_figurinha_obra"
             app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_fragment_figurinha_obra_self"
+            app:destination="@id/fragment_figurinha_obra" />
     </fragment>
     <fragment
         android:id="@+id/colecao"

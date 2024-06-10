@@ -57,7 +57,6 @@ class Camera : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Log.d("GetView e Paths","View: $view \n userPath: $userPath \n \n")
 
         // Initialize the camera
         if (ContextCompat.checkSelfPermission(requireActivity(), Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
@@ -82,9 +81,7 @@ class Camera : Fragment() {
     private fun initCamera() {
 
         cameraProviderListenableFuture = ProcessCameraProvider.getInstance(requireContext())
-        Log.d("GetView preListener","View: $view \n userPath: $userPath \n \n")
         cameraProviderListenableFuture.addListener({
-            Log.d("GetView posListener","View: $view \n userPath: $userPath \n \n")
             try {
                 cameraProvider = cameraProviderListenableFuture.get()
                 bindPreviewAndAnalysis(cameraProvider!!)
@@ -102,13 +99,11 @@ class Camera : Fragment() {
 
     @androidx.annotation.OptIn(ExperimentalGetImage::class)
     private fun bindPreviewAndAnalysis(cameraProvider: ProcessCameraProvider) {
-        Log.d("GetView e Paths (bindPreview)","View: $view \n userPath: $userPath \n \n")
+
         val preview = Preview.Builder()
-//            .setTargetResolution(Size(1280, 720))
             .build()
 
         val imageAnalysis = ImageAnalysis.Builder()
-//            .setTargetResolution(Size(1280, 720))
             .setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
             .build()
 
@@ -162,7 +157,6 @@ class Camera : Fragment() {
                     val obraDescricao = document.getString("descricao")
                     val progresso = document.getLong("progresso")?.toInt() ?:0
 
-                    Log.d("Progresso log", "Progresso: $progresso \n \n \n")
 
                     if(progresso == 0){
                         db.collection("Logins/$userPath/ObrasUser")

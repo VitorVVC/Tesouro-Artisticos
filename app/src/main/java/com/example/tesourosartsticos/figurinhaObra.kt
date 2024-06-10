@@ -24,6 +24,7 @@ private const val ARG_DESCRICAO = "descricao"
 private const val USER_PATH = "USER_PATH"
 private const val COMPLETE_QUIZ = "completeQuiz"
 
+
 class figurinhaObra : Fragment() {
     private var titulo: String? = null
     private var imageUrl: String? = null
@@ -111,10 +112,10 @@ class figurinhaObra : Fragment() {
                             tituloTextView.text = titulo
                             autorTextView.text = autor
                             detalhesTextView.text = descricao
-                            Glide.with(this@figurinhaObra)
-                                .load(imageUrl)
-                                .override(300, 300)
-                                .into(imagemImageView)
+//                            Glide.with(this@figurinhaObra)
+//                                .load(imageUrl)
+//                                .override(300, 300)
+//                                .into(imagemImageView)
                             completeQuiz = document.getBoolean("completeQuiz") ?: false // Recuperando completeQuiz do banco de dados
 
                         } else {

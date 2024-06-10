@@ -1,7 +1,7 @@
 package com.example.tesourosartsticos
 
+import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -23,7 +23,6 @@ class Perfil : Fragment() {
         arguments?.let {
             userPath = it.getString("USER_PATH")
         }
-        Log.d("Perfil","Path: $userPath")
     }
 
     override fun onCreateView(
@@ -35,19 +34,23 @@ class Perfil : Fragment() {
 
         val btnVoltar = view.findViewById<Button>(R.id.btnVoltar)
         btnVoltar.setOnClickListener {
-
             Navigation.findNavController(view).navigate(R.id.home)
         }
 
         return view
     }
 
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        // Recuperar o nome do usuário do SharedPreferences
         val settings = view.context.getSharedPreferences("perfil", AppCompatActivity.MODE_PRIVATE)
-        var valor = settings.getString("chave","0")
-        // Carrega os dados do perfil do usuário
+        val userName = settings.getString("user_name", "Nome não encontrado")
+
+        // Definir o nome do usuário no TextView
+        view.findViewById<TextView>(R.id.userName)?.text = userName
+
+        // Carregar os dados do perfil do usuário do Firestore
         loadUserProfile()
     }
 
@@ -60,6 +63,13 @@ class Perfil : Fragment() {
                     val userName = document.getString("nome")
                     val userType = if (document.id == "A4DHpnfLZ9PIZzM7zuqB") "Admin" else "User"
 
+                    // Salvar o nome do usuário no SharedPreferences
+                    val settings = activity?.getSharedPreferences("perfil", Context.MODE_PRIVATE)
+                    val prefEditor = settings?.edit()
+                    prefEditor?.putString("user_name", userName)
+                    prefEditor?.apply()
+
+                    // Definir os valores no TextView
                     view?.findViewById<TextView>(R.id.userName)?.text = userName
                     view?.findViewById<TextView>(R.id.userType)?.text = userType
                 }
