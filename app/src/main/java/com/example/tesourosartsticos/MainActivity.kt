@@ -48,20 +48,23 @@ class MainActivity : AppCompatActivity() {
         val bottomNavView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         bottomNavView.setupWithNavController(navController)
 
+        val bundle = Bundle().apply {
+            putString("USER_PATH", userPath)
+        }
+
         bottomNavView.setOnNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.colecao -> {
                     // Passar o userPath para a tela de coleção usando o ViewModel
                     userViewModel.userPath?.let { userPath ->
-                        val bundle = Bundle().apply {
-                            putString("USER_PATH", userPath)
-                        }
                         navController.navigate(R.id.colecao, bundle)
                     }
                     true
                 }
                 R.id.camera -> {
-                    navController.navigate(R.id.camera)
+                    userViewModel.userPath?.let { userPath ->
+                        navController.navigate(R.id.camera, bundle)
+                    }
                     true
                 }
                 R.id.settings -> {
@@ -69,7 +72,10 @@ class MainActivity : AppCompatActivity() {
                     true
                 }
                 R.id.home -> {
-                    navController.navigate(R.id.home)
+                    userViewModel.userPath?.let { userPath ->
+                        navController.navigate(R.id.home, bundle)
+                    }
+
                     true
                 }
                 else -> false

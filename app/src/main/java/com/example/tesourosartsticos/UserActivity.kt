@@ -61,7 +61,13 @@ class UserActivity : AppCompatActivity() {
                     true
                 }
                 R.id.camera -> {
-                    navController.navigate(R.id.camera)
+                    userViewModel.userPath?.let { userPath ->
+                        val bundle = Bundle().apply {
+                            putString("USER_PATH", userPath)
+                        }
+                        navController.navigate(R.id.camera, bundle)
+                    }
+
                     true
                 }
                 R.id.settings -> {
@@ -69,7 +75,13 @@ class UserActivity : AppCompatActivity() {
                     true
                 }
                 R.id.home -> {
-                    navController.navigate(R.id.home)
+                    userViewModel.userPath?.let { userPath ->
+                        val bundle = Bundle().apply {
+                            putString("USER_PATH", userPath)
+                        }
+                        navController.navigate(R.id.home, bundle)
+                    }
+
                     true
                 }
                 else -> false

@@ -53,7 +53,7 @@ class AdmSupport : Fragment() {
         val btnVoltar = view.findViewById<Button>(R.id.btnVoltar)
 
         btnVoltar.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.settings)
+            Navigation.findNavController(view).navigate(R.id.action_admSupport_to_administrador)
         }
 
         val db = Firebase.firestore

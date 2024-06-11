@@ -7,12 +7,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import com.example.tesourosartsticos.MainActivity
-import com.example.tesourosartsticos.R
-import com.example.tesourosartsticos.UserActivity
-import com.example.tesourosartsticos.models.UserViewModel
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
