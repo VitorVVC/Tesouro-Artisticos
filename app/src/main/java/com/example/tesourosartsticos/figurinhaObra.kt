@@ -50,7 +50,7 @@ class figurinhaObra : Fragment() {
         Log.d(TAG, "onCreate (figurinhaObra.kt): userPath=$userPath, obraPath=$obraPath")
     }
 
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint("MissingInflatedId", "RestrictedApi")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -125,6 +125,20 @@ class figurinhaObra : Fragment() {
                         Log.e("ERROR", "Erro ao obter obra do usuário", exception)
                     }
             }
+        }
+
+        val btnVoltar = view.findViewById<Button>(R.id.btnObraVoltar)
+        btnVoltar.setOnClickListener {
+            it.isEnabled = false
+            val navController = findNavController()
+            if (navController.currentBackStackEntry != null) {
+                navController.popBackStack()
+            } else {
+                Log.e("FigurinhaObra", "No back stack entry found")
+            }
+            it.postDelayed({
+                it.isEnabled = true
+            }, 1000) // Re-enable the button after 1 second
         }
 
         return view
