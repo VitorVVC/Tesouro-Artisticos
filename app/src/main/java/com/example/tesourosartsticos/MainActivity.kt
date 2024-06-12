@@ -68,7 +68,9 @@ class MainActivity : AppCompatActivity() {
                     true
                 }
                 R.id.settings -> {
-                    navController.navigate(R.id.settings)
+                    userViewModel.userPath?.let { userPath ->
+                        navController.navigate(R.id.settings, bundle)
+                    }
                     true
                 }
                 R.id.home -> {

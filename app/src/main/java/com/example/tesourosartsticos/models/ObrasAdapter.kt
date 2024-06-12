@@ -57,8 +57,13 @@ class ObrasAdapter(private val obraList: List<Obra>) :
                     putString("obraPath", obra.documentPath) // Passando o caminho do documento
                     putString("userPath", obra.userPath) // Passando o caminho do usuário
                 }
-                itemView.findNavController()
-                    .navigate(R.id.fragment_figurinha_obra, bundle)
+                val navController = itemView.findNavController()
+                val currentDestination = navController.currentDestination?.id
+                if (currentDestination == R.id.colecao) {
+                    navController.navigate(R.id.fragment_figurinha_obra, bundle)
+                } else if (currentDestination == R.id.gerenciarObras) {
+                    navController.navigate(R.id.admFigurinhaObra, bundle)
+                }
             }
         }
     }

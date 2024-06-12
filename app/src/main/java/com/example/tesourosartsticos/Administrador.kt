@@ -1,25 +1,30 @@
 package com.example.tesourosartsticos
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.fragment.app.viewModels
 import androidx.navigation.Navigation
+import com.example.tesourosartsticos.models.UserViewModel
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
+private const val TAG = "ADM VIEW"
 
 class Administrador : Fragment() {
     private var param1: String? = null
-    private var param2: String? = null
+    private val userViewModel: UserViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
+            userViewModel.userPath = it.getString("USER_PATH")
+            Log.d(TAG, "User path recebido ADM View: ${userViewModel.userPath}")
         }
     }
 
@@ -34,6 +39,10 @@ class Administrador : Fragment() {
         val btnChamados = view.findViewById<Button>(R.id.btnChamados);
         val btnRanking = view.findViewById<Button>(R.id.btnGerenciarRank)
         val btnGerenciarObras = view.findViewById<Button>(R.id.btnGerenciarObras)
+
+        val bundle = Bundle().apply {
+            putString("USER_PATH", userViewModel.userPath)
+        }
         btnRanking.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.action_administrador_to_gerenciar_ranking)
         }
@@ -49,11 +58,10 @@ class Administrador : Fragment() {
 
         btnChamados.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.action_administrador_to_admSupport)
-
         }
 
         btnGerenciarObras.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_administrador_to_gerenciarObras)
+            Navigation.findNavController(view).navigate(R.id.action_administrador_to_gerenciarObras,bundle)
         }
 
         return view

@@ -14,6 +14,7 @@ import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
+import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.google.firebase.firestore.FieldValue
@@ -33,7 +34,8 @@ class AdmFigurinhaObra : Fragment() {
     private var descricao: String? = null
     private var userPath: String? = null
     private var obraPath: String? = null // Adicionando a variável para o caminho da obra
-    private var completeQuiz: Boolean = false // Adicionando a variável para indicar se o quiz foi completado
+    private var completeQuiz: Boolean =
+        false // Adicionando a variável para indicar se o quiz foi completado
     private lateinit var firestore: FirebaseFirestore
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,7 +51,7 @@ class AdmFigurinhaObra : Fragment() {
         }
         firestore = FirebaseFirestore.getInstance()
         fetchCompleteQuiz() // Recuperando completeQuiz do banco de dados
-        Log.d(TAG, "onCreate (figurinhaObra.kt): userPath=$userPath, obraPath=$obraPath")
+        Log.d(TAG, "onCreate (admFigurinhaObra.kt): userPath=$userPath, obraPath=$obraPath")
     }
 
     @SuppressLint("MissingInflatedId")
@@ -82,10 +84,13 @@ class AdmFigurinhaObra : Fragment() {
             val newDescricao = detalhesEditText.text.toString()
 
             if (newTitulo.isEmpty() || newAutor.isEmpty() || newDescricao.isEmpty()) {
-                Toast.makeText(requireContext(), "Preencha todos os campos", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Preencha todos os campos", Toast.LENGTH_SHORT)
+                    .show()
             } else {
                 updateFigurinha(newTitulo, newAutor, newDescricao)
+
             }
+
         }
 
         Glide.with(this)
@@ -119,7 +124,8 @@ class AdmFigurinhaObra : Fragment() {
                                 .load(imageUrl)
                                 .override(300, 300)
                                 .into(imagemImageView)
-                            completeQuiz = document.getBoolean("completeQuiz") ?: false // Recuperando completeQuiz do banco de dados
+                            completeQuiz = document.getBoolean("completeQuiz")
+                                ?: false // Recuperando completeQuiz do banco de dados
 
                         } else {
                             Log.e("ERROR", "Documento não encontrado.")
@@ -141,7 +147,8 @@ class AdmFigurinhaObra : Fragment() {
                     firestore.collection("Logins/$userPath/ObrasUser").document(obraPath)
                 obraDocumentRef.get()
                     .addOnSuccessListener { document ->
-                        completeQuiz = document.getBoolean("completeQuiz") ?: false // Recuperando completeQuiz do banco de dados
+                        completeQuiz = document.getBoolean("completeQuiz")
+                            ?: false // Recuperando completeQuiz do banco de dados
                     }
                     .addOnFailureListener { exception ->
                         Log.e("ERROR", "Erro ao obter completeQuiz do banco de dados", exception)
@@ -165,11 +172,22 @@ class AdmFigurinhaObra : Fragment() {
 
                 obraDocumentRef.update(updatedData)
                     .addOnSuccessListener {
-                        Toast.makeText(requireContext(), "Figurinha atualizada com sucesso", Toast.LENGTH_SHORT).show()
-                        findNavController().navigate(R.id.backToGerenciarObras)
+                        Toast.makeText(
+                            requireContext(),
+                            "Figurinha atualizada com sucesso",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                        val bundle = Bundle().apply {
+                            putString("USER_PATH", userPath)
+                        }
+                        findNavController().navigate(R.id.backToGerenciarObras, bundle)
                     }
                     .addOnFailureListener { e ->
-                        Toast.makeText(requireContext(), "Erro ao atualizar figurinha: ${e.message}", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(
+                            requireContext(),
+                            "Erro ao atualizar figurinha: ${e.message}",
+                            Toast.LENGTH_SHORT
+                        ).show()
                     }
             }
         }
@@ -183,11 +201,19 @@ class AdmFigurinhaObra : Fragment() {
 
                 obraDocumentRef.delete()
                     .addOnSuccessListener {
-                        Toast.makeText(requireContext(), "Figurinha removida com sucesso", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(
+                            requireContext(),
+                            "Figurinha removida com sucesso",
+                            Toast.LENGTH_SHORT
+                        ).show()
                         findNavController().navigate(R.id.backToGerenciarObras)
                     }
                     .addOnFailureListener { e ->
-                        Toast.makeText(requireContext(), "Erro ao remover figurinha: ${e.message}", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(
+                            requireContext(),
+                            "Erro ao remover figurinha: ${e.message}",
+                            Toast.LENGTH_SHORT
+                        ).show()
                     }
             }
         }
