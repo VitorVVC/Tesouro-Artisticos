@@ -206,7 +206,10 @@ class AdmFigurinhaObra : Fragment() {
                             "Figurinha removida com sucesso",
                             Toast.LENGTH_SHORT
                         ).show()
-                        findNavController().navigate(R.id.backToGerenciarObras)
+                        val bundle = Bundle().apply {
+                            putString("USER_PATH", userPath)
+                        }
+                        findNavController().navigate(R.id.backToGerenciarObras, bundle)
                     }
                     .addOnFailureListener { e ->
                         Toast.makeText(

@@ -47,10 +47,10 @@
             android:layout_width="250dp"
             android:layout_height="64dp"
             android:background="@drawable/button_background"
-            app:backgroundTint="@null"
             android:gravity="center"
             android:text="SUPORTE"
             android:textSize="25sp"
+            app:backgroundTint="@null"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
@@ -73,6 +73,21 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.118" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="192dp"
+            android:background="@drawable/button_warning"
+            android:text="LOGOUT"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSuporte" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
