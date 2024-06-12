@@ -1,6 +1,7 @@
 package com.example.tesourosartsticos
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -41,6 +42,8 @@ class Settings : Fragment() {
         val btnAdm = view.findViewById<Button>(R.id.btnAdm);
         val btnTema = view.findViewById<Button>(R.id.btnTema);
         val btnSobre = view.findViewById<Button>(R.id.btnSobre);
+        val btnLogout = view.findViewById<Button>(R.id.btnLogout)
+
 
         val colorChange = false
         val bundle = Bundle().apply {
@@ -51,10 +54,17 @@ class Settings : Fragment() {
 
         }
 
-
         btnSobre.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.navToSobre)
         }
+
+        btnLogout.setOnClickListener {
+            val intent = Intent(activity, InicioActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            startActivity(intent)
+            activity?.finish()
+        }
+
 
 
         return view

@@ -1,5 +1,6 @@
 package com.example.tesourosartsticos
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -40,6 +41,7 @@ class UserSettings : Fragment() {
 
         val btnSobre = view.findViewById<Button>(R.id.btnSobre)
         val btnSuporte = view.findViewById<Button>(R.id.btnSuporte)
+        val btnLogout = view.findViewById<Button>(R.id.btnLogout)
 
         btnSobre.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.navToSobre)
@@ -47,6 +49,13 @@ class UserSettings : Fragment() {
 
         btnSuporte.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.navToUserSupport)
+        }
+
+        btnLogout.setOnClickListener {
+            val intent = Intent(activity, InicioActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            startActivity(intent)
+            activity?.finish()
         }
         return view
     }
