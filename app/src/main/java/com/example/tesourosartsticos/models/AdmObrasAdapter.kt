@@ -11,8 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.tesourosartsticos.R
 
-
-class AdmObrasAdapter(private val obraList: List<Obra>) :
+class AdmObrasAdapter(private var obraList: List<Obra>) :
     RecyclerView.Adapter<AdmObrasAdapter.ViewHolderClass>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolderClass {
@@ -49,8 +48,14 @@ class AdmObrasAdapter(private val obraList: List<Obra>) :
                     putString("userPath", obra.userPath) // Passando o caminho do usuário
                 }
                 itemView.findNavController()
-                    .navigate(R.id.fragment_figurinha_obra, bundle)
+                    .navigate(R.id.navigateToAdmFigurinhaObra, bundle)
             }
         }
+    }
+
+    // Método para atualizar a lista de obras
+    fun updateObras(newObras: List<Obra>) {
+        obraList = newObras
+        notifyDataSetChanged()
     }
 }

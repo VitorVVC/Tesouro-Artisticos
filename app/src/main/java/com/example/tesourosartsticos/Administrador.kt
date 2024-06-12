@@ -33,7 +33,7 @@ class Administrador : Fragment() {
         val btnAdicionarFigurinha = view.findViewById<Button>(R.id.btnAdicionarFigurinha)
         val btnChamados = view.findViewById<Button>(R.id.btnChamados);
         val btnRanking = view.findViewById<Button>(R.id.btnGerenciarRank)
-
+        val btnGerenciarObras = view.findViewById<Button>(R.id.btnGerenciarObras)
         btnRanking.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.action_administrador_to_gerenciar_ranking)
         }
@@ -50,6 +50,10 @@ class Administrador : Fragment() {
         btnChamados.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.action_administrador_to_admSupport)
 
+        }
+
+        btnGerenciarObras.setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.action_administrador_to_gerenciarObras)
         }
 
         return view
