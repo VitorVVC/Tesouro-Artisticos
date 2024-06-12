@@ -94,6 +94,9 @@
             app:enterAnim="@anim/nav_default_enter_anim"
             app:popUpTo="@id/administrador"
             app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_administrador_to_gerenciarObras"
+            app:destination="@id/gerenciarObras" />
     </fragment>
     <fragment
         android:id="@+id/perfil"
@@ -216,6 +219,36 @@
             app:destination="@id/administrador"
             app:enterAnim="@anim/nav_default_enter_anim"
             app:popUpTo="@id/gerenciar_ranking"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/gerenciarObras"
+        android:name="com.example.tesourosartsticos.GerenciarObras"
+        android:label="fragment_gerenciar_obras"
+        tools:layout="@layout/fragment_gerenciar_obras" >
+        <action
+            android:id="@+id/navigateToAdmFigurinhaObra"
+            app:destination="@id/admFigurinhaObra"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/gerenciarObras"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/backToAdm"
+            app:destination="@id/administrador"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/gerenciarObras"
+            app:popUpToInclusive="true"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/admFigurinhaObra"
+        android:name="com.example.tesourosartsticos.AdmFigurinhaObra"
+        android:label="AdmFigurinhaObra" >
+        <action
+            android:id="@+id/backToGerenciarObras"
+            app:destination="@id/gerenciarObras"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/admFigurinhaObra"
             app:popUpToInclusive="true"/>
     </fragment>
 </navigation>

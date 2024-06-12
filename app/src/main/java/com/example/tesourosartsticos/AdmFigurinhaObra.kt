@@ -9,12 +9,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
+import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
 
 private const val ARG_TITULO = "titulo"
@@ -55,37 +57,36 @@ class AdmFigurinhaObra : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_figurinha_obra, container, false)
+        val view = inflater.inflate(R.layout.fragment_adm_figurinha_obra, container, false)
 
         val progressBar: ProgressBar = view.findViewById(R.id.progressBar)
-        val tituloTextView: Button = view.findViewById(R.id.headerObra)
+        val tituloEditText: EditText = view.findViewById(R.id.editTitle)
         val imagemImageView: ImageView = view.findViewById(R.id.obraImage)
-        val autorTextView: TextView = view.findViewById(R.id.autor)
-        val detalhesTextView: TextView = view.findViewById(R.id.descricao)
-        val bordaImage: Button = view.findViewById(R.id.borda)
+        val autorEditText: EditText = view.findViewById(R.id.editAuthor)
+        val detalhesEditText: EditText = view.findViewById(R.id.editDescription)
 
         val btnRemove: Button = view.findViewById(R.id.btnRemove)
         val btnConfirm: Button = view.findViewById(R.id.btnConfirma)
 
-        val btnGoToQuiz: Button = view.findViewById(R.id.btnGoToQuiz)
-        btnGoToQuiz.setOnClickListener {
-            if (!completeQuiz) {
-                // Navegar para o quiz da obra específica
-                val bundle = Bundle().apply {
-                    putString(USER_PATH, userPath)
-                    putString("obraPath", obraPath)
-                    putBoolean(COMPLETE_QUIZ, completeQuiz)
-                }
-                findNavController().navigate(R.id.quiz, bundle)
-            } else {
-                // Exibir mensagem informando que o usuário já completou o quiz
-                Toast.makeText(context, "Você já completou este quiz.", Toast.LENGTH_SHORT).show()
-            }
+        tituloEditText.setText(titulo)
+        autorEditText.setText(autor)
+        detalhesEditText.setText(descricao)
+
+        btnRemove.setOnClickListener {
+            removeFigurinha()
         }
 
-        tituloTextView.text = titulo
-        autorTextView.text = autor
-        detalhesTextView.text = descricao
+        btnConfirm.setOnClickListener {
+            val newTitulo = tituloEditText.text.toString()
+            val newAutor = autorEditText.text.toString()
+            val newDescricao = detalhesEditText.text.toString()
+
+            if (newTitulo.isEmpty() || newAutor.isEmpty() || newDescricao.isEmpty()) {
+                Toast.makeText(requireContext(), "Preencha todos os campos", Toast.LENGTH_SHORT).show()
+            } else {
+                updateFigurinha(newTitulo, newAutor, newDescricao)
+            }
+        }
 
         Glide.with(this)
             .load(imageUrl)
@@ -111,9 +112,9 @@ class AdmFigurinhaObra : Fragment() {
                                 2 -> progressBar.max
                                 else -> 75
                             }
-                            tituloTextView.text = titulo
-                            autorTextView.text = autor
-                            detalhesTextView.text = descricao
+                            tituloEditText.setText(titulo)
+                            autorEditText.setText(autor)
+                            detalhesEditText.setText(descricao)
                             Glide.with(this@AdmFigurinhaObra)
                                 .load(imageUrl)
                                 .override(300, 300)
@@ -149,6 +150,49 @@ class AdmFigurinhaObra : Fragment() {
         }
     }
 
+    private fun updateFigurinha(newTitulo: String, newAutor: String, newDescricao: String) {
+        userPath?.let { userPath ->
+            obraPath?.let { obraPath ->
+                val obraDocumentRef =
+                    firestore.collection("Logins/$userPath/ObrasUser").document(obraPath)
+
+                val updatedData = mapOf(
+                    "titulo" to newTitulo,
+                    "autor" to newAutor,
+                    "descricao" to newDescricao,
+                    "dataAtualizacao" to FieldValue.serverTimestamp()
+                )
+
+                obraDocumentRef.update(updatedData)
+                    .addOnSuccessListener {
+                        Toast.makeText(requireContext(), "Figurinha atualizada com sucesso", Toast.LENGTH_SHORT).show()
+                        findNavController().navigate(R.id.backToGerenciarObras)
+                    }
+                    .addOnFailureListener { e ->
+                        Toast.makeText(requireContext(), "Erro ao atualizar figurinha: ${e.message}", Toast.LENGTH_SHORT).show()
+                    }
+            }
+        }
+    }
+
+    private fun removeFigurinha() {
+        userPath?.let { userPath ->
+            obraPath?.let { obraPath ->
+                val obraDocumentRef =
+                    firestore.collection("Logins/$userPath/ObrasUser").document(obraPath)
+
+                obraDocumentRef.delete()
+                    .addOnSuccessListener {
+                        Toast.makeText(requireContext(), "Figurinha removida com sucesso", Toast.LENGTH_SHORT).show()
+                        findNavController().navigate(R.id.backToGerenciarObras)
+                    }
+                    .addOnFailureListener { e ->
+                        Toast.makeText(requireContext(), "Erro ao remover figurinha: ${e.message}", Toast.LENGTH_SHORT).show()
+                    }
+            }
+        }
+    }
+
     companion object {
         @JvmStatic
         fun newInstance(
@@ -160,7 +204,7 @@ class AdmFigurinhaObra : Fragment() {
             obraPath: String, // Adicionando o novo parâmetro
             completeQuiz: Boolean // Adicionando o novo parâmetro
         ) =
-            figurinhaObra().apply {
+            AdmFigurinhaObra().apply {
                 arguments = Bundle().apply {
                     putString(ARG_TITULO, titulo)
                     putString(ARG_IMAGE_URL, imageUrl)
