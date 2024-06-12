@@ -79,7 +79,7 @@ class figurinhaObra : Fragment() {
                 Toast.makeText(context, "Você já completou este quiz.", Toast.LENGTH_SHORT).show()
             }
         }
-
+        Log.d(TAG,"Title: ${titulo}, Autor: ${autor}, Descricao: ${descricao}")
         tituloTextView.text = titulo
         autorTextView.text = autor
         detalhesTextView.text = descricao

@@ -28,7 +28,7 @@ class TelaColecao : Fragment() {
         super.onCreate(savedInstanceState)
         arguments?.let {
             userViewModel.userPath = it.getString("USER_PATH")
-            Log.d(TAG, "User path recebido: ${userViewModel.userPath}")
+            Log.d(TAG, "User path recebido TELA COLECAO: ${userViewModel.userPath}")
         }
     }
 
